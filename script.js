@@ -6,8 +6,12 @@ const STORAGE_KEYS = {
     adminTimetable: "admin_uploaded_timetable"
 };
 
+// Admin timetable URL - points to the repo's JSON file
+const ADMIN_TIMETABLE_URL = "./admin-timetable.json";
+
 const units = JSON.parse(localStorage.getItem(STORAGE_KEYS.units)) || [];
 let myUnits = JSON.parse(localStorage.getItem(STORAGE_KEYS.savedTimetable)) || [];
+let globalAdminTimetable = null; // Universal timetable for all users
 
 const add = document.querySelector("#add");
 const unitCode = document.querySelector("#code");
@@ -22,12 +26,28 @@ const adminStats = document.querySelector(".admin-stats");
 const adminControls = document.querySelector(".admin-controls");
 const adminLogs = document.querySelector(".admin-logs");
 
-if (myUnits.length > 0) {
-    generateTable(myUnits);
+// Load admin timetable from JSON file on startup
+async function loadAdminTimetable() {
+    try {
+        const response = await fetch(ADMIN_TIMETABLE_URL);
+        const data = await response.json();
+        if (data.fullTT && Array.isArray(data.fullTT) && data.fullTT.length > 0) {
+            globalAdminTimetable = data;
+        }
+    } catch (error) {
+        console.log("No admin timetable found or error loading:", error);
+    }
 }
 
-displayUnits();
-trackVisit();
+// Initialize app
+(async () => {
+    await loadAdminTimetable();
+    if (myUnits.length > 0) {
+        generateTable(myUnits);
+    }
+    displayUnits();
+    trackVisit();
+})();
 
 if (window.location.hash.toLowerCase() === "#admin") {
     openAdminWithAuth();
@@ -79,7 +99,7 @@ generate.addEventListener("click", () => {
     }
 
     const file = fileInput.files[0];
-    if (!file && !localStorage.getItem(STORAGE_KEYS.adminTimetable)) {
+    if (!file && !globalAdminTimetable) {
         alert("No source timetable found. Upload one or ask admin to upload a default timetable.");
         return;
     }
@@ -260,9 +280,9 @@ generate.addEventListener("click", () => {
         return;
     }
 
-    const storedAdminTT = JSON.parse(localStorage.getItem(STORAGE_KEYS.adminTimetable) || "{}");
-    if (Array.isArray(storedAdminTT.fullTT)) {
-        processFile(storedAdminTT.fullTT);
+    // Use global admin timetable or fallback to stored one
+    if (globalAdminTimetable && Array.isArray(globalAdminTimetable.fullTT)) {
+        processFile(globalAdminTimetable.fullTT);
     }
 });
 
@@ -598,37 +618,37 @@ function closeAdminPanel() {
 function renderAdminDashboard() {
     const logs = JSON.parse(localStorage.getItem(STORAGE_KEYS.visitLogs)) || [];
     const uniqueIps = new Set(logs.map((log) => log.ip).filter((ip) => ip && ip !== "Unavailable")).size;
-    const adminTimetable = JSON.parse(localStorage.getItem(STORAGE_KEYS.adminTimetable));
+
+    const ttStatus = globalAdminTimetable 
+        ? `Loaded (Universal - shared with all users)`
+        : "Not uploaded";
 
     adminStats.innerHTML = `
         <p><strong>Total Visits:</strong> ${logs.length}</p>
         <p><strong>Unique IPs:</strong> ${uniqueIps}</p>
         <p><strong>Latest Visit:</strong> ${logs.length ? new Date(logs[logs.length - 1].at).toLocaleString() : "-"}</p>
-        <p><strong>Default Timetable:</strong> ${adminTimetable ? `Uploaded (${new Date(adminTimetable.at).toLocaleString()})` : "Not uploaded"}</p>
+        <p><strong>Default Timetable:</strong> ${ttStatus}</p>
     `;
 
     adminControls.innerHTML = `
         <div class="admin-source-tools">
             <input id="adminTtFile" type="file" accept=".xlsx,.xls">
             <button class='upload-source'>Upload Default TT</button>
-            <button class='clear-source'>Remove Default TT</button>
+            <button class='export-source' ${!globalAdminTimetable ? 'disabled' : ''}>Export as JSON</button>
             <button class='clear-logs'>Clear Logs</button>
         </div>
+        <p style="font-size: 0.85rem; color: #999; margin-top: 10px;">
+            📌 <strong>Setup:</strong> After uploading, export as JSON and save the contents to <code>admin-timetable.json</code> in the repo root.
+        </p>
     `;
 
     const uploadSourceBtn = adminControls.querySelector(".upload-source");
     uploadSourceBtn.addEventListener("click", uploadAdminSourceTimetable);
 
-    const clearSourceBtn = adminControls.querySelector(".clear-source");
-    clearSourceBtn.addEventListener("click", () => {
-        const okay = confirm("Remove uploaded default timetable?");
-        if (!okay) {
-            return;
-        }
-
-        localStorage.removeItem(STORAGE_KEYS.adminTimetable);
-        renderAdminDashboard();
-    });
+    const exportSourceBtn = adminControls.querySelector(".export-source");
+    if (exportSourceBtn && globalAdminTimetable) {
+        exportSourceBtn.addEventListener("click", exportAdminTimetable);
+    }
 
     const clearLogsBtn = adminControls.querySelector(".clear-logs");
     clearLogsBtn.addEventListener("click", () => {
@@ -664,11 +684,11 @@ async function uploadAdminSourceTimetable() {
         try {
             const data = new Uint8Array(e.target.result);
             const fullTT = parseWorkbookToFullTT(data);
-            localStorage.setItem(STORAGE_KEYS.adminTimetable, JSON.stringify({
-                at: new Date().toISOString(),
+            globalAdminTimetable = {
+                uploadedAt: new Date().toISOString(),
                 fullTT
-            }));
-            alert("Default timetable uploaded successfully");
+            };
+            alert("✅ Default timetable loaded. Now export it as JSON and update admin-timetable.json in the repo.");
             renderAdminDashboard();
         } catch (error) {
             alert("Failed to upload default timetable");
@@ -677,6 +697,26 @@ async function uploadAdminSourceTimetable() {
     };
 
     reader.readAsArrayBuffer(file);
+}
+
+function exportAdminTimetable() {
+    if (!globalAdminTimetable) {
+        alert("No timetable to export");
+        return;
+    }
+
+    const jsonString = JSON.stringify(globalAdminTimetable, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "admin-timetable.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    alert("📥 Downloaded admin-timetable.json. Replace the file in your repo with this and push to GitHub.");
 }
 
 async function sha256(value) {
