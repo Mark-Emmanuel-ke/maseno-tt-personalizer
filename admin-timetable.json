@@ -1,4 +1,7004 @@
 {
-  "fullTT": [],
-  "uploadedAt": ""
+  "uploadedAt": "2026-03-23T18:59:35.706Z",
+  "fullTT": [
+    {
+      "day": "COMBINED SEMESTER TWO EXAMINATION TIMETABLE ",
+      "unit1": [],
+      "unit2": [],
+      "unit3": []
+    },
+    {
+      "day": "2025/2026 ACADEMIC YEAR SEMESTER 2 - 23/03/2026",
+      "unit1": [],
+      "unit2": [],
+      "unit3": []
+    },
+    {
+      "day": "Day, Date",
+      "unit1": [
+        {
+          "name": "8.30am - 11.30am",
+          "venue": [
+            "Hall"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "12.00noon - 3.00pm",
+          "venue": [
+            "Hall"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "3.30pm 6.30pm",
+          "venue": [
+            "Hall"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Monday, 13 April 2026",
+      "unit1": [
+        {
+          "name": "AAB 408 - MARKETING MANAGEMENT",
+          "venue": [
+            "M07"
+          ]
+        },
+        {
+          "name": "AAG 305 - WEED SCIENCE",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "AAN 412 -",
+          "venue": [
+            "PGM-LH11"
+          ]
+        },
+        {
+          "name": "ACC 302 - RESEARCH METHODOLOGY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "ADI 202 - COST PLANNING & CONTROL",
+          "venue": [
+            "M05, M06"
+          ]
+        },
+        {
+          "name": "AFR 104 - FRENCH VERBS",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "AHC 305 - POMOLOGY I",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AMT 320 - CORPORATE COMMUNICATION",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "AMU 402 - COMPOSITION IV",
+          "venue": [
+            "MR01"
+          ]
+        },
+        {
+          "name": "APH 302 - EPISTEMOLOGY",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "ARE 310 - HISTORY OF CHRISTIANITY IN AFRICA",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "BBA 499 - RESEARCH PROJECT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "BIT 302 - E-COMMERCE",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "CIR 302 - HUMAN COMPUTER INTERACTION",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "EPY 311 - HUMAN BEHAVIOR, LEARNING, GUIDANCE AND COUNSELING",
+          "venue": [
+            "NL GROUND FLR, NL11, 12, 15+.Anx, NL16, + .L.Anx, + R.Anx, NL17 + .Anx"
+          ]
+        },
+        {
+          "name": "MAC 300 - FINANCIAL MATHEMATICS II",
+          "venue": [
+            "PGM-LH19"
+          ]
+        },
+        {
+          "name": "MBC 113 - CELL BIOLOGY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MBC 321 - CLINICAL CHEMISTRY I",
+          "venue": [
+            "M02"
+          ]
+        },
+        {
+          "name": "MMA 302 - LINEAR ALGEBRA III",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "PDM 302 - FIRST AID SKILLS FOR DISASTER RISK",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "PDM 402 - MAINSTREAMING GENDER IN DISASTER MANAGEMENT",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PGS 301 - CASE STUDY II: GIS APPLICATIONS",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "PHR 402 - PRINCIPLES OF TELEMEDICINE",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 308 - FOOD FORMULATION AND MODIFICATION",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SPH 404 - PRINCIPLES OF ENERGY CONVERSION, STORAGE AND TRANSPORT",
+          "venue": [
+            "M01"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAB 301 - FINANCIAL ACCOUNTING",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "AAG 207 - TECHNICAL DRAWING",
+          "venue": [
+            "PGM-LH11"
+          ]
+        },
+        {
+          "name": "ACS 302 - CRIME, TECHNOLOGY, AND SOCIETY",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "AEN 206 - LANGUAGE AND COGNITION",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AFN 210 - DEVELOPMENTAL BIOLOGY OF FISHES",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AFN 302 - FISH STOCK ASSESSMENT",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AFR 206 - ENHANCED ART OF WRITING IN FRENCH",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "AKI 302 - KISWAHILI PHONOLOGY",
+          "venue": [
+            "NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "AMT 214 - GROUP DYNAMICS",
+          "venue": [
+            "NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "AMU 202 - COMPOSITIONAL STUDIES & PRACTICAL MUSICIANSHIP III",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "APY 302 - POSTTRAUMATIC STRESS DISORDER",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "ARE 304 - SYSTEMATIC THEOLOGY II",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "ASO 204 - KENYAN SOCIAL WELFARE SYSTEM",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "BBE 404 - CONTEMPORARY ISSUES IN ENTREPRENEURSHIP",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "BIT 302 - E-COMMERCE",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BPS 204 - PROCUREMENT INVENTORY MANAGEMENT",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BPS 406 - PUBLIC PRIVATE PARTNERSHIP",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "CCT 312 - EMBEDDED COMPUTING SYSTEMS I",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIS 120 - COMPUTER BASED INFORMATION SYSTEMS CONCEPTS",
+          "venue": [
+            "TB05"
+          ]
+        },
+        {
+          "name": "CIS 310 - MIS GROUP PROJECT IMPLEMENTATION",
+          "venue": [
+            "TB03"
+          ]
+        },
+        {
+          "name": "MBC 221 - METABOLISM II",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "PDM 201 - DRM STUDIO: LOCAL",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "PND 207 - PRINCIPLES OF FOODS AND NUTRITION II: MIRCONUTRIENTS",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 321 - MEAL PLANNING, MANAGEMENT AND SERVICE",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "PUR 201 - PLANNING STUDIO (RURAL)",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PUR 334 - URBAN INFORMALITY AND SPATIAL MANAGEMENT",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SBT 310 - DRYLAND ECOLOGY & LAND USE",
+          "venue": [
+            "NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAB 306 - ECONOMIC DEVELOPMENT",
+          "venue": [
+            "NL05.Anx"
+          ]
+        },
+        {
+          "name": "AAG 409 - TUBER CROPS",
+          "venue": [
+            "PGM-LH11"
+          ]
+        },
+        {
+          "name": "ADA 246 - HISTORY OF ART IN EUROPE",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "AEN 408 - COMPARATIVE STUDY OF LANGUAGE",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AFN 404 - RESEARCH PROJECT II",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AGE 402 - URBAN GEOGRAPHY",
+          "venue": [
+            "NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "AIT 302 - DIGITAL TRADE AND SOCIETY",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH21-27"
+          ]
+        },
+        {
+          "name": "AKI 108 - INTRODUCTION TO LANGUAGE AND SOCIETY",
+          "venue": [
+            "PGM-LH18, PGM-LH28, PGM-LH32"
+          ]
+        },
+        {
+          "name": "AKI 208 - STYLISTICS IN KISWAHILI LANGUAGE",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AMU 102 - COMPOSITIONAL STUDIES & PRACTICAL MUSICIANSHIP II",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "BAF 308 - FINANCIAL INSTITUTIONS & MARKETS",
+          "venue": [
+            "NL11, 12, 13, 15+.Anx, NL16+.L.Anx+R.Anx, 17+Anx"
+          ]
+        },
+        {
+          "name": "BBE 102 - ENTREPRENEURSHIP DEVELOPMENT IN KENYA",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "BBE 303 - ICT AND ENTREPRENEURSHIP",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "BEH 412 - ECO AND NATURE BASED TOURISM",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "BIR 411 - INSURANCE THEORY AND PRACTICE",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "BMM 306 - RETAIL MANAGEMENT",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "BPS 102 - FUNDAMENTALS OF INFORMATION TECHNOLOGY",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "CIM 332 - GROUP ICTM PROJECT IMPLEMENTATION",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIT 326 - INFORMATION ASSURANCE AND SECURITY",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "MAS 304 - TESTS OF HYPOTHESIS",
+          "venue": [
+            "PGM-LH19"
+          ]
+        },
+        {
+          "name": "MBC 421 - PRINCIPLES OF BIOTECHNOLOGY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MMA 326 - REAL ANALYSIS II",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "PDM 102 - CHANGE MANAGEMENT",
+          "venue": [
+            "PGM-LH13"
+          ]
+        },
+        {
+          "name": "PHT 333 - PORT HEALTH",
+          "venue": [
+            "PGM-LH34"
+          ]
+        },
+        {
+          "name": "PUR 102 - PLANNING THEORY",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SPH 301 - INTRODUCTION TO SOLID STATE PHYSICS",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "SZL 304 - COMPARATIVE ANIMAL PHYSIOLOGY",
+          "venue": [
+            "NL02.Anx, NL05"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 14 April 2026",
+      "unit1": [
+        {
+          "name": "AAB 404 - OPERATIONS RESEARCH",
+          "venue": [
+            "BGDN01, BGDN03"
+          ]
+        },
+        {
+          "name": "AAG 308 - SOIL SURVEY, CLASSIFICATION AND EVALUATION",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ACP 402 - LOSS AND GRIEF COUNSELLING",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "ACS 304 - CRIME AND ETHICS",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "ADI 206 - ENVIRONMENTAL DESIGN & ERGONOMICS",
+          "venue": [
+            "M05, M06"
+          ]
+        },
+        {
+          "name": "AFR 106 - INTRODUCTION TO TRANSLATION SKILLS",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "AGE 308 - RURAL SETTLEMENTS AND LAND USE",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "AHC 306 - FLORICULTURE I",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AHC 407 - PLANT DISEASE CONTROL",
+          "venue": [
+            "NL13, NL14"
+          ]
+        },
+        {
+          "name": "AKI 304 - HISTORICAL AND COMPARATIVE LINGUISTICS",
+          "venue": [
+            "NL11, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "ALI 104 - EASTERN AFRICAN DRAMA",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMU 304 - AFRICAN INSTRUMENTS",
+          "venue": [
+            "MR01, MR02"
+          ]
+        },
+        {
+          "name": "APH 304 - MEDICAL ETHICS",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "ASO 102 - INTRODUCTION TO SOCIAL STATISTICS I",
+          "venue": [
+            "NL05.Anx, NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "ASO 402 - LABOUR, WELFARE AND INDUSTRIAL RELATIONS",
+          "venue": [
+            "PGM-LH01, PGM-LH04"
+          ]
+        },
+        {
+          "name": "BIT 304 - ENTERPRISE APPLICATIONS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "CIR 304 - COMPUTER GRAPHICS",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "MAS 416 - QUALITY CONTROL METHODS",
+          "venue": [
+            "NL12"
+          ]
+        },
+        {
+          "name": "MBC 121 - BIOMOLECULES",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MBC 322 - INDUSTRIAL BIOCHEMISTRY",
+          "venue": [
+            "M02"
+          ]
+        },
+        {
+          "name": "MMA 416 - GALOIS THEORY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "NGA 402 - DRINKING WATER TECHNOLOGY",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "PDM 304 - CLIMATE CHANGE POLICY AND RESPONSE STRATEGY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "PDM 404 - FIRE RISK ASSESSMENT AND SAFETY",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PGS 302 - ANALYSIS OF URBAN GROWTH AND DYNAMICS",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "PHT 420 - PUBLIC HEALTH LAWS, CONVENTIONS & ETHICS",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 310 - RESEARCH METHODOLOGY",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SCH 312 - PRINCIPLES AND APPLICATION OF ATOMIC SPECTROSCOPY",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "SPH 406 - DIGITAL ELECTRONICS II",
+          "venue": [
+            "M01"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAN 406 - PRINCIPLES OF TOXICOLOGY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "ACS 402 - ADVANCED CRIMINOLOGY",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "ADI 302 - RESEARCH METHODOLOGY",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "AEG 311 - APPLIED AGRICULTURAL MARKETING",
+          "venue": [
+            "NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "AEN 208 - LANGUAGE DEATH AND LINGUISTIC RIGHTS",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AFN 208 - CULTURE OF SHELLFISH",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AFN 316 - PROFESSIONALISM IN FISHERIES AND ENVI. SCIENCES",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AFR 208 - HISTORICAL STUDIES OF THE FRENCH LANGUAGE",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "AHC 102 - BASIC ENTOMOLOGY",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "AHI 302 - GOVERNMENT, CONSTITUTION AND POLITICS IN KENYA",
+          "venue": [
+            "NL11, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "AMU 204 - PRACTICAL MUSICIANSHIP II",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "AMU 402 - COMPOSITION IV",
+          "venue": [
+            "MR01"
+          ]
+        },
+        {
+          "name": "APY 304 - PSYCHOLOGY OF HUMAN EXCEPTIONALITIES",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "BBA 406 - PLANNING & ADMINISTRATIVE DECISION MAKING",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "BBE 406 - ENTREPRENEURSHIP IN PUBLIC SECTOR",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "BEH 402 - STRATEGIC MANAGEMENT IN HOSPITALITY AND TOURISM",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "BHR 202 - EMPLOYEE RESOURCING",
+          "venue": [
+            "PGM-LH13, PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BIT 304 - ENTERPRISE APPLICATIONS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BPS 404 - PURCHARSING POLICY & STRATEGY",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "CCS 328 - ADVANCED SYSTEMS DEVELOPMENT PROJECT",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIS 202 - INFORMATION SYSTEMS MANAGEMENT",
+          "venue": [
+            "TB05"
+          ]
+        },
+        {
+          "name": "CIS 312 - ICT AND SOCIETY",
+          "venue": [
+            "TB03"
+          ]
+        },
+        {
+          "name": "ESE 406 - FUNCTIONAL AND VOCATIONAL SKILLS FOR THE MENTALLY HANDICAPPED",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MAC 210 - INVESTMENT AND ASSEST MANAGEMENT I",
+          "venue": [
+            "NL02.Anx"
+          ]
+        },
+        {
+          "name": "MBC 222 - IMMUNOLOGY II",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "PDM 202 - ENVIRONMENTAL RISK ASSESSMENT",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "PHR 302 - HEALTHCARE DATA QUALITY AND TECHNOLOGY",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "PND 211 - PRINCIPLES OF NUTRITION ASSESSMENT",
+          "venue": [
+            "PGM-LH14, PGM-LH15"
+          ]
+        },
+        {
+          "name": "PUR 204 - LANDSCAPE DESIGN",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SAN 204 - TITRATIONS IN AQUEOUS AND NON AQUEOUS MEDIA",
+          "venue": [
+            "PGM-LH07"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAG 406 - RESEARCH PROJECT II",
+          "venue": [
+            "PGM-LH11"
+          ]
+        },
+        {
+          "name": "AAN 206 - GROWTH AND DEVELOPMENT OF LIVESTOCK",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "AAN 308 - ANIMAL BREEDING",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "AEN 419 - HEALTH COMMUNICATION",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AFN 102 - ICHTHYOTAXONOMY",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AFR 302 - INTRODUCTION TO FRENCH LITERATURE",
+          "venue": [
+            "NL10"
+          ]
+        },
+        {
+          "name": "AIT 304 - DATA ANALYSIS SOFTWARE",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH21-27"
+          ]
+        },
+        {
+          "name": "AKI 306 - PRE 20TH-CENTURY KISWAHILI POETRY",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "AKI 406 - LANGUAGE PLANNING AND POLICY IN KENYA",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AMU 104 - MUSIC IN AFRICAN CULTURES",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "BAF 418 - INTERNATIONAL FINANCE",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BEH 106 - FOOD AND BEVERAGE SERVICE TECHNIQUES I",
+          "venue": [
+            "PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BIR 421 - INSURANCE RISK MANAGEMENT",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "BMS 304 - RESEARCH METHODS",
+          "venue": [
+            "NL10.Anx"
+          ]
+        },
+        {
+          "name": "CIM 328 - SECURITY IN APPLICATIONS",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIT 204 - NETWORK ADMINISTRATION AND MANAGEMENT",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "HIT 304 - STATISTICAL DATA ANALYSIS",
+          "venue": [
+            "PGM-LH28, PGM-LH32"
+          ]
+        },
+        {
+          "name": "MBC 423 - BIOCHEMICAL TOXICOLOGY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MIT 314 - COMPUTERS APPLIED TO MATHEMATICS",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "NES 103 - ENVIRONMENTAL POLLUTION",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "PDM 104 - COMMUNICATION FOR DRM",
+          "venue": [
+            "PGM-LH13"
+          ]
+        },
+        {
+          "name": "PND 106 - FIRST AID",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "PUR 106 - PRESENTATION TECHNIQUES 11",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SBT 304 - BRYOLOGY & PTERIDOLOGY",
+          "venue": [
+            "NL11, NL12, NL13, NL14, NL17.Anx"
+          ]
+        },
+        {
+          "name": "SIT 304 - ANALYTICAL METHOD DEVELOPMENT AND VALIDATION",
+          "venue": [
+            "PGM-LH34"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 15 April 2026",
+      "unit1": [
+        {
+          "name": "AAB 307 - RISK AND INSURANCE",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "ACS 406 - TERRORISM",
+          "venue": [
+            "PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "ADI 408 - PACKAGING & ADVERTISEMENT DESIGN",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "AFR 112 - INTROD. TO FRENCH FOR SPECIFIC PURPOSES",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "AHC 308 - ORNAMENTAL HORTICULTURE",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AKI 210 - INTERPRETATION IN KISWAHILI",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "ALI 106 - EASTERN AFRICAN POETRY",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMT 402 - PRACTICAL SKILLS PROJECT",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "AMU 302 - COMPOSITIONAL STUDIES & PRACTICAL MUSICIANSHIP V",
+          "venue": [
+            "MR01, MR02"
+          ]
+        },
+        {
+          "name": "APH 306 - INDUCTION",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "ARE 110 - AFRICAN RELIGION",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "ARE 312 - AFRICAN MYTHOLOGY",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "ASA 304 - MEDICAL ANTHROPOLOGY",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "ASO 406 - SOCIOLOGY OF DEVELOPMENT",
+          "venue": [
+            "PGM-LH01, PGM-LH04"
+          ]
+        },
+        {
+          "name": "ATM 310 - COMPUTER MUSIC NOTATION",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "BMM 410 - PUBLIC RELATIONS",
+          "venue": [
+            "PGM-LH24, PGM-LH25"
+          ]
+        },
+        {
+          "name": "BMS 302 - QUANTITATIVE METHODS FOR BUSINESS I",
+          "venue": [
+            "NL GROUND FLR, NL15"
+          ]
+        },
+        {
+          "name": "CIR 306 - WIRELESS AND MOBILE COMPUTING",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 304 - METHODS OF TEACHING LIFE SKILLS IN ECD",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "EIT 302 - DATA ANALYSIS AND INTERPRETATION IN EDUCATION",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "HIT 302 - ELECTRONIC COMMERCE IN HEALTH",
+          "venue": [
+            "PGM-LH28, PGM-LH32"
+          ]
+        },
+        {
+          "name": "MAC 302 - METHODS OF ACTUARIAL INVESTIGATIONS",
+          "venue": [
+            "NL11"
+          ]
+        },
+        {
+          "name": "MBC 323 - BIOCHEMISTRY OF SPECIAL ORGANS",
+          "venue": [
+            "M02"
+          ]
+        },
+        {
+          "name": "MMA 322 - RING THEORY",
+          "venue": [
+            "NL12"
+          ]
+        },
+        {
+          "name": "MMA 418 - ALGEBRAIC GEOMETRY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "NES 308 - PARTICIPATORY RURAL APPRAISAL",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "NGA 404 - MANAGEMENT IRRIGATION SYSTEMS",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "PDM 306 - DISASTER MITIGATION AND RECOVERY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "PDM 406 - INDUSTRIAL DISASTERS",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PGS 304 - PROJECT PLANNING AND MANAGEMENT",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "PHR 406 - PUBLIC HEALTH INFORMATICS",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PIT 402 - PROGRAMMING FOR GIS APPLICATIONS",
+          "venue": [
+            "PGM-LH18, PGM-LH23"
+          ]
+        },
+        {
+          "name": "PUR 401 - PLANNING STUDIO (REGIONAL)",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SAN 404 - BIOANALYTICAL CHEMISTRY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "SIC 406 - CHEMISTRY OF SYNTHETIC AND NATURAL DYES",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "SIT 302 - PATENT LAW, PROTECTION AND SCIENTIFIC ETHICS",
+          "venue": [
+            "PGM-LH34"
+          ]
+        },
+        {
+          "name": "SPH 412 - AERONOMY AND PALEOMAGNETISM",
+          "venue": [
+            "M01"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAN 306 - FISH FARMING & PRODUCTION",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "ACC 304 - METHODS OF ASSESSING CURRENT AND FUTURE CLIMATE CHANGE",
+          "venue": [
+            "PGM-LH18"
+          ]
+        },
+        {
+          "name": "ACS 306 - ADVOCACY AND HUMAN RIGHTS",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "ADF 306 - DESIGN & CONSTRUCTION OF TEENAGER’S WEAR & STAFF UNIFORM",
+          "venue": [
+            "PGM-LH23"
+          ]
+        },
+        {
+          "name": "AEN 212 - LANGUAGE ATTITUDES AND IDEOLOGIES",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AFN 404/ AAN 414 - RESEARCH PROJECT II",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AFR 210 - ENHANCED COMMUNICATION SKILLS IN FRENCH",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "AMT 302 - DEVELOPMENT COMMUNICATION",
+          "venue": [
+            "PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "AMU 406 - MUSIC ANALYSIS II",
+          "venue": [
+            "MR01, MR02"
+          ]
+        },
+        {
+          "name": "APY 306 - COGNITION",
+          "venue": [
+            "PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "ASO 208 - COMMUNITY DEVELOPMENT",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "ATM 332 - COSTUME AND MAKE – UP",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BBE 408 - SOCIAL RESPONSIBILITY IN ENTREPRENEURSHIP",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "BPS 306 - OPERATIONS RESEARCH 1",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BTM 402 - LEISURE AND RECREATION MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "CCT 326 - DIGITAL SYSTEMS DESIGN",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIS 316 - BUSINESS INFORMATION SYSTEMS AND MANAGEMENT",
+          "venue": [
+            "TB03"
+          ]
+        },
+        {
+          "name": "CIS 402 - SPECIAL TOPICS IN IS",
+          "venue": [
+            "TB05"
+          ]
+        },
+        {
+          "name": "ECE 404 - ROLE OF STAKEHOLDERS IN ECDE",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "EIT 304 - CYBER SECURITY IN EDUCATION",
+          "venue": [
+            "Amph.EW, SW, WW, LH15"
+          ]
+        },
+        {
+          "name": "MAC 206 - ACTUARIAL MATHEMATICS I",
+          "venue": [
+            "NL05.Anx"
+          ]
+        },
+        {
+          "name": "MBC 223 - BIOCHEMISTRY TECHNIQAND INSTRUMENTATION",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MMA 116 - LINEAR ALGEBRA I",
+          "venue": [
+            "NL05, NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "PDM 204 - LOGISTICS AND SERVICE DELIVERY SYSTEMS",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "PHR 306 - HEALTH POLICY AND PLANNING FOR HEALTH DATA MANAGEMENT",
+          "venue": [
+            "PGM-LH24"
+          ]
+        },
+        {
+          "name": "PIT 302 - PHOTOGRAMMETRIC TECHNIQUES",
+          "venue": [
+            "PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "PND 220 - GENERAL DIETETICS",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 206 - LAND ECONOMICS",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SAN 304 - IONIC EQUILIBRIA",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "SBT 306 - SEED SCIENCE AND TECHNOLOGY",
+          "venue": [
+            "M12"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAG 205/SBT 313 - PLANT BREEDING",
+          "venue": [
+            "PGM-LH24 - LH28"
+          ]
+        },
+        {
+          "name": "AAG 407 - POST HARVEST PHYSIOLOGY AND TECHNOLOGY",
+          "venue": [
+            "PGM-LH11"
+          ]
+        },
+        {
+          "name": "AEG 303 - COOPERATIVE MANAGEMENT",
+          "venue": [
+            "NL10.Anx"
+          ]
+        },
+        {
+          "name": "AEG 440 - AGRICULTURAL POLICY AND LAW",
+          "venue": [
+            "NL05.Anx, NL08, NL08.R.Anx"
+          ]
+        },
+        {
+          "name": "AFN 100 - SWIMMING AND WATER SAFETY",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AFN 304 - BIOTECHNOLOGY IN FISHERIES SCIENCES",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AFR 304 - FRENCH MORPHOLOGY & SYNTAX",
+          "venue": [
+            "NL10"
+          ]
+        },
+        {
+          "name": "AFR 404 - CREATIVE WRITING IN FRENCH",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "AHA 104 - AFRICAN ARCHAEOLOGY",
+          "venue": [
+            "M01, M02, M03"
+          ]
+        },
+        {
+          "name": "AKI 412 - LEXICOGRAPHY IN KISWAHILI",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AMU 206 - HISTORY OF WESTERN MUSIC: BAROQUE/PRE-BAROQUE",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "ARE 302 - ETHICS 11",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "BEH 408 - PROFESSIONALISM IN HOSPITALITY AND TOURISM",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "BIT 226 - GUEST CENTRIC TECHNOLOGIES",
+          "venue": [
+            "PGM-LH23"
+          ]
+        },
+        {
+          "name": "BMM 304 - PRODUCT INNOVATION & MANAGEMENT",
+          "venue": [
+            "NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BPS 312 - SUPPLY CHAIN MANAGEMENT",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "BTM 108 - INTRODUCTION TO TRAVEL AND TOUR OPERATIONS",
+          "venue": [
+            "PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BTM 302 - VISITOR MANAGEMENT",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "CCT 402 - COMPUTER-AIDED ANALYSIS AND DESIGN",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "CIM 326 - SOFTWARE EVALUATION TECHNIQUES",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIS 404 - MANAGERIAL DECISION MAKING",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "CIT 202 - COMPUTER AIDED DESIGN",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "EIT 304 - CYBER SECURITY IN EDUCATION",
+          "venue": [
+            "Amph.EW, SW, WW, LH15"
+          ]
+        },
+        {
+          "name": "MBC 422 - BIOCHEMICAL PHARMACOLOGY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MIT 302 - STATISTICAL COMPUTING II",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "MMA 110 - FOUNDATIONS OF APPLIED MATHEMATICS",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "PDM 106 - THEORIES IN DISASTER MANAGEMENT",
+          "venue": [
+            "PGM-LH13"
+          ]
+        },
+        {
+          "name": "PIT 304 - ICT FOR PROJECT MANAGEMENT IN BUILT ENVIRONMENT",
+          "venue": [
+            "PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "PND 107 - LIFE SKILLS",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "PUR 108 - INTRODUCTION TO COMPUTER AIDED CARTOGRAPHY",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SZL 302 - BIOSTATISTICS",
+          "venue": [
+            "NL11, NL13, NL14, NL17.Anx"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 16 April 2026",
+      "unit1": [
+        {
+          "name": "AAB 314 - AGRIBUSINESS SUPPLY CHAIN MANAGEMENT",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "AAN 414 - RUMINANT PRODUCTION",
+          "venue": [
+            "PGM-LH24, PGM-LH28"
+          ]
+        },
+        {
+          "name": "ACS 408 - VICTIMS AND VICTIMOLOGY",
+          "venue": [
+            "PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "ADF 406 - DESIGN ENTREPRENEURSHIP",
+          "venue": [
+            "PGM-LH16, PGM-LH17, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AEN 108 - HUMAN AND ANIMALCOMMUNICATION SYSTEMS",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AGE 310 - SPATIAL ANALYSIS USING GIS",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "AHC 309 - OLERICULTURE I",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AKI 308 - TRANSLATION II",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "ALI 304 - LITERARY MOVEMENT",
+          "venue": [
+            "Amph.EW, SW, WW"
+          ]
+        },
+        {
+          "name": "AMT 404 - ONLINE JOURNALISM",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "AMU 306 - TRANSCRIPTION & NOTATION OF AFRICAN MUSIC",
+          "venue": [
+            "MR01, MR02"
+          ]
+        },
+        {
+          "name": "APH 310 - PHILOSOPHY OF RELIGION",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "APH 402 - AFRICAN AESTHETICS",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "APY 402 - PSYCHOLOGY OF ADJUSTMENT",
+          "venue": [
+            "M06, M07, M08"
+          ]
+        },
+        {
+          "name": "ASA 302 - RESEARCH METHODS IN ANTHROPOLOGICAL SCIENCE",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "ASO 408 - SOCIOLOGY OF INDUSTRIALIZATION",
+          "venue": [
+            "PGM-LH01, PGM-LH04"
+          ]
+        },
+        {
+          "name": "BAF 424 - ACCOUNTING INFORMATION SYSTEM",
+          "venue": [
+            "NL05.Anx, NL08.R.Anx"
+          ]
+        },
+        {
+          "name": "BMM 320 - CONSUMER BEHAVIOUR",
+          "venue": [
+            "NL10.Anx"
+          ]
+        },
+        {
+          "name": "CIR 308 - DATABASE ADMINISTRATION",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 308 - METHODS OF TEACHING CRE",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "FIT 302 - STATISTICAL DATA ANALYSIS I, ANALYSIS OF DATA FROM DESIGNED EXPERIMENTS",
+          "venue": [
+            "LH15, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "MBC 324 - INTRODUCTION TO BIOTECHNOLOGY",
+          "venue": [
+            "M02"
+          ]
+        },
+        {
+          "name": "MMA 324 - COMPLEX ANALYSIS I",
+          "venue": [
+            "NL11, 12, 13, 15+.Anx, NL16+.L.Anx+R.Anx, 17+Anx"
+          ]
+        },
+        {
+          "name": "MMA 410 - FUNCTIONAL ANALYSIS",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "NES 309 - HYDROLOGY AND WATER RESOURCES MANAGEMENT",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "NGA 407 - GIS APPLIED TO WATER RESOURCES",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "PDM 308 - PUBLIC HEALTH AND DRM",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "PDM 408 - DROUGHT AND FOOD SECURITY",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PGS 306 - SPATIAL MULTICRITERIA EVALUATION",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "PIT 404 - EMERGING GEO ICT FOR GISAPPLICATIONS",
+          "venue": [
+            "PGM-LH18, PGM-LH23"
+          ]
+        },
+        {
+          "name": "PND 402 - NUTRITION EDUCATION AND COUNSELING",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 406 - PLANNING AND ENVIRONMENTAL LAW",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SAN 406 - ANALYTICAL CHEMISTRY OF POLLUTANTS",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "SIC 412 - REACTOR DESIGN",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "SPH 432 - COMPUTATIONAL PHYSICS VI",
+          "venue": [
+            "M01"
+          ]
+        },
+        {
+          "name": "SZL 202 - BASIC ECOLOGY",
+          "venue": [
+            "NL02, NL02.Anx, NL08.L.Anx"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAN 312 - PIG PRODUCTION",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "ACC 306 - CLIMATE CHANGE ADAPTATION",
+          "venue": [
+            "PGM-LH18"
+          ]
+        },
+        {
+          "name": "ACS 308 - CRIME AND COMMUNITY SAFETY",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "ADF 308 - ADVANCED MERCHANDIZIN",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "ADI 306 - LAW & INTERIOR DESIGN",
+          "venue": [
+            "NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "AEN 214 - LANGUAGE AND ADVERTISING",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AEN 302 - ENGLISH SENTENCE II",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH17, PGM-LH19"
+          ]
+        },
+        {
+          "name": "AEN 410 - TRANSLATION PROJECT",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "AFN 410 - CODE OF CONDUCT FOR RESPONSIBLE FISHERIES",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AFR 212 - FRENCH IN THE PROFESSIONAL WORLD",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "AMT 304 - RESEARCH METHODS",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "APY 308 - PSYCHOLOGY OF MOTIVATION",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "ARE 308 - NEW TESTAMENT STUDIES II",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "ATM 334 - ACTING II",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BAF 318 - INVESTMENT AND PORTFOLIO MANAGEMENT",
+          "venue": [
+            "NL11, 12, 13, 15+.Anx, NL16+.L.Anx+R.Anx, 17+Anx"
+          ]
+        },
+        {
+          "name": "BEC 206 - ECONOMIC STATISTICS II",
+          "venue": [
+            "PGM-LH24 - LH28"
+          ]
+        },
+        {
+          "name": "BEC 406 - ELEMENTARY ECONOMETRICS",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "BTM 404 - TOURISM LEGISLATION AND INTERNATIONAL CONVENTIONS",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "CCT 316 - DIGITAL COMMUNICATIONS SYSTEMS",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIS 220 - DEVELOPMENT OF OPEN SOURCE SOFTWARE",
+          "venue": [
+            "TB05"
+          ]
+        },
+        {
+          "name": "CIS 330 - CONTENT DEVELOPMENT AND MANAGEMENT",
+          "venue": [
+            "TB03"
+          ]
+        },
+        {
+          "name": "ECE 408 - CONTEMPORARY ISSUES AND TRENDS IN ECDE",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "HIT 402 - HEALTH INFORMATION SYSTEMS ANALYSIS AND DESIGN",
+          "venue": [
+            "PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "MBC 225 - ENZYMOLOGY II",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MMA 220 - DISCRETE MATHEMATICS III",
+          "venue": [
+            "NL05, NL05.Anx"
+          ]
+        },
+        {
+          "name": "PDM 206 - DISASTER PREPAREDNESS",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "PHT 306 - NON-COMMUNICABLE DISEASES PREVENTION AND CONTROL",
+          "venue": [
+            "PGM-LH23"
+          ]
+        },
+        {
+          "name": "PND 221 - FOOD CHEMISTRY",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 313 - FOOD MICROBIOLOGY AND PARASITOLOGY",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "PUR 208 - DEMOGRAPHY",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SCH 314 - PRINCIPLES AND APPLICATIONS OF ELECTROCHEMISTRY",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAG 410 - SEED SCIENCE & TECHNOLOGY",
+          "venue": [
+            "PGM-LH11"
+          ]
+        },
+        {
+          "name": "ADI 208 - FLOWERS & PLANTS FOR INTERIORS",
+          "venue": [
+            "M05, M06"
+          ]
+        },
+        {
+          "name": "AEN 310 - RESEARCH METHODOLOGY",
+          "venue": [
+            "Amph.EW, PGM-LH01, PGM-LH02, PGM-LH04"
+          ]
+        },
+        {
+          "name": "AFN 104 - OCEANOGRAPHY AND MARINE ECOSYSTEMS",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AGE 302 - RESEARCH METHODOLOGY",
+          "venue": [
+            "NL11, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "AHI 404 - HISTORY OF THE MIDDLE EAST SINCE 1900",
+          "venue": [
+            "Amph.SW, PGM-LH07, PGM-LH08"
+          ]
+        },
+        {
+          "name": "AKI 212 - CHILDREN’S LITERATURE",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "ARE 104 - JESUS OF HISTORY AND CHRIST OF FAITH",
+          "venue": [
+            "M01"
+          ]
+        },
+        {
+          "name": "ASO 302 - SOCIAL STATISTICS II",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "BAF 420 - CORPORATE FINANCE",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx"
+          ]
+        },
+        {
+          "name": "BEC 106 - COMPARATIVE ECONOMIC SYSTEMS",
+          "venue": [
+            "PGM-LH23, PGM-LH24, PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "BEC 325 - FINANCIAL ECONOMICS",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "BEH 304 - FRONT OFFICE OPERATIONS II",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "BHR 104 - BUSINESS, GOVERNANCE & SOCIETY",
+          "venue": [
+            "NL14, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BIT 224 - INTRODUCTION TO HOSPITALITY, TRAVEL AND TOURISM TECHNOLOGIES",
+          "venue": [
+            "PGM-LH28"
+          ]
+        },
+        {
+          "name": "BIT 422 - COMPUTER RESERVATION SYSTEMS",
+          "venue": [
+            "PGM-LH16, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BMM 302 - GLOBAL MARKETING MANAGEMENT",
+          "venue": [
+            "NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BMS 306 - INTERNATIONAL PROCUREMENT",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "BTM 304 - CONTEMPORARY ISSUES IN TOURISM",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "CCT 412 - COMPUTER SYSTEMS ENGINEERING II",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "CIM 302 - IT SERVICE SUPPORT AND DELIVERY",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIT 216 - SYSTEM ADMINISTRATION & MANAGEMENT",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "FIT 404 - MODELLING IN AGRICULTURAL & ENVIRONMENTAL SYSTEMS",
+          "venue": [
+            "LH15, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "MBC 424 - DESIGN OF NOVE L PROTEINS IN INDUSTRY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "PDM 108 - PRINCIPLES OF ECONOMIC, SOCIAL, AND ECOLOGICAL SUSTAINABILITY",
+          "venue": [
+            "PGM-LH13"
+          ]
+        },
+        {
+          "name": "PUR 301 - PLANNING STUDIO (URBAN)",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SBT 308 - PLANT ECOPHYSIOLOGY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "SCH 416 - ORGANIC STEREOCHEMISTRY AND PERICYCLIC REACTIONS",
+          "venue": [
+            "Amph.WW, PGM-LH05, PGM-LH06"
+          ]
+        },
+        {
+          "name": "SIC 312 - AGRO-BASED PROCESSING INDUSTRIES",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "SPH 302 - THERMODYNAMICS",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "SPH 308 - MATERIALS SCIENCE I",
+          "venue": [
+            "PGM-LH19"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday, 17 April 2026",
+      "unit1": [
+        {
+          "name": "AAB 301 - FINANCIAL ACCOUNTING",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "ACP 204 - COUNSELLING PROCESS AND PRACTICE",
+          "venue": [
+            "PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "ACS 410 - CRIME AND REHABILITATION OF OFFENDERS",
+          "venue": [
+            "PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "ADF 206 - HISTORIC TEXTILES & TEXTILES CONSERVATION",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "AEG 315 - APPLIED ECONOMETRICS",
+          "venue": [
+            "NL10.Anx"
+          ]
+        },
+        {
+          "name": "AEN 110 - ETHNOGRAPHY OF COMMUNICATION",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AFN 206 - AQUACULTURE ENGINEERING",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AGE 312 - MANAGEMENT OF MINERAL RESOURCES",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "AKI 312 - CREATIVE WRITING II",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "AKI 410 - RESEARCH PROJECT",
+          "venue": [
+            "PGM-LH16, PGM-LH17, PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "ALI 306 - LITERATURE OF GREAT BRITAIN",
+          "venue": [
+            "Amph.EW"
+          ]
+        },
+        {
+          "name": "APY 408 - ETHICAL ISSUES IN PSYCHOLOGICAL PRACTICE",
+          "venue": [
+            "M06, M07, M08"
+          ]
+        },
+        {
+          "name": "ARE 204 - HISTORY OF RELIGIONS II",
+          "venue": [
+            "Amph.WW, PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "ASA 306 - ANTHROPOLOGY OF FAMILY SYSTEMS",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "BAF 316 - FINANCIAL PLANNING, BUDGETING AND CONTROL",
+          "venue": [
+            "NL11, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "BAF 425 - FINANCIAL ACCOUNTING THEORY",
+          "venue": [
+            "NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BFA 418 - VALUATION OF FIXED INCOMES",
+          "venue": [
+            "Amph.SW, PGM-LH04, PGM-LH05, PGM-LH06, PGM-LH07"
+          ]
+        },
+        {
+          "name": "BMM 406 - CUSTOMER RELATIONSHIP MANAGEMENT SYSTEMS",
+          "venue": [
+            "NL17.Anx"
+          ]
+        },
+        {
+          "name": "CIR 310 - CRYPTOGRAPHY AND APPLICATION",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 306 - METHODS OF TEACHING MUSIC, DANCE AND DRAMA ACTIVITIES",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "ESE 210 - EARLY CHILDHOOD SPECIAL NEEDS EDUCATION AN BEHAVIOUR MANAGEMENT",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "ESE 306 - PERCEPTUAL TRAINING FOR LEARNERS WITH MENTAL DISABILITY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "FIT 304 - ELECTRONIC COMMERCE IN AGRICULTURE AND ENVIRONMENT",
+          "venue": [
+            "LH15, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "MAS 306 - STATISTICAL MODELING I",
+          "venue": [
+            "NL10"
+          ]
+        },
+        {
+          "name": "MAS 410 - STATISTICAL MODEL BUILDING",
+          "venue": [
+            "NL12"
+          ]
+        },
+        {
+          "name": "MBC 325 - INTRODUCTION TO BIOINFORMATICS",
+          "venue": [
+            "M02"
+          ]
+        },
+        {
+          "name": "NES 310 - ENVIRONMENTAL PLANNING AND MANAGEMENT",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "NES 402 - ENVIRONMENTAL LAW",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "PGS 308 - MOBILE GIS",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "PHR 308/ PHT 302 - APPLIED EPIDEMIOLOGY IN HEALTHCARE DELIVERY",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "PND 409 - SEMINARS IN NUTRITION AND DIETETICS",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 408 - PLANNING FOR TRANSPORTATION",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SPH 434 - SCIENTIFIC COMPUTING LAB VI",
+          "venue": [
+            "M01"
+          ]
+        },
+        {
+          "name": "SZL 306 - EVOLUTIONARY BIOLOGY",
+          "venue": [
+            "M12"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAG 306 - FARM MATERIALS AND STRUCTURES",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "ACS 312 - QUANTITATIVE TECHNIQUES IN CRIMINOLOGY",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "ADI 102 - DESIGN COMMUNICATION & AESTHETICS",
+          "venue": [
+            "PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "AEN 314 - LANGUAGE ACQUISITION",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH17, PGM-LH19"
+          ]
+        },
+        {
+          "name": "AFN 314 - FISH DISEASES AND HEALTH MANAGEMENT",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AFN 412 - FISHERIES POLICIES AND LEGISLATION",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AGE 306 - BIOGEOGRAPHY",
+          "venue": [
+            "NL11, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "AHA 202 - FIELDS METHODS IN ARCHAEOLOGY",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "AMT 210 - ALTERNATIVE MEDIA",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "AMT 310 - FEATURE WRITING",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "APY 314 - CLINICAL PSYCHOLOGY",
+          "venue": [
+            "NL08"
+          ]
+        },
+        {
+          "name": "ARE 410 - ISLAMIC THEOLOGY",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "ATM 338 - DIRECTING FOR STAGE, RADIO & FILM II",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BEH 404 - INTERNATIONAL BUSINESS AND HOSPITALITY ENVIRONMENT",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "BIT 424 - FINANCIAL MANAGEMENT INFORMATION SYSTEMS",
+          "venue": [
+            "PGM-LH16, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BMM 308 - DIGITAL MARKETING",
+          "venue": [
+            "NL10.Anx"
+          ]
+        },
+        {
+          "name": "BTM 406 - ECOTOURISM PLANNING AND MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "CCT 328 - ADVANCED COMPUTER ARCHITECTURE",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIT 324 - WEB APPLICATION SERVER PROGRAMMING",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "FIT 402 - AGRICULTURAL AND ENVIRONMENTAL MANAGEMENT INFORMATION SYSTEM",
+          "venue": [
+            "LH15, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "HIT 404 - SPECIAL TOPICS IN ICT",
+          "venue": [
+            "PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "MBC 226 - INTRODUCTORY ABIOCHEMISTRY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MMA 206 - ALGEBRAIC STRUCTURES",
+          "venue": [
+            "NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "PDM 208 - EMERGENCY RESPONSE SERVICES",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "PHR 202 - MANAGEMENT OF HEALTH INFORMATION SYSTEMS",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 320 - NUTRITION PHARMACOLOGY",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "PUR 232 - PLANNING FOR AGRICULTURE",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "SCH 316 - ORGANIC POLYMER CHEMISTRY",
+          "venue": [
+            "NL10"
+          ]
+        },
+        {
+          "name": "SPH 208 - PHYSICS OF SEMI-CONDUCTOR DEVICES",
+          "venue": [
+            "NL13"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAG 103 - INTRODUCTION TO MICROBIOLOGY",
+          "venue": [
+            "Amph.WW, PGM-LH01, PGM-LH02, PGM-LH04"
+          ]
+        },
+        {
+          "name": "AAN 418 - NON-RUMINANT PRODUCTION",
+          "venue": [
+            "PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "ACS 404 - FORENSIC SCIENCE AND CRIMINAL JUSTICE",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "ADI 308 - AFRICAN ART IN INTERIOR DESIGN",
+          "venue": [
+            "NL15"
+          ]
+        },
+        {
+          "name": "AEN 405 - SOCIOLINGUISTICS",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "AFR 312 - AFRICAN NOVELS & SHORT STORIES",
+          "venue": [
+            "M05, M06"
+          ]
+        },
+        {
+          "name": "AHI 408 - PHILOSOPHY OF HISTORY",
+          "venue": [
+            "Amph.SW, PGM-LH07, PGM-LH08"
+          ]
+        },
+        {
+          "name": "AKI 414 - PSYCHOLINGUISTICS IN KISWAHILI",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "ALI 310 - CHINESE LITERATURE",
+          "venue": [
+            "Amph.EW"
+          ]
+        },
+        {
+          "name": "ARE 108 - LIFE AND TEACHINGS OF PROPHET MUHAMMAD",
+          "venue": [
+            "M01"
+          ]
+        },
+        {
+          "name": "ASO 304 - SOCIOLOGY OF THE FAMILY",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "ATM 104 - MUSIC IN DRAMA",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "BEC 104 - MATHEMATICS FOR ECONOMIST II",
+          "venue": [
+            "NL02, NL02.Anx, NL05.Anx"
+          ]
+        },
+        {
+          "name": "BEC 302 - ADVANCED MACROECONOMICS",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BEC 421 - PUBLIC FINANCE & FISCAL POLICY",
+          "venue": [
+            "NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "BEH 302 - SERVICE MANAGEMENT IN HOSPITALITY AND TOURISM",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "BFM 402 - PROPERTY AND UNIT TRUSTS",
+          "venue": [
+            "PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BPS 302 - CONTRACT LAW/PROCUREMENT LEGAL",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "BTM 108 - INTRODUCTION TO TRAVEL AND TOUR OPERATIONS",
+          "venue": [
+            "NL11, NL12"
+          ]
+        },
+        {
+          "name": "BTM 306 - TOURISM POLICY PLANNING AND DEVELOPMENT",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "CIM 306 - IT ORGANIZATION",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIS 218 - INTEGRATING ANALYTICAL TOOLS TO INFORMATION SYSTEMS",
+          "venue": [
+            "TB01"
+          ]
+        },
+        {
+          "name": "CIT 418 - AUTHENTICATION PROTOCOLS AND BIOMETRICS",
+          "venue": [
+            "TB02"
+          ]
+        },
+        {
+          "name": "MAC 304 - ACTUARIAL LIFE CONTINGENCIES I",
+          "venue": [
+            "PGM-LH24"
+          ]
+        },
+        {
+          "name": "MBC 425 - BIOCHEMISTRY OF TUMORS",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "MMA 310 - DYNAMICS II",
+          "venue": [
+            "PGM-LH23"
+          ]
+        },
+        {
+          "name": "PGS 102 - CARTOGRAPHY AND GEO-VISUALIZATION",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 302 - POLITICS AND PLANNING",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SBT 312 - PHYTOCHEMISTRY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "SIC 314 - FIBRES IN TEXTILES INDUSTRY",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "SPH 310 - STRUCTURES AND PROPERTIES OF MATTER II",
+          "venue": [
+            "PGM-LH19"
+          ]
+        },
+        {
+          "name": "SPH 326 - THERMODYNAMICS AND SOLID STATE ELECTRONICS LAB",
+          "venue": [
+            "HH, Har"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Monday, 20 April 2026",
+      "unit1": [
+        {
+          "name": "AAN 210 - ANIMAL HUSBANDRY & HANDLING TECHNIQUES",
+          "venue": [
+            "M06"
+          ]
+        },
+        {
+          "name": "ACS 412 - INTERNATIONAL ORDER AND DISORDER",
+          "venue": [
+            "PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "AEN 112 - HISTORICAL DEVELOPMENT OF COMMUNICATION II",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AEN 318 - POLITICAL DISCOURSE",
+          "venue": [
+            "PGM-LH18, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AFR 102 - ENHANCED WRITTEN COMPREH. & EXPRESSION IN FRENCH",
+          "venue": [
+            "M02, M04, M05"
+          ]
+        },
+        {
+          "name": "AGE 314 - NAURAL HAZARDS AND DSASTER MANAGEMENT",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "AKI 110 - WASWAHILI CULTURE AND KISWAHILI LANGUAGE",
+          "venue": [
+            "PGM-LH17, PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "AKI 314 - AFRICAN THEATRE",
+          "venue": [
+            "NL02"
+          ]
+        },
+        {
+          "name": "APH 404 - AFRICAN SOCIAL AND POLITICAL PHILOSOPHY",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ARE 306/APH 308 - RESEARCH METHODS",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "ASA 308 - ANTHROPOLOGY OF TOURISM",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "ASO 410 - POLITICAL SOCIOLOGY",
+          "venue": [
+            "PGM-LH01, PGM-LH04"
+          ]
+        },
+        {
+          "name": "ATM 412 - MUSIC PRODUCTION AND TECHNOLOGY II",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "BAF 302 - TRUST AND EXECUTORSHIP ACCOUNTS",
+          "venue": [
+            "NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BAF 420 - CORPORATE FINANCE",
+          "venue": [
+            "NL05.Anx, NL08, NL08.L.Anx, NL08.R.Anx, NL10"
+          ]
+        },
+        {
+          "name": "CIR 312 - INTERCONNECTING NETWORKS",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 302 - METHODS OF TEACHING SOCIAL STUDIES AND ENVIRONMENTAL ACTIVITIES",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "EIT 402 - VIRTUAL LEARNING ENVIRONMENT",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "MAS 310 - STOCHASTIC DECISION MODELS I",
+          "venue": [
+            "NL02.Anx"
+          ]
+        },
+        {
+          "name": "NES 311 - RESEARCH METHODS",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "NES 408 - GENDER, DEVELOPMENT AND ENVIRONMENT",
+          "venue": [
+            "PGM-LH03"
+          ]
+        },
+        {
+          "name": "PDM 332 - ETHICS AND PRACTICE IN DRM",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "PDM 433 - COUNTY DRM STUDIO",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PND 410 - LEADERSHIP IN NUTRITION AND DIETETICS",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 432 - COUNTY GOVERNANCE",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SAN 412 - PRINCIPLES OF NANOTECHNOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "SIC 426 - PULP AND PAPER PROCESSING TECHNOLOGIES",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "SZL 308 - MEDICAL MICROBIOLOGY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "SZL 402 - HISTORY AND PHILOSOPHY OF BIOLOGY II",
+          "venue": [
+            "NL10.Anx, NL12"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAG 208 - GENERAL PLANT PHYSIOLOGY",
+          "venue": [
+            "PGM-LH23, PGM-LH24, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "ACC 202 - CLIMATE CHANGE AND HUMAN HEALTH",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "ACS 310 - PHILOSOPHY OF LAW",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "AFN 408 - POSTHARVEST PHYSIOLOGY AND TECHNOLOGY IN FISHERIES",
+          "venue": [
+            "FSH"
+          ]
+        },
+        {
+          "name": "AIT 402 - INFORMATION TECHNOLOGY AND SECURITY",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "AKI 214 - EDITORIAL METHODS IN KISWAHILI",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "ALI 206 - WOMEN AND LITERATURE",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMT 316 - PRINCIPLES OF RADIO AND TV PRODUCTION",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "ATM 340 - DANCE TECHNIQUES II",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BEC 310 - ECONOMICS FOR DECISION MAKING",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "BFM 302 - FINANCIAL STATEMENT ANALYSIS",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BHR 204 - GROUPS & TEAMS MANAGEMENT",
+          "venue": [
+            "NL11, NL12, NL15"
+          ]
+        },
+        {
+          "name": "BHR 302 - HUMAN CAPITAL MANAGEMENT",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "BMM 404 - CONTEMPORARY MARKETING & MANAGEMENT PRACTICE",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "CCT 324 - ADVANCED COMPUTER SYSTEMS DESIGN PROJECT",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIT 324 - WEB APPLICATION SERVER PROGRAMMING",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ESE 322 - STRATEGIES AND METHODS OF TEACHING LEARNERS WITH CEREBRAL PALSY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "MAS 204 - DEMOGRAPHY AND SOCIAL STATISTICS",
+          "venue": [
+            "NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "MBC 227 - PLANT BIOCHEMISTRY",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "PGS 201 - CASE STUDY I: REMOTE SENSING APPLICATIONS",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PHR 206 - HEALTHCARE DATA CLASSIFICATION MANAGEMENT II",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 322 - NUTRITION IN DISEASES MANAGEMENT",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SCH 406 - NUCLEAR CHEMISTRY",
+          "venue": [
+            "NL05, NL05.Anx"
+          ]
+        },
+        {
+          "name": "SPH 210 - PHYSICS OF ENERGY SOURCES AND MATERIALS",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "SZL 208 - COMPARATIVE VERTEBRATE ANATOMY",
+          "venue": [
+            "PGM-LH04"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAG 304 - PRINCIPLES OF HORTICULTURE",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "AAN 416 - EQUINE AND CAMEL PRODUCTION",
+          "venue": [
+            "M06"
+          ]
+        },
+        {
+          "name": "AEG 203 - INTRODUCTION TO ECONOMETRICS",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AHI 104 - UNITED STATES OF AMERICA AND AFRICA",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "AIT 402 - INFORMATION TECHNOLOGY AND SECURITY",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ARE 112 - CHURCH HISTORY II",
+          "venue": [
+            "M01"
+          ]
+        },
+        {
+          "name": "ASO 108 - SOCIAL WORK PRACTICE",
+          "venue": [
+            "PGM-LH01, PGM-LH03"
+          ]
+        },
+        {
+          "name": "ASO 306 - SOCIOLOGY OF FORMAL ORGANIZATIONS",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "ATM 106 - IMPROVISATION",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "BEC 306 - ECONOMETRICS II",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BEH 102 - INTRODUCTION TO FOOD AND BEVERAGE PRODUCTION",
+          "venue": [
+            "PGM-LH23, PGM-LH24, PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "BHM 318 - EVENTS PLANNING AND MANAGEMENT",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "BMM 104 - SERVICE MARKETING",
+          "venue": [
+            "NL10.Anx, NL11"
+          ]
+        },
+        {
+          "name": "CIM 210 - OFFICE APPLICATIONS PROGRAMMING",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 310 - DEFINING THE INFORMATION ARCHITECTURE",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ESE 302 - ADAPTED PHYSICAL EDUCATION FOR THE HANDICAPPED",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "ESE 404",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MAC 102 - FUNDAMENTALS OF ACTUARIAL MATHEMATICS I",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "MAC 306 - FINANCIAL ECONOMICS",
+          "venue": [
+            "NL15"
+          ]
+        },
+        {
+          "name": "MBC 426 - PRINCIPLES OF GENETIC ENGINEERING",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "PGS 104 - SPATIAL DATABASE MANAGEMENT SYSTEMS",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PHR 102 - FUNDAMENTALS OF HEALTH RECORDS AND INFORMATION MANAGEMENT II",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "PUR 132 - ECONOMICS AND PLANNING",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PUR 304 - APPLICATION OF GEOGRAPHIC INFORMATION SYSTEMS",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SAN 306 - SAFETY AND STANDARDIZATION IN ANALYTICAL CHEMISTRY",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "SBT 104 - FUNDAMENTALS OF ECOLOGY & CONSERVATION",
+          "venue": [
+            "NL05.Anx, NL08, NL08.L.Anx, NL08.R.Anx, NL10"
+          ]
+        },
+        {
+          "name": "SBT 324 - PLANT VIROLOGY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "SPH 314 - DIGITAL ELECTRONICS I",
+          "venue": [
+            "PGM-LH19"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 21 April 2026",
+      "unit1": [
+        {
+          "name": "AAG 102 - PRINCIPALS OF FOOD SECURITY",
+          "venue": [
+            "NL02, NL02.Anx, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "AAN 204 - ENVIRON PHYSIOLOGY, ETHOLOGY & ANIMAL WELFARE",
+          "venue": [
+            "M06"
+          ]
+        },
+        {
+          "name": "AEN 116 - INTRAPERSONAL COMMUNICATION",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AFR 108 - ENHANCED ORAL COMPREH. & EXPRESSION IN FRENCH",
+          "venue": [
+            "M02, M04, M05"
+          ]
+        },
+        {
+          "name": "AGE 318 - GIS PROJECT DEVELOPMENT AND PROCESS",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "AKI 112 - BIOGRAPHIES AND AUTOBIOGRAPHIES IN KISWAHILI",
+          "venue": [
+            "PGM-LH18, PGM-LH21, PGM-LH23"
+          ]
+        },
+        {
+          "name": "ALI 108 - KENYAN LITERATURE",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "APH 406 - NPHILOSOPHY OF SCIENCE",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ASA 310 - CULTURE CHANGE AND DEVELOPMENT",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "ASO 412 - SOCIAL DEMOGRAPHY",
+          "venue": [
+            "PGM-LH01, PGM-LH03, PGM-LH04"
+          ]
+        },
+        {
+          "name": "BAF 304 - TAX PLANNING AND MANAGEMENT",
+          "venue": [
+            "NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BHR 308 - PERFORMANCE & REWARD MANAGEMENT",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "BMS 404 - CONTRACT AND DISPUTE MANAGEMENT",
+          "venue": [
+            "PGM-LH24, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "CCS 326 - MACHINE LEARNING",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "EIT 404 - COMPUTER GRAPHICS AND MULTIMEDIA SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "MIT 414 - MACHINE LEARNING ALGORITHMS",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "NES 312 - ENVIRONMENTAL STATISTICS 2",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "PDM 333 - ECOSYTEM DRM STUDIO",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "PGS 404 - GIS IN LAND AND PROPERTY MANAGEMENT",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PHR 310/ PHT 308 - RESEARCH METHODOLOGY",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "PND 411 - FOOD SECURITY AND POLICY ANALYSIS",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 434 - RANGELAND MANAGEMENT",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SCH 304 - GROUP THEORY",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "SIT 424 - GENOMICS AND PROTEOMICS",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "SZL 312 - TERRESTRIAL ECOLOGY",
+          "venue": [
+            "M12"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACC 204 - CLIMATE CHANGE AND AGRICULTURE",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AFR 202 - INTRODUCTION TO GENERAL LINGUISTICS",
+          "venue": [
+            "M01, M02, M05"
+          ]
+        },
+        {
+          "name": "AGE 406 - INTEGRATED NATURAL RESOURCES MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AHA 208 - MUSEOLOGY",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "ALI 208 - CHINESE LITERATURE",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMT 202 - EDITING FOR PRINT MEDIA",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "AMT 318 - PRINCIPLES OF ADVERTISING",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "ARE 412 - AFRICAN MORALITY",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "ASS 204 - SOIL CHEMISTRY",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ATM 342 - ANIMATION AND PUPPETRY",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BBA 423 - PLANNING & ADMINISTRATIVE DECISION MAKING",
+          "venue": [
+            "NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BBE 206 - EXPORTING FOR ENTREPRENEURSHIP",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "BBE 402 - MANAGEMENT OF ENTERPRISE RISK AND CHANGE",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BEC 204 - AGRICULTURAL ECONOMICS & POLICY",
+          "venue": [
+            "PGM-LH23, PGM-LH24, PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "BEC 308 - ECONOMIC POLICY ANALYSIS",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BMM 408 - AGRICULTURAL MARKETING",
+          "venue": [
+            "M07"
+          ]
+        },
+        {
+          "name": "CCT 332 - DIGITAL SIGNAL PROCESSING",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 404 - SECURITY POLICIES",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "EIT 404 - COMPUTER GRAPHICS AND MULTIMEDIA SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ESE 304 - INTRODUCTION TO RESEARCH IN EDUCATION",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "MAS 308 - ANALYSIS OF EXPERIMENTAL DESIGNS I",
+          "venue": [
+            "NL15"
+          ]
+        },
+        {
+          "name": "MIT 212 - COLLECTING AND ORGANIZING DATA",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "NES 207 - FORESTRY AND FOREST MANAGEMENT",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PGS 202 - NETWORK ANALYSIS",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PHR 208 - MEDICAL TERMINOLOGY AND NOSOLOGY II",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 323 - NUTRITION EDUCATION AND COUNSELING",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SAN 206 - CHEMICAL WASTE AND EFFLUENT MANAGEMENT",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "SIC 208 - INDUSTRIAL APPLICATIONS OF P-BLOCK ELEMENTS AND THEIR COMPOUNDS",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "SPH 212 - COMPUTATIONAL PHYSICS II",
+          "venue": [
+            "NL13"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAN 314 - VETERINARY PARASITOLOGY AND PARASITIC DISEASES",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "AAN 410 - BIOTECHNOLOGY IN ANIMAL SCIENCE",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "ACC 102 - PALEOCLIMATOLOGY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "ADI 310 - DESIGN MANAGEMENT",
+          "venue": [
+            "NL15"
+          ]
+        },
+        {
+          "name": "AEG 208 - AGRICULTURAL POLICY",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AHI 306 - RELIGION AND GOVERNANCE IN AFRICA",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "AIT 410 - INFORMATION SYSTEMS APPLICATION",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ASA 102 - LINGUISTIC ANTHROPOLOGY",
+          "venue": [
+            "PGM-LH01, PGM-LH03"
+          ]
+        },
+        {
+          "name": "ASO 308 - SOCIAL SECURITY & WELFARE ADMINISTRATION",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "ATM 108 - DANCE TECHNIQUES AND CHOREOGRAPHY",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "BFA 408 - CONTEMPORARY ISSUES IN FINANCIAL ACCOUNTING",
+          "venue": [
+            "PGM-LH20, PGM-LH21, PGM-LH23, PGM-LH24, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "BHR 102 - MAN POWER PLANNING",
+          "venue": [
+            "NL13, NL14"
+          ]
+        },
+        {
+          "name": "BPS 310 - PROCUREMENT COSTING AND BUDGETING",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "CCT 208 - ENGINEERING MATHEMATICS IV",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 316 - SYSTEM ADMINISTRATION II",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ECE 208 - QUALITY ASSURANCE IN EARLY CHILDHOOD EDUCATION",
+          "venue": [
+            "M01, M02, M05"
+          ]
+        },
+        {
+          "name": "MAS 102 - PROBABILITY AND DISTRIBUTION THEORY I",
+          "venue": [
+            "NL05.Anx, NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "PGS 106 - ALGEBRA",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PMT 122 - HUMAN PHYSIOLOGY I",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "PUR 306 - INDUSTRIAL DEVELOPMENT PLANNING",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SIC 106 - PRINCIPLES AND CHALLENGES OF CHEMICAL INDUSTRIES",
+          "venue": [
+            "PGM-LH10"
+          ]
+        },
+        {
+          "name": "SPH 322 - SPACE WEATHER",
+          "venue": [
+            "PGM-LH19"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 22 April 2026",
+      "unit1": [
+        {
+          "name": "AHI 310 - THEMES IN SOUTH AFRICAN HISTORY SINCE 1900",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "ALI 404 - SCIENCE FICTION",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMT 406 - MEDIA HOUSE MANAGEMENT",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "APH 412 - EXISTENTIALISM",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "APY 414 - RESEARCH PROJECT",
+          "venue": [
+            "M06, M07, M08"
+          ]
+        },
+        {
+          "name": "ASA 312 - ANTHROPOLOGY OF SEXUALITY",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "ASO 110 - INTRODUCTION TO SOCIAL PSYCHOLOGY",
+          "venue": [
+            "NL05.Anx, NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "ASO 414 - SOCIAL ASPECTS OF SCIENCE AND TECHNOLOGY",
+          "venue": [
+            "PGM-LH01, PGM-LH03, PGM-LH04"
+          ]
+        },
+        {
+          "name": "BFA 302 - TAX LAW AND PRACTICE",
+          "venue": [
+            "NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BHR 306 - PROJECT HUMAN RESOURCE MANAGEMENT",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BIT 402 - BUSINESS ANALYTICS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH23, PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "CIS 334 - COLLABORATIVE TECHNOLOGIES",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIT 312 - GROUP IT PROJECT IMPLEMENTATION",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ESE 310 - ALTERNATIVE COMMUTATIONS SKILLS AND BARRIER FREE ENVIRONMENT FOR THE PH",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "MMA 316 - REGRESSION AND ANOVA",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "MMA 436 - PARTIAL DIFFERENTIAL EQUATIONS II",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "NES 313 - SOLID WASTE MANAGEMENT",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "PGS 406 - GIS IN PLANNING FOR INFRASTRUCTURE AND SERVICES",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PHR 312 - EVENT-DRIVEN PROGRAMMING",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "PND 412 - NUTRITION SURVEILLANCE AND PLANNING",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 436 - PLANNING FOR EDUCATION SERVICES",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SCH 212 - ORGANIC REACTION MECHANISMS",
+          "venue": [
+            "NL02, NL02.Anx, NL05"
+          ]
+        },
+        {
+          "name": "SCH 308 - KINETICS OF CHEMICAL REACTIONS",
+          "venue": [
+            "M13"
+          ]
+        },
+        {
+          "name": "SIT 404 - FUNDAMENTALS OF CHEMOMETRICS",
+          "venue": [
+            "PGM-LH09, PGM-LH10"
+          ]
+        },
+        {
+          "name": "SZL 316 - FUNDAMENTALS OF IMMUNOLOGY",
+          "venue": [
+            "M12"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAG 408 - PLANT BIOTECHNOLOGY",
+          "venue": [
+            "NL13, NL14"
+          ]
+        },
+        {
+          "name": "ACC 206 - CLIMATE CHANGE AND ENERGY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AFR 204 - INTRODUCTION TO FRENCH PHONETICS",
+          "venue": [
+            "M01, M02, M05"
+          ]
+        },
+        {
+          "name": "AGE 408 - CONTEMPORARY ISSUES IN GEOGRAPHY",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AKI 106 - LANGUAGE ACQUISITION II",
+          "venue": [
+            "NL11, NL15"
+          ]
+        },
+        {
+          "name": "AMT 204 - PHOTOGRAPHY",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "AMT 306 - BUSINESS COMMUNICATION",
+          "venue": [
+            "NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "ARE 218 - ISLAMIC MOVEMENTS",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "ASA 202 - URBAN ANTHROPOLOGY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "ATM 344 - PRACTICAL CRITICISM",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BBA 322 - MANAGEMENT OF PUBLIC ENTERPRISES",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BBE 208 - ENTREPRENEURIAL INFORMATION SYTEMS",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "BFM 304 - INVESTMENT BANKING",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BIT 402 - BUSINESS ANALYTICS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH23, PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BPS 206 - RETAIL AND MERCHANDISE MANAGEMENT",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "CCT 116 - DIGITAL ELECTRONICS I",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 408 - INFORMATION SYSTEM AUDITS",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ECT 304 - CONSUMER AND FAMILY ECONOMICS",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "ESE 408 - EDUCATIONAL AUDIOLOGY",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MIT 214 - INTRODUCTION TO PROGRAMMING",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "NES 209 - SUSTAINABLE DEVELOPMENT AND CLIMATE CHANGE",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PGS 204 - LOCAL ECONOMIC DEVELOPMENT AND STRATEGIC PLANNING",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PHR 210 - HEALTH ETHICS AND LAW II",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "SIC 210 - MATERIALS AND ENERGY BALANCES",
+          "venue": [
+            "PGM-LH07"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAN 408 - LIVESTOCK PRODUCT PROCESSING AND BYPRODUCTS",
+          "venue": [
+            "M05, M06"
+          ]
+        },
+        {
+          "name": "ACC 104 - CLIMATE DYNAMICS",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AKI 114 - INSTRUMENTAL LINGUISTICS",
+          "venue": [
+            "PGM-LH20, PGM-LH21, PGM-LH22"
+          ]
+        },
+        {
+          "name": "AKI 206 - TERMINOGRAPHY IN KISWAHILI",
+          "venue": [
+            "NL11, NL12"
+          ]
+        },
+        {
+          "name": "AMT 102 - NEWS SOURCING",
+          "venue": [
+            "NL13, NL14, NL17.Anx"
+          ]
+        },
+        {
+          "name": "APY 102 - STATISTICS IN PSYCHOLOGY I",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "ASA 104 - CULTURAL ANTHROPOLOGY",
+          "venue": [
+            "PGM-LH01, PGM-LH03"
+          ]
+        },
+        {
+          "name": "ASO 310 - PROJECT MONITORING AND EVALUATION",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "ATM 110 - CONTEMPORARY MUSIC GENRES OF AFRICA",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "BIT 404 - CONTEMPORARY ISSUES IN BUSINESS AND INFORMATION TECHNOLOGY",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM-LH23, PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BMM 102 - MARKETING ENVIRONMENT",
+          "venue": [
+            "NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BPS 308 - SUPPLY CHAIN DECISION SUPPORT",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "CIM 318 - NETWORK SERVER MAINTENANCE",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIS 206 - INFORMATION SYSTEMS ASSURANCE",
+          "venue": [
+            "TB01"
+          ]
+        },
+        {
+          "name": "CIT 410 - MOBILE TECHNOLOGY APPLICATIONS AND M-COMMERCE",
+          "venue": [
+            "TB02"
+          ]
+        },
+        {
+          "name": "MMA 114 - DISCRETE MATHEMATICS I",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "MMA 312 - OPERATIONS RESEARCH I",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "PGS 108 - GEOMETRY AND TRIGONOMETRY",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PND 105 - PRINCIPLES OF HUMAN NUTRITION (NUTRITION AND HOME SCIENCE)",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "PUR 308 - GENDER IN PLANNING AND DEVELOPMENT",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SPH 328 - COMPUTATIONAL PHYSICS IV",
+          "venue": [
+            "PGM-LH19"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 23 April 2026",
+      "unit1": [
+        {
+          "name": "AHI 308 - HISTORY OF THE HORN OF AFRICA",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "AKI 402 - KISWAHILI SYNTAX",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "ALI 302 - RESEARCH METHODS",
+          "venue": [
+            "Amph.EW, SW, WW"
+          ]
+        },
+        {
+          "name": "AMT 418 - INDUSTRIAL ATTACHMENT",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "APY 418 - STRESS MANAGEMENT",
+          "venue": [
+            "M06, M07, M08"
+          ]
+        },
+        {
+          "name": "ATM 302 - MUSIC THEORY & MUSICIANSHIP II",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "BAF 306 - AUDITING II",
+          "venue": [
+            "NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BHR 304 - HUMAN RESOURCE INFORMATION SYSTEM",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BHR 402 - CONTEMPORARY HUMAN RESOURCE PRACTICE",
+          "venue": [
+            "PGM-LH23, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BIR 402/421 - INSURANCE RISK MANAGEMENT",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "BMS 406 - STRATEGIC PROCUREMENT MANAGEMENT",
+          "venue": [
+            "PGM-LH24, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "CIM 410 - MANAGING THE IT INVESTMENT",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIT 304 - INTEGRATIVE PROGRAMMING AND TECHNOLOGIES",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "MAS 420 - APPLIED DEMOGRAPHY",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "MMA 437 - FLUID MECHANICS II",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "MPH 411 - STRATEGIC MANAGEMENT IN PUBLIC HEALTH",
+          "venue": [
+            "NL13"
+          ]
+        },
+        {
+          "name": "NES 318 - ENTREPRENEURSHIP, INNOVATION AND NATURAL RESOURCES MANAGEMENT",
+          "venue": [
+            "PGM-LH22"
+          ]
+        },
+        {
+          "name": "PGS 408 - GIS IN STATE, COUNTY AND LOCAL GOVERNANCE",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PHM 402 - STRATEGIC MANAGEMENT IN HEALTHCARE SYSTEMS",
+          "venue": [
+            "PGM-LH19"
+          ]
+        },
+        {
+          "name": "PHR 314 - HUMAN RESOURCE MANAGEMENT IN HEALTH SYSTEMS",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "PND 413 - THERAPEUTIC DIETETICS",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "PUR 404 - PLANNING PRACTICE, ETHICS AND ADMINISTRATION",
+          "venue": [
+            "PGM-LH15"
+          ]
+        },
+        {
+          "name": "SBT 406 - PLANT ECOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "SCH 318 - GREEN AND SUSTAINABLE CHEMISTRY",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "SIT 402 - MOLECULAR MODELLING AND DENSITY FUNCTIONAL THEORY",
+          "venue": [
+            "PGM-LH09, PGM-LH10"
+          ]
+        },
+        {
+          "name": "SZL 318 - BEHAVIORAL ECOLOGY",
+          "venue": [
+            "M12"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACC 208 - CLIMATE CHANGE AND BIODIVERSITY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "ACS 202 - THEORIES OF CRIMINOLOGY",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AEN 312 - PSYCHOLINGUISTICS",
+          "venue": [
+            "PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "AGE 410 - GIS APPLIED TO NATURAL RESOURCES MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "AKI 310 - KISWAHILI SHORT STORY",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "ALI 202 - POSTMODERN THEORIES OF LITERATURE",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "AMT 212 - NEWSWRITING PRACTICAL",
+          "venue": [
+            "NL11, NL14"
+          ]
+        },
+        {
+          "name": "AMT 312 - SPORTS JOURNALISM",
+          "venue": [
+            "NL12"
+          ]
+        },
+        {
+          "name": "ARE 216 - AFRICAN SPIRITUALITY",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "BBE 204 - ENTREPRENEURIAL BEHAVIOUR",
+          "venue": [
+            "M09"
+          ]
+        },
+        {
+          "name": "BFA 406 - STRATEGIC MANAGERIAL ACCOUNTING",
+          "venue": [
+            "PGM-LH20, PGM-LH26, PGM-LH27, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BFM 202 - FUNDAMENTALS OF FINANCIAL MANAGEMENT II",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BIT 326 - INTEGRATED DIGITAL MARKETING FOR HOSPITALITY AND TOURISM",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BMS 407 - PROCUREMENT AUDIT & INVESTIGATIONS",
+          "venue": [
+            "M07"
+          ]
+        },
+        {
+          "name": "BTM 202 - TOURISM INVESTMENT AND FINANCING",
+          "venue": [
+            "PGM-LH16, PGM-LH17"
+          ]
+        },
+        {
+          "name": "CIR 102 - DISCRETE STRUCTURES II",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ESE 308 - KENYAN SIGN LANGUAGE ACQUISITION II",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "MAS 314 - RESEARCH METHODOLOGY",
+          "venue": [
+            "NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "MMA 204 - DYNAMICS I",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "NES 210 - ECONOMICS OF NATURAL RESOURCES MANAGEMENT",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PGS 206 - SPATIAL DATA INFRASTRUCTURES",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "SIC 212 - PRODUCTION AND USES OF INDUSTRIAL GASES",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "SPH 216 - SCIENTIFIC COMPUTING LAB II",
+          "venue": [
+            "NL13"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAN 208/ AFN 318 - ANIMAL NUTRITION",
+          "venue": [
+            "Amph.SW, PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "ACC 106 - ATMOSPHERIC CIRCULATION AND CLIMATE CLASSIFICATION",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "ACS 102 - JUVENILE DELINQUENCY",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AEN 413 - DISCOURSE ANALYSIS",
+          "venue": [
+            "AMPH.EW & WW, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AES 212 - FUNDAMENTALS OF HYDROLOGY",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "ASO 312 - SOCIOLOGY OF RELIGION",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "BEC 316 - INDUSTRIAL ECONOMICS",
+          "venue": [
+            "M05, M06"
+          ]
+        },
+        {
+          "name": "BFA 102/BAF 102 - BASIC FINAL ACCOUNTS/INTRODUCTION TO ACCOUNTING II",
+          "venue": [
+            "NL02.Anx, NL05, NL05.Anx, NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "CCT 112 - ELECTRONICS II",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 324 - BUSINESS PROCESS MANAGEMENT & OUTSOURCING",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ECT 404 - WARDROBE MANAGEMENT, SELECTION AND CARE",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "PGS 132 - SURVEYING 1",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "PHR 104 - HUMAN ANATOMY AND PHYSIOLOGY II",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "PUR 332 - MARINE SPATIAL PLANNING & DEVT",
+          "venue": [
+            "M08"
+          ]
+        },
+        {
+          "name": "SBT 206 - INTRODUCTORY BIOCHEMISTRY",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "SPH 330 - SCIENTIFIC COMPUTING LAB IV",
+          "venue": [
+            "PGM-LH19"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday, 24 April 2026",
+      "unit1": [
+        {
+          "name": "ACC 402 - ECONOMICS OF CLIMATE CHANGE",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AEN 304 - FUNCTIONAL VARIETIES OF ENGLISH",
+          "venue": [
+            "Amph.SW, PGM-LH01, PGM-LH03, PGM-LH04"
+          ]
+        },
+        {
+          "name": "AES 106 - IMGE INTERPRETATION TECHNIQUES",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "AFR 110 - ENHANCED FRENCH STRUCTURES",
+          "venue": [
+            "M02, M04, M05"
+          ]
+        },
+        {
+          "name": "AHA 102 - INTRODUCTION TO ARCHAEOLOGY II",
+          "venue": [
+            "NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "AHI 304 - HEALTH, DISEASE AND ECOLOGY IN AFRICAN HISTORY",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "ALI 410 - THEATRE FOR DEVELOPMENT",
+          "venue": [
+            "AMPH.EW & WW, PGM-LH20, PGM-LH21"
+          ]
+        },
+        {
+          "name": "AMT 420 - EDITING FOR ELECTRONIC MEDIA",
+          "venue": [
+            "PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ATM 306 - WESTERN MUSIC HISTORY & ANALYSIS II",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "BAF 310 - BANKING LAW AND PRACTICE",
+          "venue": [
+            "NL05.Anx, NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BEC 316 - INDUSTRIAL ECONOMICS",
+          "venue": [
+            "NL02.Anx"
+          ]
+        },
+        {
+          "name": "BEH 306 - QUANTITY FOOD PRODUCTION",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "BHR 406 - INDUSTRIAL & LABOUR LAWS",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "BPS 402 - CONTEMPORARY ISSUES IN PROCUREMENT",
+          "venue": [
+            "PGM-LH24, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "CIM 420 - SOFTWARE QUALITY ASSURANCE",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIT 310 - DESIGN THINKING AND HUMAN-CENTERED DESIGN",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "MAS 402 - BAYESIAN INFERENCE AND DECISION THEORY",
+          "venue": [
+            "NL02"
+          ]
+        },
+        {
+          "name": "PGS 432 - GIS IN HOUSING DEVELOPMENT AND ADMINISTRATION",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PND 414 - NUTRITION AND BEHAVIOUR",
+          "venue": [
+            "PGM-LH14"
+          ]
+        },
+        {
+          "name": "SBT 408 - POPULATION GENETICS",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "SCH 420 - APPLICATIONS OF QUANTUM CHEMISTRY",
+          "venue": [
+            "PGM-LH13, PGM-LH19"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACC 210 - CLIMATE CHANGE AND HUMAN SETTLEMENTS",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "ACS 212 - DRUGS, CRIME AND SOCIETY",
+          "venue": [
+            "Amph.WW"
+          ]
+        },
+        {
+          "name": "AED 102 - AGRICULTURAL EDUCATION COMMUNICATION SKILLS",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "ALI 314 - JAPANESE LITERATURE",
+          "venue": [
+            "PGM-LH25, PGM-LH27, PGM-LH28"
+          ]
+        },
+        {
+          "name": "AMT 314 - NEWSPAPER AND MAGAZINE PRODUCTION",
+          "venue": [
+            "M04"
+          ]
+        },
+        {
+          "name": "APH 202 - SYMBOLIC LOGIC",
+          "venue": [
+            "PGM-LH22, PGM-LH26, PGM-LH32"
+          ]
+        },
+        {
+          "name": "ARE 206 - HISTORY OF CHIRISTIANITY I",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "ARE 408 - AFRICAN THEOLOGY",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "BEC 419 - AGRICULTURAL DEVELOPMENT & POLICY ANALYSIS",
+          "venue": [
+            "Amph.SW, PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BEH 210 - SUSTAINABLE TOURISM",
+          "venue": [
+            "PGM-LH34"
+          ]
+        },
+        {
+          "name": "BIT 324 - QUANTITATIVE AND QUALITATIVE DATA ANALYSIS",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BPS 208 - TACTICS AND OPERATIONS IN PURCHANSING AND SUPPLIES",
+          "venue": [
+            "PGM-LH18, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "CIR 104 - OBJECT ORIENTED PROGRAMMING I",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECT 212 - CURRICULUM DEVELOPMENT",
+          "venue": [
+            "Amph.EW, NL GROUND FLR, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "ESE 312 - ORIENTATION AND MOBILITY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "NES 212 - FISHERIES BIOLOGY",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PND 222 - NUTRITION CARE PROCESS",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "SPH 106 - ELECTRIC CIRCUIT AND ELECTRONICS",
+          "venue": [
+            "M07"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AEN 312 - PSYCHOLINGUISTICS",
+          "venue": [
+            "PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "AFR 412 - FRENCH IN DIPLOMACY & INTERNATIONAL REL",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "AGE 210 - RANGELANDS MANAGEMENT",
+          "venue": [
+            "PGM-LH25, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ALI 210 - GERMAN LITERATURE",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMT 106 - INTRODUCTION TO NEW MEDIA",
+          "venue": [
+            "LH15, M01, M02"
+          ]
+        },
+        {
+          "name": "APH 102 - AFRICAN PHILOSOPHY",
+          "venue": [
+            "M07, M08"
+          ]
+        },
+        {
+          "name": "ASA 106 - ANTHROPOLOGY AND CONFLICT RESOLUTION",
+          "venue": [
+            "PGM-LH01, PGM-LH03"
+          ]
+        },
+        {
+          "name": "BAF 434 - BUSINESS FINANCE",
+          "venue": [
+            "Amph.SW, PGM-LH26, PGM-LH27, PGM-LH28"
+          ]
+        },
+        {
+          "name": "CIR 204 - OBJECT ORIENTED ANALYSIS AND DESIGN",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "EMA 110 - ENVIRONMENTAL EDUCATION",
+          "venue": [
+            "AMPH.EW & WW, NL GROUND FLR, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "PHR 106 - MEDICAL TERMINOLOGY AND NOSOLOGY I",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "PHR 204 - COMMUNITY-BASED HEALTH INFORMATION SYSTEMS",
+          "venue": [
+            "M03, M04, M05"
+          ]
+        },
+        {
+          "name": "PUR 104 - SPATIAL ORGANIZATION",
+          "venue": [
+            "PGM-LH10, PGM-LH13"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Monday, 27 April 2026",
+      "unit1": [
+        {
+          "name": "ACC 404 - GREENHOUSE GASES EMISSION BASELINE AND INVENTORY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AKI 408 - KISWAHILI NOVEL",
+          "venue": [
+            "NL05, NL05.Anx"
+          ]
+        },
+        {
+          "name": "ALI 406 - LITERATURE AND FILM",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AMT 412 - CRIME AND COURT REPORTING",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "ASA 402 - ANTHROPOLOGY OF DEVELOPMENT",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "CIR 410 - SOCIAL AND PROFESSIONAL ISSUES IN COMPUTING",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "MAS 408 - MULTIVARIATE METHODS",
+          "venue": [
+            "NL02"
+          ]
+        },
+        {
+          "name": "MMA 102 - CALCULUS I",
+          "venue": [
+            "NL02.Anx, NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "NES 409 - ENVIRONMENTAL AUDITING",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PGS 434 - PROFESSIONAL PRACTICE AND ENTREPRENEURSHIP",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "SBT 412 - PHYCOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "UCI 204 - RELATIONAL DATABASE MANAGEMENT SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AAB 405 - RESEARCH PROJECT AND SEMINAR",
+          "venue": [
+            "PGM-LH16, PGM-LH17, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AKI 104 - INTRODUCTION TO LINGUISTIC THEORY",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "ARE 404 - LIBERATION THEOLOGY",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "ASA 204 - ETHNICITY AND NATIONALISM",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "BEH 208 - HOUSEKEEPING OPERATIONS",
+          "venue": [
+            "NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "CIR 106 - DATABASE SYSTEMS",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "PHR 214 - INTRODUCTION TO NETWORKING",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "SPH 108 - MATHEMATICAL METHODS FOR PHYSICS II",
+          "venue": [
+            "M06, M07"
+          ]
+        },
+        {
+          "name": "UCI 204 - RELATIONAL DATABASE MANAGEMENT SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AFR 414 - COMPLEXITIES OF TRANSL.& INTERPRETATION",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "APH 112 - PHILOSOPHY OF HUMAN SEXUALITY",
+          "venue": [
+            "M06, M07, M08"
+          ]
+        },
+        {
+          "name": "BMM 101 - ELEMENTS OF MARKETING",
+          "venue": [
+            "M10"
+          ]
+        },
+        {
+          "name": "CIR 206 - SOFTWARE ENGINEERING",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "EMA 412 - PLANNING AND ECONOMICS OF EDUCATION",
+          "venue": [
+            "NL GROUND FLR, NL11, NL12, NL14, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "NES 104 - RENEWABLE AND NON-RENEWABLE ENERGY",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "PCC 100 - LABORATORY DESIGN AND SAFETY",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "PHT 124 - FIRST AID",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "UCI 204 - RELATIONAL DATABASE MANAGEMENT SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 28 April 2026",
+      "unit1": [
+        {
+          "name": "ACC 406 - CLIMATE CHANGE POLICY, PLANNING, MONITORING, EVALUATION AND REPORTING",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AES 208 - GIS MODELING",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "AMT 414 - SCIENCE AND TECHNOLOGY REPORTING",
+          "venue": [
+            "M05"
+          ]
+        },
+        {
+          "name": "ASA 406 - ANTHROPOLOGY OF ETHICS",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ATM 432 - STAGE DESIGN & SCENOGRAPHY",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "CCS 222 - APPLICATION DEVELOPMENT FOR THE INTERNET",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "EDU 210 - RESEARCH METHODS",
+          "venue": [
+            "NL GROUND FLR, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "MAC 404 - COMPUTATIONAL FINANCE",
+          "venue": [
+            "M07, M08"
+          ]
+        },
+        {
+          "name": "NES 412 - CLEANER TECHNOLOGY IN INDUSTRY",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PGS 436 - GIS IN NATURAL RESOURCE MANAGEMENT",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PHT 421/ PHR 412 - HEALTH PROGRAM MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "SBT 414 - PLANT BIOTECHNOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "UCI 102 - COMPUTER COMMUNICATION SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AES 414 - WATERSED MANAGEMENT",
+          "venue": [
+            "M03, M04"
+          ]
+        },
+        {
+          "name": "ALI 408 - LITERATURE AND ENVIRONMENT",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "ARE 406 - DEVELOPMENT OF CHRISTIAN DOCTRINES",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "BMS 202 - BUSINESS STATISTICS",
+          "venue": [
+            "NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "CIR 108 - SYSTEMS ANALYSIS AND DESIGN",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "NES 214 - RANGELAND ECOLOGY AND MANAGEMENT",
+          "venue": [
+            "PGM-LH04"
+          ]
+        },
+        {
+          "name": "PGS 208 - GIS MODELLING",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PND 223 - MATERNAL AND CHILD NUTRITION",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "SCH 210 - CHEMISTRY OF S AND P BLOCK ELEMENTS",
+          "venue": [
+            "NL02, NL02.Anx, NL05"
+          ]
+        },
+        {
+          "name": "UCI 102 - COMPUTER COMMUNICATION SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AFR 402 - FRENCH STYLISTICS",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "ALI 212 - THEORIES OF CREATIVE WRITING",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "BAF 206 - ACCOUNTING FOR LIABILITIES",
+          "venue": [
+            "NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "BFM 406 - CONTEMPORARY ISSUES IN FINANCIAL MANAGEMENT",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "CIR 208 - SWITCHING, ROUTING, AND WIRELESS ESSENTIALS",
+          "venue": [
+            "HH, Har, TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "MAC 106 - MACROECONOMICS",
+          "venue": [
+            "NL05, NL05.Anx"
+          ]
+        },
+        {
+          "name": "PCC 203 - CHEMICAL SAFETY AND SECURITY",
+          "venue": [
+            "PGM-LH13, PGM-LH14"
+          ]
+        },
+        {
+          "name": "UCI 102 - COMPUTER COMMUNICATION SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 29 April 2026",
+      "unit1": [
+        {
+          "name": "ACC 408 - CLIMATE CHANGE GOVERNANCE, NEGOTIATION, DIPLOMACY AND ADVOCACY",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AES 104 - ATMOSPHERIC SCIENCE",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "AMT 416 - COMMUNICATION AND CORRUPTION",
+          "venue": [
+            "M06"
+          ]
+        },
+        {
+          "name": "ASA 408 - ANTHROPOLOGY OF INFECTIOUS DISEASES",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ATM 434 - LIGHTING FOR STAGE, STUDIO & FILM",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "BMS 102 - MANAGEMENT MATHEMATICS 1",
+          "venue": [
+            "NL GROUND FLR, NL FIRST FLR, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "CCS 432 - ADVANCED COMPUTER SCIENCE/TECHNOLOGY PROJECT",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "MAS 440 - ANALYSIS OF CATEGORICAL DATA",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "NES 419 - AQUACULTURE AND FISHERIES MANAGEMENT",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PGS 438 - GIS IN FLOOD MODELLING AND MANAGEMENT",
+          "venue": [
+            "PGM-LH07"
+          ]
+        },
+        {
+          "name": "PHT 422/ PHR 404 - HEALTH PROJECT MANAGEMENT MONITORING AND EVALUATION",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "SZL 408 - MEDICAL ENTOMOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        },
+        {
+          "name": "UCI 202 - COMPUTER BASED INFORMATION SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AKI 102 - INTRODUCTION TO KISWAHILI LITERATURE",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "APY 210 - PSYCHOMETRICS",
+          "venue": [
+            "M01, M02, M04"
+          ]
+        },
+        {
+          "name": "ASA 208 - ECOLOGICAL ANTHROPOLOGY",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "CCS 122 - ELECTRONICS",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 402 - EARLY CHILDHOOD CLASSROOM ORGANISATION AND MANAGEMENT",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "ESE 402 - MANAGEMENT OF INCLUSIVE EDUCATION PROGRAMMES",
+          "venue": [
+            "NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "MMA 224 - CALCULUS III",
+          "venue": [
+            "NL05, NL05.Anx"
+          ]
+        },
+        {
+          "name": "PHT 223 - WATER SUPPLY AND QUALITY CONTROL",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "SPC 120 - FUNDAMENTALS OF PHYSICAL CHEMISTRY",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "SPH 110 - INTRODUCTION TO COMPUTATIONAL PHYSICS",
+          "venue": [
+            "M07"
+          ]
+        },
+        {
+          "name": "UCI 202 - COMPUTER BASED INFORMATION SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AFR 408 - LITERARY CRITICISM OF TEXT IN FRENCH",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AMT 104 - HUMAN COMMUNICATION",
+          "venue": [
+            "NL02, NL02.Anx, NL05.Anx"
+          ]
+        },
+        {
+          "name": "APY 104 - CHILDHOOD PSYCHOLOGY",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BAF 104 - BUSINESS LAW 1",
+          "venue": [
+            "NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "CCS 410 - SCIENTIFIC COMPUTING",
+          "venue": [
+            "TB01, TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIM 428 - IT INDIVIDUAL PROJECT IMPLEMENTATION",
+          "venue": [
+            "TB02"
+          ]
+        },
+        {
+          "name": "ESE 422 - VOCATIONAL AND CAREER GUIDANCE FOR LEARNERS WITH CEREBRAL PALSY",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MAC 104 - LINEAR MODELS AND FORECASTING",
+          "venue": [
+            "NL05"
+          ]
+        },
+        {
+          "name": "PHT 123 - DRUGS, SUBSTANCE USE AND DISORDERS",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "UCI 202 - COMPUTER BASED INFORMATION SYSTEMS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 30 April 2026",
+      "unit1": [
+        {
+          "name": "ACC 410 - CLIMATE FINANCE",
+          "venue": [
+            "M12"
+          ]
+        },
+        {
+          "name": "AMT 424 - PUBLIC RELATIONS AND MARKETING",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "ASA 410 - ANTHROPOLOGY OF POVERTY",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "ATM 436 - THE CONTEMPORARY WESTERN & AFRICAN THEATRE",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "BAF 204 - COST ACCOUNTING",
+          "venue": [
+            "NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "CCS 218 - PRINCIPLES OF OPERATING SYSTEMS",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ESE 410 - REHABILITATION OF MOTOR DEVIATION FOR LEARNERS WITH PHYSICAL DISABILITIES",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MMA 440 - OPERATIONS RESEARCH III",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "NES 418 - OCCUPATIONAL HEALTH AND SAFETY",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PGS 401 - CASE STUDY III: GEOSPATIAL DATABASE APPLICATIONS",
+          "venue": [
+            "PGM-LH07, PGM-LH08"
+          ]
+        },
+        {
+          "name": "PHT 112 - HIV & AIDS DETERMINANTS, PREVENTION AND MANAGEMENT (ONLINE)",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "PHT 423/ PHR 407 - HEALTH ECONOMICS AND FINANCING",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "SZL 104 - HIGHER INVERTEBRATES",
+          "venue": [
+            "NL02, NL02.Anx, NL05"
+          ]
+        },
+        {
+          "name": "SZL 416 - APPLIED LIMNOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AKI 202 - ORAL LITERATURE I",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "AMT 208 - MEDIA LAW",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "APY 202 - HEALTH PSYCHOLOGY",
+          "venue": [
+            "M01, M02, M04"
+          ]
+        },
+        {
+          "name": "ASO 202 - RURAL SOCIOLOGY AND DEVELOPMENT",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "ATM 202 - MUSIC THEORY AND MUSICIANSHIP II",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BEC 424 - MONETARY THEORY & POLICY",
+          "venue": [
+            "NL05, NL05.Anx, NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BMM 204 - SELLING THEORY & PRACTICE",
+          "venue": [
+            "PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "CIM 220 - DATABASE SYSTEMS LABORATORY",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ESE 404 -",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "PHT 112 - HIV & AIDS DETERMINANTS, PREVENTION AND MANAGEMENT (ONLINE)",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "PHT 204 - BUILDING CONSTRUCTION AND TECHNOLOGY I",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "SPC 202 - STRUCTURE AND MECHANISM IN ORGANIC CHEMISTRY",
+          "venue": [
+            "PGM-LH20"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AFR 410 - RESEARCH METHODS & PROJECTS",
+          "venue": [
+            "M01, M02"
+          ]
+        },
+        {
+          "name": "AHI 204 - AFRICA AND THE BLACK DIASPORA",
+          "venue": [
+            "NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "BBA 202 - ORGANIZATIONAL THEORY",
+          "venue": [
+            "NL GROUND FLR"
+          ]
+        },
+        {
+          "name": "CCS 412 - NATURAL LANGUAGE PROCESSING",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 210 - CURRICULUM DEVELOPMENT IN ECDE",
+          "venue": [
+            "M03, M04, M05"
+          ]
+        },
+        {
+          "name": "ESE 412 - LOW VISION",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MAS 106 - INTRODUCTION TO BIOSTATISTICS",
+          "venue": [
+            "M07, M08"
+          ]
+        },
+        {
+          "name": "PHT 112 - HIV & AIDS DETERMINANTS, PREVENTION AND MANAGEMENT (ONLINE)",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "SPH 214 - WAVES, RELATIVITY AND QUANTUM PHYSICS LAB",
+          "venue": [
+            "PGM-LH16, PGM-LH18, PGM-LH19, PGM-LH20"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday, 1 May 2026",
+      "unit1": [
+        {
+          "name": "AHI 202 - HISTORY OF KENYA SINCE 1895",
+          "venue": [
+            "NL GROUND FLR"
+          ]
+        },
+        {
+          "name": "AKI 404 - KISWAHILI SEMANTICS",
+          "venue": [
+            "NL11, NL12, NL15, NL15.Anx, NL16, NL16.L.Anx"
+          ]
+        },
+        {
+          "name": "AMT 426 - PUBLIC RELATIONS PLANNING AND MONITORING",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "ASA 412 - ANTHROPOLOGY RELIGION",
+          "venue": [
+            "PGM-LH02"
+          ]
+        },
+        {
+          "name": "CCS 210 - AUTOMATA THEORY",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 202 - SCIENCE ACTIVITIES",
+          "venue": [
+            "NL14"
+          ]
+        },
+        {
+          "name": "ECE 406 - BEHAVIOUR MANAGEMENT IN ECDE",
+          "venue": [
+            "Har"
+          ]
+        },
+        {
+          "name": "MAC 406 - RISK AND CREDIBILITY THEORY",
+          "venue": [
+            "M07, M08"
+          ]
+        },
+        {
+          "name": "NES 421 - ENVIRONMENTAL HEALTH AND TOXICOLOGY",
+          "venue": [
+            "PGM-LH01"
+          ]
+        },
+        {
+          "name": "PHT 424/ PHR 408 - GEOGRAPHICAL INFORMATION SYSTEM AND HEALTH MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "SPH 206 - EMPIRICAL IDEAS OF QUANTUM PHYSICS AND RELATIVITY",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "SZL 406 - PARASITIOLOGY II",
+          "venue": [
+            "NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "UCI 104 - DATA MANIPULATION AND ANALYSIS USING SPREADSHEETS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AKI 204 - KISWAHILI POETRY",
+          "venue": [
+            "NL GROUND FLR, NL11, NL12"
+          ]
+        },
+        {
+          "name": "APY 204 - ADOLESCENT PSYCHOLOGY",
+          "venue": [
+            "M01, M02, M04"
+          ]
+        },
+        {
+          "name": "ATM 204 - PERFORMING ARTS IN SOCIETY",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BAF 402 - ADVANCED FINANCIAL ACCOUNTING II",
+          "venue": [
+            "NL14, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BMM 202 - CONSUMER PERCEPTION & BEHAVIOUR",
+          "venue": [
+            "PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "BPS 202 - RELATIONSHIPS AND NEGOTIATION MANAGEMENT",
+          "venue": [
+            "NL15, NL15.Anx"
+          ]
+        },
+        {
+          "name": "CCT 118 - DIGITAL ELECTRONICS I LAB",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 416 - EMERGING DATABASE TECHNOLOGIES AND APPLICATIONS",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "PHT 206 - NUTRITION AND HEALTH",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "SPC 204 - CHROMATOGRAPHIC AND SPECTROSCOPIC METHODS IN PHARMACEUTICAL SCIENCES",
+          "venue": [
+            "PGM-LH20"
+          ]
+        },
+        {
+          "name": "SZL 206 - GENERAL PARASITIOLOGY",
+          "venue": [
+            "HH, Har"
+          ]
+        },
+        {
+          "name": "UCI 104 - DATA MANIPULATION AND ANALYSIS USING SPREADSHEETS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "BAF 202 - BUSINESS LAW II",
+          "venue": [
+            "NL GROUND FLR, NL11, NL12"
+          ]
+        },
+        {
+          "name": "BEH 104 - SANITATION AND SAFETY IN FOOD AND BEVERAGE",
+          "venue": [
+            "NL13, NL14, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BFM 404 - FINANCIAL RISK MANAGEMENT",
+          "venue": [
+            "NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17"
+          ]
+        },
+        {
+          "name": "CCS 414 - PATTERN RECOGNITION",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "SPH 206 - EMPIRICAL IDEAS OF QUANTUM PHYSICS AND RELATIVITY",
+          "venue": [
+            "PGM-LH16, PGM-LH18, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "UCI 104 - DATA MANIPULATION AND ANALYSIS USING SPREADSHEETS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, PGM 3RD FLR, PGM 4TH FLR"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Monday, 4 May 2026",
+      "unit1": [
+        {
+          "name": "AED 103 - E-EXTENSION AND INFORMATION SYSTEM",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AEG 106 - INTRODUCTION TO STATISTICS",
+          "venue": [
+            "PGM-LH19"
+          ]
+        },
+        {
+          "name": "AHI 206 - HISTORY OF ECONOMIC THOUGHT",
+          "venue": [
+            "M04, M05"
+          ]
+        },
+        {
+          "name": "AMT 408 - GENDER COMMUNICATION",
+          "venue": [
+            "PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ATM 440 - THEATRE FOR CHILDREN AND YOUTH",
+          "venue": [
+            "PGM-LH16"
+          ]
+        },
+        {
+          "name": "BEC 425 - HEALTH ECONOMICS",
+          "venue": [
+            "Amph.SW, PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BPS 402 - CONTEMPORARY ISSUES IN PROCUREMENT",
+          "venue": [
+            "PGM-LH24, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "CCS 220 - SOFTWARE DEVELOPMENT GROUP PROJECT",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "EDF 210 - PHILOSOPHY OF EDUCATION",
+          "venue": [
+            "AMPH.EW & WW, NL GROUND FLR, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "ESE 102 - INTRODUCTION TO KENYA SIGN LANGUAGE",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "MAC 408 - RISK MATHEMATICS",
+          "venue": [
+            "M07, M08"
+          ]
+        },
+        {
+          "name": "PHT 426/ PHR 410 - DISASTER AND HEALTH RECORDS AND INFORMATION MANAGEMENT",
+          "venue": [
+            "CH"
+          ]
+        },
+        {
+          "name": "SPH 430 - STATISTICAL, TELECOMMUNICATION AND ENERGY PHYSICS LAB",
+          "venue": [
+            "PGM-LH21, PGM-LH22, PGM-LH23"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "AEG 204 - PRODUCTION ECONOMICS",
+          "venue": [
+            "PGM-LH19, PGM-LH20, PGM-LH21"
+          ]
+        },
+        {
+          "name": "AHI 410 - HISTORY OF INDUSTRIAL RELATIONS",
+          "venue": [
+            "Amph.SW, PGM-LH07, PGM-LH08"
+          ]
+        },
+        {
+          "name": "APY 206 - CRIMINAL BEHAVIOR I",
+          "venue": [
+            "M01, M02, M04"
+          ]
+        },
+        {
+          "name": "ATM 206 - ANALYSIS OF MUSIC & DRAMA",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BEC 202 - INTERMEDIATE MACROECONOMICS",
+          "venue": [
+            "AMPH.EW & WW, NL02.Anx, NL05, NL05.Anx, NL08, NL08.L.Anx, NL08.R.Anx, NL10, NL10.Anx, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "BFA 406 - STRATEGIC MANAGERIAL ACCOUNTING",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BHR 420 - CONFLICT MANAGEMENT",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "CIT 118 - COMPUTER COMMUNICATION THEORY",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ESE 102 - INTRODUCTION TO KENYA SIGN LANGUAGE",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "PHT 208 - PHARMACOLOGY",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AHI 106 - IMPERIALISM AND NATIONALISM IN AFRICA",
+          "venue": [
+            "M01, M02, M03"
+          ]
+        },
+        {
+          "name": "APY 110 - MEASUREMENTS OF INTELLIGENCE & ABILITIES",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "BEC 102 - INTRODUCTION TO MACROECONOMICS",
+          "venue": [
+            "Amph.EW, SW, WW, LH15, NL GROUND FLR, NL FIRST FLR, PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BHR 404 - INTERNATIONAL HUMAN RESOURCE MANAGEMENT",
+          "venue": [
+            "PGM-LH23, PGM-LH24, PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "CCS 430 - EXPERT SYSTEMS",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "PHT 126 - PRINCIPLES OF BEHAVIORAL SCIENCES & ETHICS",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Tuesday, 5 May 2026",
+      "unit1": [
+        {
+          "name": "AAG 103 - INTRODUCTION TO MICROBIOLOGY",
+          "venue": [
+            "Amph.WW, PGM-LH01, PGM-LH02, PGM-LH04"
+          ]
+        },
+        {
+          "name": "AEG 412 - AGRICULTURAL PROJECT ANALYSIS",
+          "venue": [
+            "PGM-LH28"
+          ]
+        },
+        {
+          "name": "AMT 410 - ENVIRONMENTAL COMMUNICATION",
+          "venue": [
+            "PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "BEC 426 - OPERATIONS ANALYSIS II",
+          "venue": [
+            "Amph.EW, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "BHR 408 - GLOBAL WORK MANAGEMENT",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "BMM 402 - BRAND MANAGEMENT",
+          "venue": [
+            "PGM-LH24, PGM-LH25"
+          ]
+        },
+        {
+          "name": "CCT 210 - DATA COMMUNICATIONS",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECT 214 - EDUCATIONAL MEDIA & RESOURCES",
+          "venue": [
+            "Amph.SW, NL GROUND FLR, NL FIRST FLR"
+          ]
+        },
+        {
+          "name": "ESE 104 - INTRODUCTION TO BRAILLE",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "MAS 414 - SURVEY RESEARCH METHODS",
+          "venue": [
+            "M07, M08"
+          ]
+        },
+        {
+          "name": "PUR 403 - INDEPENDENT RESEARCH PROJECT",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "SPH 112 - HEAT AND ELECTRICITY LAB",
+          "venue": [
+            "PGM-LH21, PGM-LH22, PGM-LH23"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACS 204 - QUALITATIVE METHODS IN CRIMINOLOGY",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AGE 108 - RESOURCES AND DEVELOPMENT",
+          "venue": [
+            "PGM-LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ALI 402 - LITERATURE AND PEACE BUILDING",
+          "venue": [
+            "AMPH.EW & WW, PGM-LH20, PGM-LH21"
+          ]
+        },
+        {
+          "name": "APY 208 - PSYCHOMETRICS",
+          "venue": [
+            "M03, M04, M05"
+          ]
+        },
+        {
+          "name": "ARE 102 - HISTORY OF RELIGIONS 1",
+          "venue": [
+            "NL13, NL14, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "ARE 402 - NEW RELIGIOUS MOVEMENTS IN KENYA",
+          "venue": [
+            "PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "ATM 208 - PERFORMING ARTS THERAPY II",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BBA 102 - BUSINESS ENVIRONMENT",
+          "venue": [
+            "NL GROUND FLR"
+          ]
+        },
+        {
+          "name": "BEH 202 - HOSPITALITY ACCOUNTING",
+          "venue": [
+            "NL11"
+          ]
+        },
+        {
+          "name": "BEH 204 - FOOD AND BEVERAGE SERVICE TECHNIQUES II",
+          "venue": [
+            "PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "BFA 402 - CORPORATE REPORTING",
+          "venue": [
+            "Amph.SW, PGM-LH22, PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "CIT 218 - WEB APPLICATION CLIENT PROGRAMMING",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ESE 214 - INDIVIDIALISED EDUCATION PROGRAMME AND COMMUNITY SERVICE LEARNING PRACTICUM",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "PHT 212 - LIQUID WASTE MANAGEMENT",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "ACS 106 - SOCIAL CHANGE, IDENTITY, AND BEHAVIOUR",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AGE 202 - ELEMENTS OF STRUCTURAL GEOLOGY",
+          "venue": [
+            "PGM-LH28, PGM-LH32"
+          ]
+        },
+        {
+          "name": "AHI 102 - HISTORY AFRICA SINCE 1885",
+          "venue": [
+            "NL GROUND FLR"
+          ]
+        },
+        {
+          "name": "APY 106 - LEARNING AND LEARNING THEORIES",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "ARE 208 - ECUMENISM",
+          "venue": [
+            "Amph.WW, PGM-LH22, PGM-LH23, PGM-LH24"
+          ]
+        },
+        {
+          "name": "BEC 416 - ENERGY ECONOMICS",
+          "venue": [
+            "Amph.EW, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "BIR 102 - INTRODUCTION TO RISK & INSURANCE BSC PROC & OTHER GROUPS.",
+          "venue": [
+            "Amph.SW, PGM-LH18, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "CCS 426 - INFORMATION RETRIEVAL",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CCT 202 - DIGITAL ELECTRONICS II",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ESE 212 - INTRODUCTION TO LEARNING DISABILITIES AND INDIVIDUALIZED EDUCATION PROGRAMME(IEP)",
+          "venue": [
+            "NL11, NL15"
+          ]
+        },
+        {
+          "name": "PHT 106 - MEDICAL MICROBIOLOGY",
+          "venue": [
+            "PGM-LH17, PGM-LH21"
+          ]
+        },
+        {
+          "name": "SCH 106 - BASIC ORGANIC CHEMISTRY",
+          "venue": [
+            "NL13, NL14, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Wednesday, 6 May 2026",
+      "unit1": [
+        {
+          "name": "AEG 423 - RURAL DEVELOPMENT",
+          "venue": [
+            "PGM-LH28"
+          ]
+        },
+        {
+          "name": "AEN 204 - STRUCTURE OF ENGLISH 1",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "ASS 406 - AGROFORSTRY AND LAND USE",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "BAF 426 - FINANCIAL LAW",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "CIR 402 - CLOUD COMPUTING AND EMERGING APPLICATIONS",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 106 - PHYSICAL AND PSYCHOMOTOR ACTIVITIES",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "MIT 402 - PROBLEM-BASED STATISTICAL ANALYSIS",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "MMA 208 - INTRODUCTION TO ANALYSIS",
+          "venue": [
+            "NL11, NL12, NL14, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "SPH 102 - ELECTRICITY AND MAGNETISM I",
+          "venue": [
+            "PGM-LH21, PGM-LH22, PGM-LH23"
+          ]
+        },
+        {
+          "name": "SPH 402 - STATISTICAL MECHANICS",
+          "venue": [
+            "PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "SZL 410 - NEUROPHYSIOLOGY",
+          "venue": [
+            "M03"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACS 206 - WHITE-COLLAR & CORPORATE CRIME",
+          "venue": [
+            "Amph.SW"
+          ]
+        },
+        {
+          "name": "AEG 105 - PRINCIPLES OF AGRICULTURAL MARKETING",
+          "venue": [
+            "PGM-LH23"
+          ]
+        },
+        {
+          "name": "AEN 409 - PRACTICAL ENGLISH STYLISTICS",
+          "venue": [
+            "AMPH.EW & WW, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AGE 204 - GEOMORPHOLOGY",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "ATM 210 - INDIGENOUS DRAMA IN EAST AFRICA",
+          "venue": [
+            "PGM-LH01, PGM-LH02"
+          ]
+        },
+        {
+          "name": "BBE 202 - SMALL BUSINESS PLANNING",
+          "venue": [
+            "M03"
+          ]
+        },
+        {
+          "name": "BEH 204 - FOOD AND BEVERAGE SERVICE TECHNIQUES II",
+          "venue": [
+            "PGM-LH21"
+          ]
+        },
+        {
+          "name": "BFA 404 - FORENSIC AUDIT FOR FRAUD",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "CIT 120 - COMPUTER ORGANIZATION AND ARCHITECTURE",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 104 - MUSIC, DANCE AND DRAMA ACTIVITIES",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "MAS 206 - PROBABILITY AND DISTRIBUTION THEORY II",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "PHT 221 - MATERNAL AND CHILD HEALTH",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "PUR 202 - QUANTITATIVE TECHNIQUES",
+          "venue": [
+            "PGM-LH17, PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "SCH 104/SAN 102 - BASIC ANALYTICAL CHEMISTRY",
+          "venue": [
+            "NL13, NL14, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "ACS 108 - PERSPECTIVES ON INTERPERSONAL VIOLENCE",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AGE 104 - SPATIAL ORGANIZATION",
+          "venue": [
+            "NL13, NL14, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "AGE 208 - ECONOMICS OF NATURAL RESOURCES",
+          "venue": [
+            "PGM-LH28, PGM-LH32"
+          ]
+        },
+        {
+          "name": "ALI 110 - CLASSICAL THEORIES OF LITERATURE",
+          "venue": [
+            "Amph.EW, SW, WW"
+          ]
+        },
+        {
+          "name": "APY 108 - THEORIES OF PERSONALITY",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "ARE 202 - ETHICS I",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "BHR 410 - SEPARATION & RETIREMENT PLANNING",
+          "venue": [
+            "PGM-LH24, PGM-LH25, PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "CIR 408 - SIMULATION AND MODELING",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECE 206 - GENERAL MTHODS OF TEACHING IN ECDE",
+          "venue": [
+            "NL11, NL15"
+          ]
+        },
+        {
+          "name": "MIT 102 - HANDLING DATA",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "PHT 113 - ANATOMY AND PHYSIOLOGY OF FOOD ANIMALS",
+          "venue": [
+            "PGM-LH17, PGM-LH21"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Thursday, 7 May 2026",
+      "unit1": [
+        {
+          "name": "AEN 216 - ENGLISH GROUP",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "ARE 106 - NEW TESTAMENT STUDIES I",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "BAF 406 - BANKRUPTCY & INSOLVENCY ACCOUNTS",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "CCT 206 - CIRCUITS AND SYSTEMS",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIM 422 - DECISION SUPPORT SYSTEMS",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "ECE 108 - LIFE SKILLS IN ECD",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "MAS 418 - APPLIED POPULATION ANALYSIS",
+          "venue": [
+            "M14"
+          ]
+        },
+        {
+          "name": "MMA 222 - LINEAR ALGEBRA II",
+          "venue": [
+            "NL11, NL12, NL14, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "MMA 408 - TOPOLOGY II",
+          "venue": [
+            "M11"
+          ]
+        },
+        {
+          "name": "SPH 104 - THERMAL PHYSICS",
+          "venue": [
+            "PGM-LH21, PGM-LH22, PGM-LH23"
+          ]
+        },
+        {
+          "name": "SPH 410 - ELECTRODYNAMICS",
+          "venue": [
+            "PGM-LH26, PGM-LH27"
+          ]
+        },
+        {
+          "name": "SZL 404 - MARINE BIOLOGY AND OCEANOGRAPHY",
+          "venue": [
+            "LH15"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACS 110 - CULTURE AND CRIME",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AGE 206 - AGRICULTURAL GEOGRAPHY",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "ALI 102 - LITERARY STYLISTICS",
+          "venue": [
+            "Amph.EW, SW, WW"
+          ]
+        },
+        {
+          "name": "APH 212 - PHILOSOPHY AND CONTEMPORARY AFRICAN PROBLEMS",
+          "venue": [
+            "PGM-LH21, PGM-LH22, PGM-LH23"
+          ]
+        },
+        {
+          "name": "BBE 204 - ENTREPRENEURIAL BEHAVIOUR",
+          "venue": [
+            "NL12"
+          ]
+        },
+        {
+          "name": "BMS 402 - TOTAL QUALITY MANAGEMENT",
+          "venue": [
+            "NL13, NL14, NL15, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BTM 206 - TOURISM ECONOMICS",
+          "venue": [
+            "NL11"
+          ]
+        },
+        {
+          "name": "CCT 102 - ENGINEERING MATHEMATICS II",
+          "venue": [
+            "TB02, TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIS 406 - MIS INDIVIDUAL PROJECT IMPLEMENTATION",
+          "venue": [
+            "TB01"
+          ]
+        },
+        {
+          "name": "ECE 102 - CHILD PSYCHOLOGY",
+          "venue": [
+            "HH"
+          ]
+        },
+        {
+          "name": "MAS 202 - PRINCIPLES OF STATISTICAL INFERENCE",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "PHT 202/PHR 212 - COMMUNITY DIAGNOSIS AND NEEDS ASSESSMENT",
+          "venue": [
+            "PGM-LH16, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "SBT 410 - PLANT PATHOLOGY",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "AAG 204 - PRINCIPALS OF CROP PRODUCTION",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "AEN 102 - INTRODUCTION TO LINGUISTICS",
+          "venue": [
+            "Amph.EW, SW, WW"
+          ]
+        },
+        {
+          "name": "AGE 214 - AGROFORESTRY SYSTEMS",
+          "venue": [
+            "PGM-LH21, PGM-LH22, PGM-LH23"
+          ]
+        },
+        {
+          "name": "AHI 402 - ETHNICITY AND CONFLICT IN AFRICAN HISTORY",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "CIR 404 - BIG DATA ANALYTICS",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ESE 204 - INTRODUCTION TO INCLUSIVE EDUCATION",
+          "venue": [
+            "NL11, NL15"
+          ]
+        },
+        {
+          "name": "MAS 108 - INTRODUCTION TO PROBABILITY THEORY",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "MMA 402 - MEASURE THEORY",
+          "venue": [
+            "NL13, NL14, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "PHT 120/PHR 218 - PRINCIPLES OF COMMUNITY HEALTH",
+          "venue": [
+            "PGM-LH17, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "SPH 204 - OSCILLATIONS AND WAVES",
+          "venue": [
+            "LH15"
+          ]
+        }
+      ]
+    },
+    {
+      "day": "Friday, 8 May 2026",
+      "unit1": [
+        {
+          "name": "AAG 206 - PRINCIPALS OF PATHOLOGY",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "AAN 104 - BASIC ANIMAL PHYSIOLOGY",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        },
+        {
+          "name": "ACS 208 - CRIME AND MEDIA",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AEN 102 - INTRODUCTION TO LINGUISTICS",
+          "venue": [
+            "PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "ALI 410 - THEATRE FOR DEVELOPMENT",
+          "venue": [
+            "Amph.EW, SW, WW"
+          ]
+        },
+        {
+          "name": "BEC 424 - MONETARY THEORY & POLICY",
+          "venue": [
+            "NL05, NL05.Anx, NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "CIM 430 - PEOPLE MANAGEMENT",
+          "venue": [
+            "TB01, TB02"
+          ]
+        },
+        {
+          "name": "CIT 402 - INDIVIDUAL IT PROJECT IMPLEMENTATION",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "SCH 208 - SEPARATION AND CHROMATROGRAPHIC TECHNIQUES",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx, NL11, NL12"
+          ]
+        },
+        {
+          "name": "SZL 102 - VERTEBRATE ZOOLOGY",
+          "venue": [
+            "NL13, NL14, NL15.Anx, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "SZL 417 - INDUSTRIAL MICROBIOLOGY",
+          "venue": [
+            "PGM-LH05"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "ACS 210 - SECURITY MANAGEMENT IN KENYA",
+          "venue": [
+            "LH15, M01"
+          ]
+        },
+        {
+          "name": "AGE 106 - BIOLOGICAL RESOURCES MANAGEMENT",
+          "venue": [
+            "PGM-LH20, PGM-LH21, PGM-LH23"
+          ]
+        },
+        {
+          "name": "AGE 404 - GEOGRAPHY OF AFRICA",
+          "venue": [
+            "NL05, NL05.Anx, NL08, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "AHI 406 - FUNDAMENTALISM AND TERRORISM IN CONTEMPORARY WORLD",
+          "venue": [
+            "NL08.R.Anx, NL10, NL10.Anx, NL11, NL12"
+          ]
+        },
+        {
+          "name": "ALI 204 - LITERARY THEORIES AND CRITICISM",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH18, PGM-LH19"
+          ]
+        },
+        {
+          "name": "AMT 206 - WRITING FOR BROADCAST MEDIA",
+          "venue": [
+            "NL02, NL02.Anx"
+          ]
+        },
+        {
+          "name": "CCT 434 - WIRELESS SENSOR AND ACTUATOR NETWORKS",
+          "venue": [
+            "TB01"
+          ]
+        },
+        {
+          "name": "CIM 424 - IT SERVICE COST & AVAILABILITY MANAGEMENT",
+          "venue": [
+            "TB03, TB05"
+          ]
+        },
+        {
+          "name": "CIS 414 - LARGE SCALE SOFTWARE SYSTEMS",
+          "venue": [
+            "TB02"
+          ]
+        },
+        {
+          "name": "PHT 225 - PHYSICS FOR HEALTH SCIENCES",
+          "venue": [
+            "PGM-LH13, PGM-LH16"
+          ]
+        },
+        {
+          "name": "SBT 102 - SURVEY OF PLANT KINGDOM",
+          "venue": [
+            "NL13, NL14, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "SBT 402 - MORPHOGENESIS & AND ANATOMY",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "ACP 102 - COUNSELLING THEORIES",
+          "venue": [
+            "NL11, NL15"
+          ]
+        },
+        {
+          "name": "AEN 104 - ART OFWRITING",
+          "venue": [
+            "Amph.EW, SW, WW, PGM-LH19, PGM-LH20"
+          ]
+        },
+        {
+          "name": "AGE 102 - FUNDAMENTALS OF PHYSICAL GEOGRAPHY",
+          "venue": [
+            "NL13, NL14, NL16, NL16.L.Anx, NL16.R.Anx, NL17, NL17.Anx"
+          ]
+        },
+        {
+          "name": "BAF 404 - MANAGEMENT ACCOUNTING II",
+          "venue": [
+            "NL02, NL02.Anx, NL05, NL05.Anx, NL08.L.Anx"
+          ]
+        },
+        {
+          "name": "CIR 406 - NETWORK SECURITY",
+          "venue": [
+            "TB01, 02, 03, & 05"
+          ]
+        },
+        {
+          "name": "ECT 404 - WARDROBE MANAGEMENT, SELECTION AND CARE",
+          "venue": [
+            "LH15"
+          ]
+        },
+        {
+          "name": "MIT 104 - DESCRIPTIVE ANALYSIS AND PRESENTATION",
+          "venue": [
+            "NL08, NL08.R.Anx, NL10, NL10.Anx"
+          ]
+        },
+        {
+          "name": "PHT 118 - GENDER, SEXUAL AND REPRODUCTIVE HEALTH",
+          "venue": [
+            "PGM-LH17, PGM-LH21"
+          ]
+        },
+        {
+          "name": "SBT 202 - PLANT MINERAL NUTRITION",
+          "venue": [
+            "PGM-LH24 - LH28, PGM 4TH FLR"
+          ]
+        }
+      ]
+    }
+  ]
 }
