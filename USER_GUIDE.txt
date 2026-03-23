@@ -33,11 +33,13 @@ STEP 1: ADD YOUR UNITS
 TIPS:
 - Unit codes should match those in the master timetable
 - Unit names are optional (just for your reference)
+- If the admin has uploaded the timetable you can just use that or you can upload your timetable
+  as excel sheet from your device
 
 STEP 2: GENERATE YOUR TIMETABLE
 ────────────────────────────────
 1. After adding all your units, click "Generate TT" button
-2. Your personalized timetable appears on the right
+2. Your personalized timetable appears
 3. The timetable shows:
    - Days of the week (Monday - Friday)
    - Class times for each of YOUR units
