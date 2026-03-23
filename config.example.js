@@ -1,11 +1,11 @@
 window.APP_CONFIG = {
-    // ===== ADMIN PASSCODE (Universal for all users) =====
-    // Password: maseno2026
-    // Generate this in browser console:
+    // ===== ADMIN PASSCODE (Optional - Universal from admin-config.json) =====
+    // If you set this, it will be used globally across all devices
+    // Otherwise, the password from admin-config.json in the repo will be used
+    // Generate hash in browser console:
     // await crypto.subtle.digest("SHA-256", new TextEncoder().encode("your-passcode"))
     // then convert to hex and paste below.
-    // If empty, the passcode stored in browser's first login will be used.
-    adminPasscodeHash: "38138aabb374a15759165bba46bc7a2b0ae293e23bdae530b17c1641eb7c8dde"
+    adminPasscodeHash: ""
 };
 
 /* 

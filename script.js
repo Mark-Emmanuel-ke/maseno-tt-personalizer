@@ -6,12 +6,14 @@ const STORAGE_KEYS = {
     adminTimetable: "admin_uploaded_timetable"
 };
 
-// Admin timetable URL - points to the repo's JSON file
+// Admin URLs - Universal for all users (no backend needed)
 const ADMIN_TIMETABLE_URL = "./admin-timetable.json";
+const ADMIN_CONFIG_URL = "./admin-config.json";
 
 const units = JSON.parse(localStorage.getItem(STORAGE_KEYS.units)) || [];
 let myUnits = JSON.parse(localStorage.getItem(STORAGE_KEYS.savedTimetable)) || [];
 let globalAdminTimetable = null; // Universal timetable for all users
+let globalAdminConfig = null; // Universal admin config (password, etc.)
 
 const add = document.querySelector("#add");
 const unitCode = document.querySelector("#code");
@@ -25,6 +27,19 @@ const adminPanel = document.querySelector("#adminPanel");
 const adminStats = document.querySelector(".admin-stats");
 const adminControls = document.querySelector(".admin-controls");
 const adminLogs = document.querySelector(".admin-logs");
+
+// Load admin config from JSON file on startup
+async function loadAdminConfig() {
+    try {
+        const response = await fetch(ADMIN_CONFIG_URL);
+        const data = await response.json();
+        if (data.adminPasscodeHash) {
+            globalAdminConfig = data;
+        }
+    } catch (error) {
+        console.log("No admin config found or error loading:", error);
+    }
+}
 
 // Load admin timetable from JSON file on startup
 async function loadAdminTimetable() {
@@ -41,6 +56,7 @@ async function loadAdminTimetable() {
 
 // Initialize app
 (async () => {
+    await loadAdminConfig();
     await loadAdminTimetable();
     if (myUnits.length > 0) {
         generateTable(myUnits);
@@ -634,11 +650,12 @@ function renderAdminDashboard() {
         <div class="admin-source-tools">
             <input id="adminTtFile" type="file" accept=".xlsx,.xls">
             <button class='upload-source'>Upload Default TT</button>
-            <button class='export-source' ${!globalAdminTimetable ? 'disabled' : ''}>Export as JSON</button>
+            <button class='export-source' ${!globalAdminTimetable ? 'disabled' : ''}>Export TT as JSON</button>
+            <button class='change-password'>Change Admin Password</button>
             <button class='clear-logs'>Clear Logs</button>
         </div>
         <p style="font-size: 0.85rem; color: #999; margin-top: 10px;">
-            📌 <strong>Setup:</strong> After uploading, export as JSON and save the contents to <code>admin-timetable.json</code> in the repo root.
+            📌 <strong>Setup:</strong> After uploading TT, export as JSON and save to <code>admin-timetable.json</code>. After changing password, export as JSON and save to <code>admin-config.json</code>.
         </p>
     `;
 
@@ -648,6 +665,11 @@ function renderAdminDashboard() {
     const exportSourceBtn = adminControls.querySelector(".export-source");
     if (exportSourceBtn && globalAdminTimetable) {
         exportSourceBtn.addEventListener("click", exportAdminTimetable);
+    }
+
+    const changePasswordBtn = adminControls.querySelector(".change-password");
+    if (changePasswordBtn) {
+        changePasswordBtn.addEventListener("click", changeAdminPassword);
     }
 
     const clearLogsBtn = adminControls.querySelector(".clear-logs");
@@ -719,6 +741,34 @@ function exportAdminTimetable() {
     alert("📥 Downloaded admin-timetable.json. Replace the file in your repo with this and push to GitHub.");
 }
 
+async function changeAdminPassword() {
+    const newPassword = prompt("Enter new admin password:");
+    if (!newPassword || newPassword.trim().length === 0) {
+        alert("Password cannot be empty");
+        return;
+    }
+
+    const newHash = await sha256(newPassword);
+    globalAdminConfig = {
+        adminPasscodeHash: newHash,
+        updatedAt: new Date().toISOString()
+    };
+
+    const jsonString = JSON.stringify(globalAdminConfig, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "admin-config.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    
+    alert("✅ Password changed. Downloaded admin-config.json. Replace the file in your repo with this and push to GitHub. All devices will use the new password.");
+    renderAdminDashboard();
+}
+
 async function sha256(value) {
     const encoded = new TextEncoder().encode(value);
     const hashBuffer = await crypto.subtle.digest("SHA-256", encoded);
@@ -727,6 +777,11 @@ async function sha256(value) {
 }
 
 async function getConfiguredAdminPasscodeHash() {
+    // Priority: Global config (admin-config.json) > External config > Local storage
+    if (globalAdminConfig && globalAdminConfig.adminPasscodeHash) {
+        return String(globalAdminConfig.adminPasscodeHash).trim();
+    }
+
     const externalHash = window.APP_CONFIG && window.APP_CONFIG.adminPasscodeHash;
     if (externalHash) {
         return String(externalHash).trim();
