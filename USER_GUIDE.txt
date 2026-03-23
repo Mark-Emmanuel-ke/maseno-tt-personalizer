@@ -1,0 +1,229 @@
+================================================================================
+    MASENO UNIVERSITY TIMETABLE PERSONALIZER - USER GUIDE
+================================================================================
+
+Welcome! This guide explains how to use the Timetable Personalizer to create 
+your own personalized schedule.
+
+================================================================================
+GETTING STARTED
+================================================================================
+
+1. OPEN THE APP
+   - Visit the Maseno Timetable Personalizer website
+   - The page loads automatically - no login required!
+
+2. YOU WILL SEE THREE MAIN SECTIONS:
+   - "Enter Units" (top left): Where you add your units
+   - "Selected Units" (below): Your current unit list
+   - Timetable Display (right side): Your personalized schedule
+
+================================================================================
+HOW TO USE - STEP BY STEP
+================================================================================
+
+STEP 1: ADD YOUR UNITS
+───────────────────────
+1. Look for the text field labeled "Unit Code..."
+2. Type your FIRST unit code (e.g., "CSC 115" or "ENG 101")
+3. Optionally, type a unit name in the "Unit name..." field
+4. Click the "Add Unit" button (or press Enter)
+5. Repeat for each unit you're taking
+
+TIPS:
+- Unit codes should match those in the master timetable
+- You can add up to 3 units at a time
+- Unit names are optional (just for your reference)
+
+STEP 2: GENERATE YOUR TIMETABLE
+────────────────────────────────
+1. After adding all your units, click "Generate TT" button
+2. Your personalized timetable appears on the right
+3. The timetable shows:
+   - Days of the week (Monday - Friday)
+   - Class times for each of YOUR units
+   - Venue/Hall information
+   - Time slots for your selected courses
+
+STEP 3: SAVE YOUR SELECTION
+────────────────────────────
+1. Click the "Save" button below your timetable
+2. Your units and timetable are saved automatically
+3. When you visit again, your selection will still be there
+
+================================================================================
+UNDERSTANDING YOUR TIMETABLE
+================================================================================
+
+TIMETABLE LAYOUT:
+- FIRST COLUMN: Days and dates (shows the day of the week and date)
+- OTHER COLUMNS: One column for each of your units
+- ROWS: Different time slots throughout the day
+- CELLS: Show unit code and venue (if you have class at that time)
+
+EXAMPLE:
+If you added units: CSC 115, ENG 101, MTH 201
+Your timetable will have columns for each, showing when each unit meets.
+
+COLOR CODING:
+- Header row (unit names): Green background
+- Even rows: Light blue background
+- Text: Easy to read with good contrast
+
+================================================================================
+MANAGING YOUR UNITS
+================================================================================
+
+TO REMOVE A UNIT:
+1. Find it in "Selected Units" list
+2. Click the "remove"  button next to it
+3. Click "Generate TT" again to update your timetable
+
+TO CHANGE UNITS:
+1. Remove unwanted units (see above)
+2. Add new units
+3. Click "Generate TT" to regenerate
+
+TO START OVER:
+1. Remove all units
+2. The timetable will clear
+3. Add your new units fresh
+
+================================================================================
+SAVING AND PERSISTENCE
+================================================================================
+
+AUTOMATIC SAVING:
+- Your unit selections are saved automatically to your device
+- No account needed - saved in your browser
+- Works even if you close the browser and come back later
+
+IF YOU CLEAR YOUR BROWSER DATA:
+- Your saved units will be lost
+- You'll need to add them again
+- The default timetable is always available
+
+USING ON MULTIPLE DEVICES:
+- Each device has its own saved units
+- Desktop saves are separate from mobile saves
+- Add your units on each device you want to use
+
+================================================================================
+FREQUENTLY ASKED QUESTIONS
+================================================================================
+
+Q: Why doesn't my timetable show?
+A: Make sure:
+   - You've added at least one unit
+   - You clicked "Generate TT" button
+   - A default timetable has been uploaded by the admin
+
+Q: Do I need internet to use this?
+A: You need internet to first load the app, but once loaded, it works offline
+   for viewing your timetable. Adding units requires the app to be loaded.
+
+Q: What if I have the same unit at different times?
+A: The app shows ALL instances of a unit
+   - You should select the time slot that works best for you
+   - Remove the unit and re-add it with a note about preferred time
+
+Q: Can I print my timetable?
+A: Yes! Use your browser's Print function:
+   - Desktop: Press Ctrl+P (Windows) or Cmd+P (Mac)
+   - Mobile: Look for Share → Print option
+   - Your timetable will print nicely formatted
+
+Q: My units aren't saving - what do I do?
+A: Try these steps:
+   1. Refresh the page (F5 or swipe down)
+   2. Clear browser cache and try again
+   3. Try a different browser
+   4. Check if JavaScript is enabled in your browser
+
+Q: The timetable looks different today - why?
+A: The admin may have updated the master timetable
+   - Just regenerate your timetable to see updates
+   - Your unit selections remain the same
+
+================================================================================
+TIPS AND TRICKS
+================================================================================
+
+1. CHECK FOR CONFLICTS
+   - Look at your timetable to spot schedule conflicts
+   - If two units meet at the same time, you can't take both
+
+2. PLAN YOUR WEEK
+   - Use your saved timetable to plan study sessions
+   - Print it and stick it on your wall
+
+3. SHARE YOUR SCHEDULE
+   - Screenshot your timetable to share with groupmates
+   - Use the Print feature to save as PDF
+
+4. MOBILE USAGE
+   - Add your units on one device, view on another
+   - Keep your phone handy to check times between classes
+
+5. BACKUP YOUR SCHEDULE
+   - Take screenshots of your final timetable
+   - Save as PDF using Print function
+   - Share with friends for reference
+
+================================================================================
+GETTING HELP
+================================================================================
+
+If you encounter issues:
+
+1. TRY THESE FIRST:
+   - Refresh the page
+   - Close and reopen your browser
+   - Clear browser cache
+   - Try a different browser
+
+2. CHECK YOUR SETUP:
+   - Make sure JavaScript is enabled
+   - Ensure you have a stable internet connection
+   - Try on a different device
+
+3. CONTACT SUPPORT:
+   - See the footer of the app for contact information
+   - Use the developer's social media links
+   - Contact your institution's IT support
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+✓ Your data is stored safely in your device's browser
+✓ No personal information is collected
+✓ The app works on all modern browsers
+✓ Mobile-friendly design for smartphones and tablets
+✓ Free to use - no subscriptions or payments
+
+PRIVACY:
+- Your timetable is saved only on your device
+- The app doesn't track what units you choose
+- Visit logs are anonymous (IP and timestamp only)
+- No account or personal data collection
+
+================================================================================
+KEYBOARD SHORTCUTS (DESKTOP)
+================================================================================
+
+Enter         - Add unit (after typing unit code)
+Esc           - Close any dialog or admin panel
+Ctrl+P        - Print your timetable
+F5            - Refresh page
+
+================================================================================
+
+Thank you for using the Maseno University Timetable Personalizer!
+
+For more information, see README.md or contact the developer.
+
+Last Updated: March 23, 2026
+Version: 2.0
+
+================================================================================
