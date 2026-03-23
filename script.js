@@ -43,10 +43,25 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
-// Mobile admin button
-const adminMobileBtn = document.querySelector("#adminMobileBtn");
-if (adminMobileBtn) {
-    adminMobileBtn.addEventListener("click", openAdminWithAuth);
+// Triple-click copyright for admin access
+const footerCredit = document.querySelector(".footer-credit");
+let creditClickCount = 0;
+let creditClickTimeout;
+
+if (footerCredit) {
+    footerCredit.addEventListener("click", () => {
+        creditClickCount++;
+        clearTimeout(creditClickTimeout);
+        
+        if (creditClickCount === 3) {
+            openAdminWithAuth();
+            creditClickCount = 0;
+        }
+        
+        creditClickTimeout = setTimeout(() => {
+            creditClickCount = 0;
+        }, 500);
+    });
 }
 
 unitCode.addEventListener("keydown", (e) => {

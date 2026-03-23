@@ -202,10 +202,11 @@ th{
 .app-footer{
     background: #1f7a3f;
     color: #eef4ff;
-    padding: 20px 10px;
-    margin-top: 40px;
-    border-top: 1px solid #0e2416;
-    position: relative;
+    padding: 30px 15px;
+    margin-top: 60px;
+    border-top: 2px solid #0e2416;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-content{
@@ -215,15 +216,15 @@ th{
 }
 
 .footer-content p{
-    margin: 6px 0;
-    font-size: 0.9rem;
+    margin: 8px 0;
+    font-size: 0.95rem;
 }
 
 .footer-socials{
     display: flex;
     justify-content: center;
-    gap: 12px;
-    margin: 12px 0;
+    gap: 15px;
+    margin: 18px 0;
     flex-wrap: wrap;
 }
 
@@ -231,53 +232,36 @@ th{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
-    background: #0e2416;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 50%;
-    color: #c8f0d4;
+    color: #eef4ff;
     text-decoration: none;
-    transition: .2s ease;
-    border: 1px solid #0e2416;
-    font-weight: bold;
+    transition: all .3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    font-size: 1.3rem;
 }
 
 .social-link:hover{
-    background: #2b5a45;
-    border-color: #c8f0d4;
+    background: rgba(255, 255, 255, 0.25);
+    border-color: #ffffff;
     color: #ffffff;
-}
-
-.social-icon{
-    font-size: 1.1rem;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .footer-credit{
-    font-size: 0.8rem;
-    opacity: 0.9;
-    margin-top: 12px;
-}
-
-.admin-mobile-btn{
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border-radius: 50%;
-    background: #0e2416;
-    color: #c8f0d4;
-    border: 2px solid #c8f0d4;
-    font-size: 1.2rem;
+    font-size: 0.85rem;
+    opacity: 0.85;
+    margin-top: 16px;
     cursor: pointer;
-    transition: .2s ease;
+    transition: opacity .3s ease;
+    user-select: none;
 }
 
-.admin-mobile-btn:hover{
-    background: #2b5a45;
-    color: #ffffff;
-    box-shadow: 0 2px 8px rgba(0,0,0,.3);
+.footer-credit:hover{
+    opacity: 1;
 }
 
 @media (max-width: 900px){
