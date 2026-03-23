@@ -909,8 +909,7 @@ async function getGitHubConfig() {
     if (!config) return null;
 
     // If token is in plain text (not encrypted), return it directly
-    if (config.token && !config.encryptedToken) {
-        console.warn("⚠️ GitHub token in plain text! Consider encrypting it.");
+    if (config.token) {
         return config;
     }
 
@@ -938,7 +937,7 @@ async function getGitHubConfig() {
         }
     }
 
-    return config;
+    return null;
 }
 
 async function commitToGitHub(filename, content, message) {
