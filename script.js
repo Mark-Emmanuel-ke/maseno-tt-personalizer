@@ -144,9 +144,9 @@ function displayUnits() {
 }
 
 function generateTable(entries) {
-    const table1 = renderSlotTable(entries, "unit1", "Session 1");
-    const table2 = renderSlotTable(entries, "unit2", "Session 2");
-    const table3 = renderSlotTable(entries, "unit3", "Session 3");
+    const table1 = renderSlotTable(entries, "unit1", "Session 1 (7:00 AM - 9:00 AM)");
+    const table2 = renderSlotTable(entries, "unit2", "Session 2 (10:00 AM - 12:00 PM)");
+    const table3 = renderSlotTable(entries, "unit3", "Session 3 (2:00 PM - 4:00 PM)");
 
     outputTT.innerHTML = table1 + table2 + table3;
     outputActions.innerHTML = entries.length
