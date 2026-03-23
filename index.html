@@ -13,8 +13,8 @@
         <div class="details">
             <h3>Enter Units</h3>
             <input type="text" id="code" placeholder="Unit Code...(Required)" required>
-            <input type="text" id="name" placeholder="Unit name...(Optional)"><br/>
-            <button id="add">Add</button>
+            <input type="text" id="name" placeholder="Unit name...(Optional)">
+            <button id="add">Add Unit</button>
             <h3>Selected Units</h3>
             <div class="units">
 
@@ -22,15 +22,24 @@
             <label for="file">Source TimeTable</label><br/>
             <div class="fileGen">
                 <input id="file" required type="file" name="file">
-                <button class="generate">Generate</button>
+                <button class="generate action-btn">Generate TT</button>
             </div>
         </div>
         <div class="separator"></div>
-        <div class="output">
-
+        <div class="outputWrap">
+            <div class="outputActions"></div>
+            <div class="output"></div>
         </div>
     </div>
-    <script src="./script.js"></script>
+
+    <section id="adminPanel" class="admin-panel hidden" aria-hidden="true">
+        <h3>Admin Dashboard</h3>
+        <p class="admin-hint">Hidden mode active. Press Esc to close.</p>
+        <div class="admin-stats"></div>
+        <div class="admin-logs"></div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
