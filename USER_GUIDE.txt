@@ -32,7 +32,6 @@ STEP 1: ADD YOUR UNITS
 
 TIPS:
 - Unit codes should match those in the master timetable
-- You can add up to 3 units at a time
 - Unit names are optional (just for your reference)
 
 STEP 2: GENERATE YOUR TIMETABLE
