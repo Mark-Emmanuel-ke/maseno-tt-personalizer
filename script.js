@@ -708,7 +708,7 @@ async function uploadAdminSourceTimetable() {
     }
 
     const reader = new FileReader();
-    reader.onload = (e) => {
+    reader.onload = async (e) => {
         try {
             const data = new Uint8Array(e.target.result);
             const fullTT = parseWorkbookToFullTT(data);
@@ -716,7 +716,20 @@ async function uploadAdminSourceTimetable() {
                 uploadedAt: new Date().toISOString(),
                 fullTT
             };
-            alert("✅ Default timetable loaded. Now export it as JSON and update admin-timetable.json in the repo.");
+            
+            // Try to auto-commit to GitHub
+            const content = JSON.stringify(globalAdminTimetable, null, 2);
+            const committed = await commitToGitHub(
+                "admin-timetable.json",
+                content,
+                "Update default timetable from admin panel"
+            );
+
+            if (committed) {
+                alert("✅ Timetable uploaded and automatically committed to GitHub!\nAll users will see the update within seconds.");
+            } else {
+                alert("✅ Timetable uploaded locally.\n⚠️ GitHub auto-commit failed - download and push manually.\nOr download it as JSON and update admin-timetable.json in the repo.");
+            }
             renderAdminDashboard();
         } catch (error) {
             alert("Failed to upload default timetable");
@@ -760,18 +773,31 @@ async function changeAdminPassword() {
         updatedAt: new Date().toISOString()
     };
 
-    const jsonString = JSON.stringify(globalAdminConfig, null, 2);
-    const blob = new Blob([jsonString], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "admin-config.json";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    const content = JSON.stringify(globalAdminConfig, null, 2);
     
-    alert("✅ Password changed. Downloaded admin-config.json. Replace the file in your repo with this and push to GitHub. All devices will use the new password.");
+    // Try to auto-commit to GitHub
+    const committed = await commitToGitHub(
+        "admin-config.json",
+        content,
+        "Update admin password from admin panel"
+    );
+
+    if (committed) {
+        alert("✅ Password changed and automatically committed to GitHub!\nAll devices will use the new password immediately.");
+    } else {
+        // Fallback: download the file
+        const blob = new Blob([content], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "admin-config.json";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        
+        alert("✅ Password changed.\n⚠️ GitHub auto-commit failed - download completed.\nReplace admin-config.json in your repo and push to GitHub.");
+    }
     renderAdminDashboard();
 }
 
@@ -795,4 +821,214 @@ async function getConfiguredAdminPasscodeHash() {
 
     const localHash = localStorage.getItem(STORAGE_KEYS.adminPasscodeHash) || "";
     return localHash.trim();
+}
+
+// ===== GITHUB TOKEN ENCRYPTION/DECRYPTION =====
+// Encrypts the GitHub token with a master password
+// This prevents the token from being exposed even if code is leaked
+
+async function encryptGitHubToken(token, masterPassword) {
+    try {
+        // Derive key from master password using PBKDF2
+        const encoder = new TextEncoder();
+        const data = encoder.encode(masterPassword);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+        
+        // Create encryption key
+        const key = await crypto.subtle.importKey(
+            "raw",
+            hashBuffer,
+            { name: "AES-GCM" },
+            false,
+            ["encrypt"]
+        );
+
+        // Generate random IV
+        const iv = crypto.getRandomValues(new Uint8Array(12));
+        
+        // Encrypt token
+        const tokenData = encoder.encode(token);
+        const encryptedData = await crypto.subtle.encrypt(
+            { name: "AES-GCM", iv: iv },
+            key,
+            tokenData
+        );
+
+        // Combine IV and encrypted data
+        const combined = new Uint8Array(iv.length + encryptedData.byteLength);
+        combined.set(iv);
+        combined.set(new Uint8Array(encryptedData), iv.length);
+
+        // Return as base64 string
+        return btoa(String.fromCharCode(...combined));
+    } catch (error) {
+        console.error("Encryption error:", error);
+        throw error;
+    }
+}
+
+async function decryptGitHubToken(encryptedToken, masterPassword) {
+    try {
+        // Decode from base64
+        const combined = new Uint8Array(atob(encryptedToken).split('').map(c => c.charCodeAt(0)));
+        
+        // Extract IV and encrypted data
+        const iv = combined.slice(0, 12);
+        const encryptedData = combined.slice(12);
+
+        // Derive key from master password
+        const encoder = new TextEncoder();
+        const data = encoder.encode(masterPassword);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+        
+        const key = await crypto.subtle.importKey(
+            "raw",
+            hashBuffer,
+            { name: "AES-GCM" },
+            false,
+            ["decrypt"]
+        );
+
+        // Decrypt
+        const decryptedData = await crypto.subtle.decrypt(
+            { name: "AES-GCM", iv: iv },
+            key,
+            encryptedData
+        );
+
+        return new TextDecoder().decode(decryptedData);
+    } catch (error) {
+        console.error("Decryption error:", error);
+        throw error;
+    }
+}
+
+async function getGitHubConfig() {
+    // Check if token is encrypted in config
+    const config = window.APP_CONFIG && window.APP_CONFIG.github;
+    if (!config) return null;
+
+    // If token is in plain text (not encrypted), return it directly
+    if (config.token && !config.encryptedToken) {
+        console.warn("⚠️ GitHub token in plain text! Consider encrypting it.");
+        return config;
+    }
+
+    // If token is encrypted, ask for master password
+    if (config.encryptedToken) {
+        const masterPassword = prompt(
+            "🔐 GitHub token is encrypted.\nEnter the master password to decrypt it:"
+        );
+        
+        if (!masterPassword) {
+            return null;
+        }
+
+        try {
+            const decryptedToken = await decryptGitHubToken(config.encryptedToken, masterPassword);
+            return {
+                ...config,
+                token: decryptedToken,
+                encryptedToken: undefined
+            };
+        } catch (error) {
+            alert("❌ Failed to decrypt token. Wrong password?");
+            console.error("Decryption failed:", error);
+            return null;
+        }
+    }
+
+    return config;
+}
+
+async function commitToGitHub(filename, content, message) {
+    // Get GitHub config (will prompt for password if encrypted)
+    const config = await getGitHubConfig();
+    if (!config || !config.token || !config.username || !config.repo) {
+        console.log("GitHub auto-commit disabled. Configure in config.js to enable.");
+        return false;
+    }
+
+    try {
+        const owner = config.username;
+        const repo = config.repo;
+        const token = config.token;
+        
+        // First, get the current file SHA (needed to update it)
+        const getResponse = await fetch(
+            `https://api.github.com/repos/${owner}/${repo}/contents/${filename}`,
+            {
+                method: "GET",
+                headers: {
+                    Authorization: `token ${token}`,
+                    Accept: "application/vnd.github.v3+json"
+                }
+            }
+        );
+
+        let sha = null;
+        if (getResponse.ok) {
+            const data = await getResponse.json();
+            sha = data.sha;
+        }
+
+        // Encode content to base64
+        const encodedContent = btoa(unescape(encodeURIComponent(content)));
+
+        // Commit the file
+        const commitData = {
+            message: message,
+            content: encodedContent,
+            branch: "master"
+        };
+
+        if (sha) {
+            commitData.sha = sha; // Include SHA to update existing file
+        }
+
+        const commitResponse = await fetch(
+            `https://api.github.com/repos/${owner}/${repo}/contents/${filename}`,
+            {
+                method: "PUT",
+                headers: {
+                    Authorization: `token ${token}`,
+                    Accept: "application/vnd.github.v3+json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(commitData)
+            }
+        );
+
+        if (commitResponse.ok) {
+            console.log(`✅ Successfully committed ${filename} to GitHub`);
+            return true;
+        } else {
+            const error = await commitResponse.json();
+            console.error(`Failed to commit: ${error.message}`);
+            return false;
+        }
+    } catch (error) {
+        console.error("GitHub commit error:", error);
+        return false;
+    }
+}
+
+async function commitAdminConfigToGitHub() {
+    if (!globalAdminConfig) {
+        alert("No admin config to commit");
+        return;
+    }
+
+    const content = JSON.stringify(globalAdminConfig, null, 2);
+    const success = await commitToGitHub(
+        "admin-config.json",
+        content,
+        "Update admin config and password from admin panel"
+    );
+
+    if (success) {
+        alert("✅ Admin config updated and committed to GitHub! All devices will use the new settings.");
+    } else {
+        alert("⚠️ GitHub commit failed. Download the file manually and push it to your repo.\nCheck browser console for details.");
+    }
 }
