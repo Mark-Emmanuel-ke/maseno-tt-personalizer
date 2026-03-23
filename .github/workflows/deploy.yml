@@ -28,10 +28,7 @@ jobs:
         run: |
           cat > config.js << 'EOF'
           window.APP_CONFIG = {
-              // Admin passcode hash (from secrets)
               adminPasscodeHash: "${{ secrets.ADMIN_PASSCODE_HASH }}",
-              
-              // GitHub Configuration with plain token
               github: {
                   username: "${{ secrets.USERNAME }}",
                   repo: "${{ secrets.REPO_NAME }}",
@@ -39,10 +36,8 @@ jobs:
               }
           };
           EOF
-        env:
-          ADMIN_PASSCODE_HASH: ${{ secrets.ADMIN_PASSCODE_HASH }}
-          USERNAME: ${{ secrets.USERNAME }}
-          REPO_NAME: ${{ secrets.REPO_NAME }}
+          echo "=== config.js created ==="
+          cat config.js
           ENCRYPTED_TOKEN: ${{ secrets.ENCRYPTED_TOKEN }}
 
       - name: Setup Pages
