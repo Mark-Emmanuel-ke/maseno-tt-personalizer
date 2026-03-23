@@ -177,15 +177,14 @@ function renderSlotTable(entries, slotKey, title) {
         }
 
         hasRows = true;
-        html += `<tr><th rowspan="${slotUnits.length + 1}">${formatDay(entry.day)}</th></tr><tr>`;
-
-        slotUnits.forEach((unit) => {
-            hasRows = true;
+        slotUnits.forEach((unit, index) => {
             const venue = Array.isArray(unit.venue) ? unit.venue : unit.hall;
-            html += `<td>${unit.name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+            if (index === 0) {
+                html += `<tr><th rowspan="${slotUnits.length}">${formatDay(entry.day)}</th><td>${unit.name}</td><td>${(venue || []).join(", ")}</td></tr>`;
+            } else {
+                html += `<tr><td>${unit.name}</td><td>${(venue || []).join(", ")}</td></tr>`;
+            }
         });
-
-        html += "</tr>";
     });
 
     html += hasRows ? "</table>" : "<tr><td>No units in this session</td></tr></table>";
