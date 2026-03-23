@@ -199,6 +199,7 @@ th{
         font-weight: 700;
         letter-spacing: .2px;
         padding: 11px 12px;
+        box-shadow: 0 6px 16px rgba(0,0,0,.22);
     }
     .action-btn{
         background: linear-gradient(90deg,#06b6d4,#3b82f6);
@@ -212,6 +213,10 @@ th{
         position: sticky;
         bottom: 0;
         background: #fff;
-        padding-top: 6px;
+        padding: 6px 0 calc(6px + env(safe-area-inset-bottom));
+    }
+    .generate.action-btn:active,
+    .download:active{
+        transform: translateY(1px) scale(.995);
     }
 }
