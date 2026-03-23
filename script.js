@@ -79,6 +79,12 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+// Admin close button
+const adminCloseBtn = document.querySelector("#adminCloseBtn");
+if (adminCloseBtn) {
+    adminCloseBtn.addEventListener("click", closeAdminPanel);
+}
+
 // Triple-click copyright for admin access
 const footerCredit = document.querySelector(".footer-credit");
 let creditClickCount = 0;
