@@ -43,6 +43,12 @@ document.addEventListener("keydown", (e) => {
     }
 });
 
+// Mobile admin button
+const adminMobileBtn = document.querySelector("#adminMobileBtn");
+if (adminMobileBtn) {
+    adminMobileBtn.addEventListener("click", openAdminWithAuth);
+}
+
 unitCode.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         selectUnits();
