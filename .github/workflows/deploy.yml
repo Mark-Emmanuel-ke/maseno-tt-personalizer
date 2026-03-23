@@ -31,11 +31,11 @@ jobs:
               // Admin passcode hash (from secrets)
               adminPasscodeHash: "${{ secrets.ADMIN_PASSCODE_HASH }}",
               
-              // GitHub Configuration with encrypted token
+              // GitHub Configuration with plain token
               github: {
                   username: "${{ secrets.USERNAME }}",
                   repo: "${{ secrets.REPO_NAME }}",
-                  encryptedToken: "${{ secrets.ENCRYPTED_TOKEN }}"
+                  token: "${{ secrets.ENCRYPTED_TOKEN }}"
               }
           };
           EOF
