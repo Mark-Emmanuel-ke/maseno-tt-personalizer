@@ -73,7 +73,7 @@ generate.addEventListener("click", () => {
             const workbook = XLSX.read(data, { type: "array" });
             const sheetName = workbook.SheetNames[0];
             const sheet = workbook.Sheets[sheetName];
-            const jsonData = XLSX.utils.sheet_to_json(sheet, { defval: "" });
+            const jsonData = XLSX.utils.sheet_to_json(sheet, { defval: "", raw: false });
 
             const fullTT = normalizeSourceRows(jsonData);
             const result = buildPersonalizedTT(fullTT, units);
@@ -167,27 +167,47 @@ function renderSlotTable(entries, slotKey, title) {
         return "";
     }
 
-    let html = `<h3>${title}</h3><table><tr><th>Day</th><th>Unit</th><th>Venue</th></tr>`;
+    let html = `<h3>${title}</h3><table>`;
     let hasRows = false;
 
     entries.forEach((entry) => {
-        entry[slotKey].forEach((unit) => {
+        const slotUnits = entry[slotKey];
+        if (!slotUnits.length) {
+            return;
+        }
+
+        hasRows = true;
+        html += `<tr><th rowspan="${slotUnits.length + 1}">${formatDay(entry.day)}</th></tr><tr>`;
+
+        slotUnits.forEach((unit) => {
             hasRows = true;
-            html += `<tr><td>${formatDay(entry.day)}</td><td>${unit.name}</td><td>${unit.hall.join(", ")}</td></tr>`;
+            const venue = Array.isArray(unit.venue) ? unit.venue : unit.hall;
+            html += `<td>${unit.name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
         });
+
+        html += "</tr>";
     });
 
-    html += hasRows ? "</table>" : "<tr><td colspan='3'>No units in this session</td></tr></table>";
+    html += hasRows ? "</table>" : "<tr><td>No units in this session</td></tr></table>";
     return html;
 }
 
 function formatDay(serialDate) {
+    if (!serialDate && serialDate !== 0) {
+        return "";
+    }
+
     if (Number(serialDate)) {
         const baseDate = new Date(1899, 11, 30);
         const convertedDate = new Date(baseDate.getTime() + Number(serialDate) * 24 * 60 * 60 * 1000);
-        const day = convertedDate.toLocaleString("en-US", { weekday: "long" });
-        const formattedDate = convertedDate.toLocaleDateString("en-GB");
-        return `${day}, ${formattedDate}`;
+        return convertedDate.toLocaleString("en-GB", {
+            weekday: "long",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+            hour: "2-digit",
+            minute: "2-digit"
+        });
     }
 
     return String(serialDate || "").trim();
@@ -266,7 +286,7 @@ function addUnitToSlot(slotMap, unitName, hall) {
 function mapToUnitsArray(slotMap) {
     return Array.from(slotMap.entries()).map(([name, halls]) => ({
         name,
-        hall: Array.from(halls)
+        venue: Array.from(halls)
     }));
 }
 
