@@ -151,9 +151,9 @@ function displayUnits() {
 }
 
 function generateTable(any) {
-    let table1 = `<table style="width: 66vw">`;
-    let table2 = `<table style="width: 66vw">`;
-    let table3 = `<table style="width: 66vw">`;
+    let table1 = `<table style="width: 66vw"><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
+    let table2 = `<table style="width: 66vw"><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
+    let table3 = `<table style="width: 66vw"><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
 
     any.forEach(entry => {
         if (entry.unit1.length > 0) {
