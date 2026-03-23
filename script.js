@@ -1,13 +1,25 @@
 const STORAGE_KEYS = {
     units: "units",
     savedTimetable: "saved",
+    savedHeaders: "saved_headers",
     visitLogs: "site_visit_logs",
     adminPasscodeHash: "admin_passcode_hash",
     adminTimetable: "admin_uploaded_timetable"
 };
 
+const DEFAULT_HEADERS = {
+    day: "Day/Date",
+    unit1: "Unit",
+    venue1: "Venue",
+    unit2: "Unit",
+    venue2: "Venue",
+    unit3: "Unit",
+    venue3: "Venue"
+};
+
 const units = JSON.parse(localStorage.getItem(STORAGE_KEYS.units)) || [];
 let myUnits = JSON.parse(localStorage.getItem(STORAGE_KEYS.savedTimetable)) || [];
+let timetableHeaders = JSON.parse(localStorage.getItem(STORAGE_KEYS.savedHeaders) || "null") || { ...DEFAULT_HEADERS };
 
 const add = document.querySelector("#add");
 const unitCode = document.querySelector("#code");
@@ -63,12 +75,14 @@ generate.addEventListener("click", () => {
         return;
     }
 
-    const processWithFullTT = (fullTT) => {
+    const processWithFullTT = (fullTT, headers) => {
         try {
             const result = buildPersonalizedTT(fullTT, units);
 
             myUnits = result.personalized;
+            timetableHeaders = headers || { ...DEFAULT_HEADERS };
             localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
+            localStorage.setItem(STORAGE_KEYS.savedHeaders, JSON.stringify(timetableHeaders));
             generateTable(myUnits);
 
             if (result.notFound > 0) {
@@ -85,8 +99,8 @@ generate.addEventListener("click", () => {
         reader.onload = (e) => {
             try {
                 const data = new Uint8Array(e.target.result);
-                const fullTT = parseWorkbookToFullTT(data);
-                processWithFullTT(fullTT);
+                const parsed = parseWorkbookToFullTT(data);
+                processWithFullTT(parsed.fullTT, parsed.headers);
             } catch (error) {
                 alert("Failed to read the selected timetable file.");
                 console.error(error);
@@ -98,7 +112,10 @@ generate.addEventListener("click", () => {
     };
 
     const storedAdminTT = JSON.parse(localStorage.getItem(STORAGE_KEYS.adminTimetable) || "{}");
-    processWithFullTT(Array.isArray(storedAdminTT.fullTT) ? storedAdminTT.fullTT : []);
+    processWithFullTT(
+        Array.isArray(storedAdminTT.fullTT) ? storedAdminTT.fullTT : [],
+        storedAdminTT.headers || { ...DEFAULT_HEADERS }
+    );
 });
 
 function selectUnits() {
@@ -151,9 +168,9 @@ function displayUnits() {
 }
 
 function generateTable(entries) {
-    const table1 = renderSlotTable(entries, "unit1", "Session 1 (7:00 AM - 9:00 AM)");
-    const table2 = renderSlotTable(entries, "unit2", "Session 2 (10:00 AM - 12:00 PM)");
-    const table3 = renderSlotTable(entries, "unit3", "Session 3 (2:00 PM - 4:00 PM)");
+    const table1 = renderSlotTable(entries, "unit1", "Session 1", timetableHeaders.unit1, timetableHeaders.venue1);
+    const table2 = renderSlotTable(entries, "unit2", "Session 2", timetableHeaders.unit2, timetableHeaders.venue2);
+    const table3 = renderSlotTable(entries, "unit3", "Session 3", timetableHeaders.unit3, timetableHeaders.venue3);
 
     outputTT.innerHTML = table1 + table2 + table3;
     outputActions.innerHTML = entries.length
@@ -169,13 +186,15 @@ function generateTable(entries) {
     }
 }
 
-function renderSlotTable(entries, slotKey, title) {
+function renderSlotTable(entries, slotKey, title, dynamicUnitHeader, venueHeader) {
     if (!entries.length) {
         return "";
     }
 
-    const sessionTime = getSessionTimeFromTitle(title);
-    let html = `<h3>${title}</h3><table><tr><th>Day/Date</th><th>${sessionTime}</th><th>Venue</th></tr>`;
+    const dayHeader = timetableHeaders.day || DEFAULT_HEADERS.day;
+    const secondHeader = dynamicUnitHeader || DEFAULT_HEADERS.unit1;
+    const thirdHeader = venueHeader || DEFAULT_HEADERS.venue1;
+    let html = `<h3>${title}</h3><table><tr><th>${dayHeader}</th><th>${secondHeader}</th><th>${thirdHeader}</th></tr>`;
     let hasRows = false;
 
     entries.forEach((entry) => {
@@ -199,17 +218,15 @@ function renderSlotTable(entries, slotKey, title) {
     return html;
 }
 
-function getSessionTimeFromTitle(title) {
-    const match = String(title || "").match(/\(([^)]+)\)/);
-    return match ? match[1] : "Unit";
-}
-
 function parseWorkbookToFullTT(data) {
     const workbook = XLSX.read(data, { type: "array" });
     const sheetName = workbook.SheetNames[0];
     const sheet = workbook.Sheets[sheetName];
     const jsonData = XLSX.utils.sheet_to_json(sheet, { defval: "", raw: false });
-    return normalizeSourceRows(jsonData);
+    return {
+        fullTT: normalizeSourceRows(jsonData),
+        headers: extractSessionHeaders(jsonData)
+    };
 }
 
 function formatDay(serialDate) {
@@ -244,7 +261,8 @@ function normalizeSourceRows(jsonData) {
             unit3: row["__EMPTY_6"] || "",
             venue3: row["__EMPTY_8"] || ""
         }))
-        .filter((r) => r.day || r.unit1 || r.unit2 || r.unit3);
+        .filter((r) => r.day || r.unit1 || r.unit2 || r.unit3)
+        .filter((r) => !isHeaderLikeRow(r));
 
     let currentDay = "";
     const normalized = raw.map((row) => {
@@ -285,6 +303,46 @@ function normalizeSourceRows(jsonData) {
         unit2: mapToUnitsArray(entry.unit2),
         unit3: mapToUnitsArray(entry.unit3)
     }));
+}
+
+function extractSessionHeaders(jsonData) {
+    for (const row of jsonData) {
+        const candidate = {
+            day: String(row[" MASENO UNIVERSITY"] || row["MASENO UNIVERSITY"] || "").trim(),
+            unit1: String(row["__EMPTY"] || "").trim(),
+            venue1: String(row["__EMPTY_2"] || "").trim(),
+            unit2: String(row["__EMPTY_3"] || "").trim(),
+            venue2: String(row["__EMPTY_5"] || "").trim(),
+            unit3: String(row["__EMPTY_6"] || "").trim(),
+            venue3: String(row["__EMPTY_8"] || "").trim()
+        };
+
+        if (isHeaderLikeRow(candidate)) {
+            return {
+                day: candidate.day || DEFAULT_HEADERS.day,
+                unit1: candidate.unit1 || DEFAULT_HEADERS.unit1,
+                venue1: candidate.venue1 || DEFAULT_HEADERS.venue1,
+                unit2: candidate.unit2 || DEFAULT_HEADERS.unit2,
+                venue2: candidate.venue2 || DEFAULT_HEADERS.venue2,
+                unit3: candidate.unit3 || DEFAULT_HEADERS.unit3,
+                venue3: candidate.venue3 || DEFAULT_HEADERS.venue3
+            };
+        }
+    }
+
+    return { ...DEFAULT_HEADERS };
+}
+
+function isHeaderLikeRow(row) {
+    const dayValue = String(row.day || "").trim();
+    const units = [row.unit1, row.unit2, row.unit3].map((v) => String(v || "").trim());
+    const venues = [row.venue1, row.venue2, row.venue3].map((v) => String(v || "").trim());
+
+    const dayLike = /day|date/i.test(dayValue);
+    const venueLike = venues.some((v) => /venue|hall/i.test(v));
+    const timeLikeCount = units.filter((u) => /\d/.test(u) && /-|:|to/i.test(u)).length;
+
+    return dayLike || venueLike || timeLikeCount >= 2;
 }
 
 function addUnitToSlot(slotMap, unitName, hall) {
@@ -493,7 +551,8 @@ async function uploadAdminSourceTimetable() {
             const fullTT = parseWorkbookToFullTT(data);
             localStorage.setItem(STORAGE_KEYS.adminTimetable, JSON.stringify({
                 at: new Date().toISOString(),
-                fullTT
+                fullTT: fullTT.fullTT,
+                headers: fullTT.headers
             }));
             alert("Default timetable uploaded successfully");
             renderAdminDashboard();
