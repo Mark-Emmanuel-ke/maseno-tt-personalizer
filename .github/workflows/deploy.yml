@@ -26,7 +26,7 @@ jobs:
 
       - name: Create config.js from secrets
         run: |
-          cat > config.js << 'EOF'
+          cat > config.js << EOF
           window.APP_CONFIG = {
               adminPasscodeHash: "${{ secrets.ADMIN_PASSCODE_HASH }}",
               github: {
