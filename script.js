@@ -174,7 +174,8 @@ function renderSlotTable(entries, slotKey, title) {
         return "";
     }
 
-    let html = `<h3>${title}</h3><table><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
+    const sessionTime = getSessionTimeFromTitle(title);
+    let html = `<h3>${title}</h3><table><tr><th>Day/Date</th><th>${sessionTime}</th><th>Venue</th></tr>`;
     let hasRows = false;
 
     entries.forEach((entry) => {
@@ -196,6 +197,11 @@ function renderSlotTable(entries, slotKey, title) {
 
     html += hasRows ? "</table>" : "<tr><td colspan='3'>No units in this session</td></tr></table>";
     return html;
+}
+
+function getSessionTimeFromTitle(title) {
+    const match = String(title || "").match(/\(([^)]+)\)/);
+    return match ? match[1] : "Unit";
 }
 
 function parseWorkbookToFullTT(data) {
