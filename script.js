@@ -2,7 +2,8 @@ const STORAGE_KEYS = {
     units: "units",
     savedTimetable: "saved",
     visitLogs: "site_visit_logs",
-    adminPasscode: "admin_passcode"
+    adminPasscodeHash: "admin_passcode_hash",
+    adminTimetable: "admin_uploaded_timetable"
 };
 
 const units = JSON.parse(localStorage.getItem(STORAGE_KEYS.units)) || [];
@@ -20,10 +21,6 @@ const adminPanel = document.querySelector("#adminPanel");
 const adminStats = document.querySelector(".admin-stats");
 const adminControls = document.querySelector(".admin-controls");
 const adminLogs = document.querySelector(".admin-logs");
-
-if (!localStorage.getItem(STORAGE_KEYS.adminPasscode)) {
-    localStorage.setItem(STORAGE_KEYS.adminPasscode, "maseno2026");
-}
 
 if (myUnits.length > 0) {
     generateTable(myUnits);
@@ -61,21 +58,13 @@ generate.addEventListener("click", () => {
     }
 
     const file = fileInput.files[0];
-    if (!file) {
-        alert("You haven't selected a source TimeTable");
+    if (!file && !localStorage.getItem(STORAGE_KEYS.adminTimetable)) {
+        alert("No source timetable found. Upload one or ask admin to upload a default timetable.");
         return;
     }
 
-    const reader = new FileReader();
-    reader.onload = (e) => {
+    const processWithFullTT = (fullTT) => {
         try {
-            const data = new Uint8Array(e.target.result);
-            const workbook = XLSX.read(data, { type: "array" });
-            const sheetName = workbook.SheetNames[0];
-            const sheet = workbook.Sheets[sheetName];
-            const jsonData = XLSX.utils.sheet_to_json(sheet, { defval: "", raw: false });
-
-            const fullTT = normalizeSourceRows(jsonData);
             const result = buildPersonalizedTT(fullTT, units);
 
             myUnits = result.personalized;
@@ -91,7 +80,25 @@ generate.addEventListener("click", () => {
         }
     };
 
-    reader.readAsArrayBuffer(file);
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            try {
+                const data = new Uint8Array(e.target.result);
+                const fullTT = parseWorkbookToFullTT(data);
+                processWithFullTT(fullTT);
+            } catch (error) {
+                alert("Failed to read the selected timetable file.");
+                console.error(error);
+            }
+        };
+
+        reader.readAsArrayBuffer(file);
+        return;
+    };
+
+    const storedAdminTT = JSON.parse(localStorage.getItem(STORAGE_KEYS.adminTimetable) || "{}");
+    processWithFullTT(Array.isArray(storedAdminTT.fullTT) ? storedAdminTT.fullTT : []);
 });
 
 function selectUnits() {
@@ -167,7 +174,7 @@ function renderSlotTable(entries, slotKey, title) {
         return "";
     }
 
-    let html = `<h3>${title}</h3><table>`;
+    let html = `<h3>${title}</h3><table><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
     let hasRows = false;
 
     entries.forEach((entry) => {
@@ -187,8 +194,16 @@ function renderSlotTable(entries, slotKey, title) {
         });
     });
 
-    html += hasRows ? "</table>" : "<tr><td>No units in this session</td></tr></table>";
+    html += hasRows ? "</table>" : "<tr><td colspan='3'>No units in this session</td></tr></table>";
     return html;
+}
+
+function parseWorkbookToFullTT(data) {
+    const workbook = XLSX.read(data, { type: "array" });
+    const sheetName = workbook.SheetNames[0];
+    const sheet = workbook.Sheets[sheetName];
+    const jsonData = XLSX.utils.sheet_to_json(sheet, { defval: "", raw: false });
+    return normalizeSourceRows(jsonData);
 }
 
 function formatDay(serialDate) {
@@ -354,11 +369,39 @@ async function getVisitorIp() {
     }
 }
 
-function openAdminWithAuth() {
-    const code = prompt("Enter admin passcode");
-    const savedPasscode = localStorage.getItem(STORAGE_KEYS.adminPasscode) || "";
+async function openAdminWithAuth() {
+    const configuredHash = await getConfiguredAdminPasscodeHash();
+    if (!configuredHash) {
+        const shouldSetup = confirm("Admin passcode is not configured. Set it now?");
+        if (!shouldSetup) {
+            return;
+        }
 
-    if (code !== savedPasscode) {
+        const first = prompt("Create new admin passcode");
+        if (!first) {
+            return;
+        }
+
+        const second = prompt("Confirm new admin passcode");
+        if (first !== second) {
+            alert("Passcodes do not match");
+            return;
+        }
+
+        const hash = await sha256(first);
+        localStorage.setItem(STORAGE_KEYS.adminPasscodeHash, hash);
+        alert("Admin passcode saved in this browser.");
+    }
+
+    const code = prompt("Enter admin passcode");
+    if (!code) {
+        return;
+    }
+
+    const savedPasscodeHash = await getConfiguredAdminPasscodeHash();
+    const enteredHash = await sha256(code);
+
+    if (enteredHash !== savedPasscodeHash) {
         alert("Access denied");
         return;
     }
@@ -376,14 +419,38 @@ function closeAdminPanel() {
 function renderAdminDashboard() {
     const logs = JSON.parse(localStorage.getItem(STORAGE_KEYS.visitLogs)) || [];
     const uniqueIps = new Set(logs.map((log) => log.ip).filter((ip) => ip && ip !== "Unavailable")).size;
+    const adminTimetable = JSON.parse(localStorage.getItem(STORAGE_KEYS.adminTimetable));
 
     adminStats.innerHTML = `
         <p><strong>Total Visits:</strong> ${logs.length}</p>
         <p><strong>Unique IPs:</strong> ${uniqueIps}</p>
         <p><strong>Latest Visit:</strong> ${logs.length ? new Date(logs[logs.length - 1].at).toLocaleString() : "-"}</p>
+        <p><strong>Default Timetable:</strong> ${adminTimetable ? `Uploaded (${new Date(adminTimetable.at).toLocaleString()})` : "Not uploaded"}</p>
     `;
 
-    adminControls.innerHTML = "<button class='clear-logs'>Clear Logs</button>";
+    adminControls.innerHTML = `
+        <div class="admin-source-tools">
+            <input id="adminTtFile" type="file" accept=".xlsx,.xls">
+            <button class='upload-source'>Upload Default TT</button>
+            <button class='clear-source'>Remove Default TT</button>
+            <button class='clear-logs'>Clear Logs</button>
+        </div>
+    `;
+
+    const uploadSourceBtn = adminControls.querySelector(".upload-source");
+    uploadSourceBtn.addEventListener("click", uploadAdminSourceTimetable);
+
+    const clearSourceBtn = adminControls.querySelector(".clear-source");
+    clearSourceBtn.addEventListener("click", () => {
+        const okay = confirm("Remove uploaded default timetable?");
+        if (!okay) {
+            return;
+        }
+
+        localStorage.removeItem(STORAGE_KEYS.adminTimetable);
+        renderAdminDashboard();
+    });
+
     const clearLogsBtn = adminControls.querySelector(".clear-logs");
     clearLogsBtn.addEventListener("click", () => {
         const okay = confirm("Clear all locally stored visit logs?");
@@ -403,4 +470,49 @@ function renderAdminDashboard() {
     rows += "</table>";
 
     adminLogs.innerHTML = `<h4>Recent Visits</h4>${rows}`;
+}
+
+async function uploadAdminSourceTimetable() {
+    const adminFileInput = document.querySelector("#adminTtFile");
+    const file = adminFileInput.files[0];
+    if (!file) {
+        alert("Choose a timetable file first");
+        return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        try {
+            const data = new Uint8Array(e.target.result);
+            const fullTT = parseWorkbookToFullTT(data);
+            localStorage.setItem(STORAGE_KEYS.adminTimetable, JSON.stringify({
+                at: new Date().toISOString(),
+                fullTT
+            }));
+            alert("Default timetable uploaded successfully");
+            renderAdminDashboard();
+        } catch (error) {
+            alert("Failed to upload default timetable");
+            console.error(error);
+        }
+    };
+
+    reader.readAsArrayBuffer(file);
+}
+
+async function sha256(value) {
+    const encoded = new TextEncoder().encode(value);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", encoded);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+}
+
+async function getConfiguredAdminPasscodeHash() {
+    const externalHash = window.APP_CONFIG && window.APP_CONFIG.adminPasscodeHash;
+    if (externalHash) {
+        return String(externalHash).trim();
+    }
+
+    const localHash = localStorage.getItem(STORAGE_KEYS.adminPasscodeHash) || "";
+    return localHash.trim();
 }

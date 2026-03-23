@@ -75,6 +75,12 @@ label{
     font-style: italic;
     display: inline-block;
 }
+.source-note{
+    display: inline-block;
+    margin-top: 6px;
+    color: #42564a;
+    font-size: .82rem;
+}
 .separator{
     width: 1px;
     background-color: #1f7a3f;
@@ -165,14 +171,23 @@ th{
     margin-top: 6px;
 }
 .admin-controls{
-    display: flex;
-    justify-content: flex-end;
+    display: block;
     margin: 8px 0;
 }
 .admin-controls button{
     background: #334155;
     color: #f8fafc;
     box-shadow: none;
+}
+.admin-source-tools{
+    display: grid;
+    gap: 6px;
+}
+.admin-source-tools input[type='file']{
+    color: #e2e8f0;
+    box-shadow: none;
+    border: 1px solid #3e4c5f;
+    background: #0f172a;
 }
 .hidden{
     display: none;

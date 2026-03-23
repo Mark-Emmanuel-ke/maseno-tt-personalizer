@@ -21,9 +21,10 @@
             </div>
             <label for="file">Source TimeTable</label><br/>
             <div class="fileGen">
-                <input id="file" required type="file" name="file">
+                <input id="file" type="file" name="file">
                 <button class="generate action-btn">Generate TT</button>
             </div>
+            <small class="source-note">If no file is selected, a default admin timetable will be used (if uploaded).</small>
         </div>
         <div class="separator"></div>
         <div class="outputWrap">
@@ -33,13 +34,14 @@
     </div>
 
     <section id="adminPanel" class="admin-panel hidden" aria-hidden="true">
-        <h3>Admin Dashboard</h3>
+        <h3>Visitor Logs</h3>
         <p class="admin-hint">Hidden mode active. Press Esc to close.</p>
         <div class="admin-stats"></div>
         <div class="admin-controls"></div>
         <div class="admin-logs"></div>
     </section>
 
+    <script src="./config.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <script src="./script.js"></script>
 </body>
