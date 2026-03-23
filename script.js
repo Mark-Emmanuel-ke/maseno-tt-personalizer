@@ -63,21 +63,165 @@ generate.addEventListener("click", () => {
         return;
     }
 
-    const processWithFullTT = (fullTT) => {
-        try {
-            const result = buildPersonalizedTT(fullTT, units);
+    const processFile = (data) => {
+        const workbook = XLSX.read(data, { type: "array" });
+        const sheetName = workbook.SheetNames[0];
+        const sheet = workbook.Sheets[sheetName];
+        const jsonData = XLSX.utils.sheet_to_json(sheet);
 
-            myUnits = result.personalized;
-            localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
-            generateTable(myUnits);
+        const tempTT = {
+            day: "",
+            unit1: "",
+            venue1: "",
+            unit2: "",
+            venue2: "",
+            unit3: "",
+            venue3: ""
+        };
+        const TT = [];
+        jsonData.forEach(value => {
+            const keys = Object.keys(value);
+            keys.forEach(key => {
+                const match = [" MASENO UNIVERSITY", "__EMPTY", "__EMPTY_2", "__EMPTY_3", "__EMPTY_5", "__EMPTY_6", "__EMPTY_8"];
+                for (let i = 0; i < match.length; i++) {
+                    if (match[i] == key) {
+                        if (i == 0) {
+                            tempTT["day"] = value[match[i]];
+                        } else if (i == 1) {
+                            tempTT["unit1"] = value[match[i]];
+                        } else if (i == 2) {
+                            tempTT["venue1"] = value[match[i]];
+                        } else if (i == 3) {
+                            tempTT["unit2"] = value[match[i]];
+                        } else if (i == 4) {
+                            tempTT["venue2"] = value[match[i]];
+                        } else if (i == 5) {
+                            tempTT["unit3"] = value[match[i]];
+                        } else if (i == 6) {
+                            tempTT["venue3"] = value[match[i]];
+                        }
+                    }
+                }
+            });
+            TT.push({ ...tempTT });
+        });
 
-            if (result.notFound > 0) {
-                alert(`${result.notFound} unit(s) not found. Double-check unit codes and generate again.`);
+        const wholeTT = [];
+        let found = 0;
+
+        TT.forEach((obj, index) => {
+            const format = {
+                day: obj.day || "",
+                unit1: [],
+                unit2: [],
+                unit3: []
+            };
+
+            if (!obj["unit1"]) {
+                return;
+            } else if (index == 2) {
+                format.day = obj.day;
+                format.unit1.push({ name: obj.unit1, hall: [obj.venue1] });
+                format.unit2.push({ name: obj.unit2, hall: [obj.venue2] });
+                format.unit3.push({ name: obj.unit3, hall: [obj.venue3] });
+                wholeTT.push({ ...format });
+            } else {
+                if (obj["day"] === wholeTT[wholeTT.length - 1].day) {
+                    let lastEntry = wholeTT[wholeTT.length - 1];
+
+                    let unit1 = lastEntry.unit1.find(value => value.name === obj.unit1);
+                    if (unit1) {
+                        if (!unit1.hall.includes(obj.venue1)) {
+                            unit1.hall.push(obj.venue1);
+                        }
+                    } else {
+                        lastEntry.unit1.push({ name: obj.unit1, hall: [obj.venue1] });
+                    }
+
+                    let unit2 = lastEntry.unit2.find(value => value.name === obj.unit2);
+                    if (unit2) {
+                        if (!unit2.hall.includes(obj.venue2)) {
+                            unit2.hall.push(obj.venue2);
+                        }
+                    } else {
+                        lastEntry.unit2.push({ name: obj.unit2, hall: [obj.venue2] });
+                    }
+
+                    let unit3 = lastEntry.unit3.find(value => value.name === obj.unit3);
+                    if (unit3) {
+                        if (!unit3.hall.includes(obj.venue3)) {
+                            unit3.hall.push(obj.venue3);
+                        }
+                    } else {
+                        lastEntry.unit3.push({ name: obj.unit3, hall: [obj.venue3] });
+                    }
+                } else {
+                    format.day = obj.day;
+                    format.unit1.push({ name: obj.unit1, hall: [obj.venue1] });
+                    format.unit2.push({ name: obj.unit2, hall: [obj.venue2] });
+                    format.unit3.push({ name: obj.unit3, hall: [obj.venue3] });
+                    wholeTT.push({ ...format });
+                }
             }
-        } catch (error) {
-            alert("Failed to generate timetable. Make sure the source file has the expected format.");
-            console.error(error);
+        });
+
+        const regex = new RegExp(`^(${units.map(unit => unit.code).join("|")})`, "i");
+        myUnits = [];
+        myUnits.push(wholeTT[0]);
+
+        wholeTT.forEach(each => {
+            each.unit1.forEach(n => {
+                if (regex.test(n.name)) {
+                    found++;
+                    const format = {
+                        day: "",
+                        unit1: [],
+                        unit2: [],
+                        unit3: []
+                    };
+                    format.day = each.day;
+                    format.unit1.push({ name: n.name, hall: [...n.hall] });
+                    myUnits.push({ ...format });
+                }
+            });
+
+            each.unit2.forEach(n => {
+                if (regex.test(n.name)) {
+                    found++;
+                    const format = {
+                        day: "",
+                        unit1: [],
+                        unit2: [],
+                        unit3: []
+                    };
+                    format.day = each.day;
+                    format.unit2.push({ name: n.name, hall: [...n.hall] });
+                    myUnits.push({ ...format });
+                }
+            });
+
+            each.unit3.forEach(n => {
+                if (regex.test(n.name)) {
+                    found++;
+                    const format = {
+                        day: "",
+                        unit1: [],
+                        unit2: [],
+                        unit3: []
+                    };
+                    format.day = each.day;
+                    format.unit3.push({ name: n.name, hall: [...n.hall] });
+                    myUnits.push({ ...format });
+                }
+            });
+        });
+
+        generateTable(myUnits);
+        const notFound = units.length - found;
+        if (notFound > 0) {
+            alert(`${notFound} unit(s) not found,\nDouble check the unit codes and generate again`);
         }
+        localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
     };
 
     if (file) {
@@ -85,20 +229,20 @@ generate.addEventListener("click", () => {
         reader.onload = (e) => {
             try {
                 const data = new Uint8Array(e.target.result);
-                const fullTT = parseWorkbookToFullTT(data);
-                processWithFullTT(fullTT);
+                processFile(data);
             } catch (error) {
                 alert("Failed to read the selected timetable file.");
                 console.error(error);
             }
         };
-
         reader.readAsArrayBuffer(file);
         return;
-    };
+    }
 
     const storedAdminTT = JSON.parse(localStorage.getItem(STORAGE_KEYS.adminTimetable) || "{}");
-    processWithFullTT(Array.isArray(storedAdminTT.fullTT) ? storedAdminTT.fullTT : []);
+    if (Array.isArray(storedAdminTT.fullTT)) {
+        processFile(storedAdminTT.fullTT);
+    }
 });
 
 function selectUnits() {
@@ -151,17 +295,22 @@ function displayUnits() {
 }
 
 function generateTable(any) {
-    let table1 = `<table style="width: 66vw"><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
-    let table2 = `<table style="width: 66vw"><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
-    let table3 = `<table style="width: 66vw"><tr><th>Day/Date</th><th>Unit</th><th>Venue</th></tr>`;
+    let table1 = `<table style="width: 66vw">`;
+    let table2 = `<table style="width: 66vw">`;
+    let table3 = `<table style="width: 66vw">`;
+    let firstUnit1 = true;
+    let firstUnit2 = true;
+    let firstUnit3 = true;
 
     any.forEach(entry => {
         if (entry.unit1.length > 0) {
             table1 += `<tr><th rowspan="${entry.unit1.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
         }
         for (let i = 0; i < entry.unit1.length; i++) {
-            const venue = Array.isArray(entry.unit1[i].venue) ? entry.unit1[i].venue : entry.unit1[i].hall;
-            table1 += `<td>${entry.unit1[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+            const isFirst = firstUnit1;
+            if (isFirst) firstUnit1 = false;
+            const cellType = isFirst ? "th" : "td";
+            table1 += `<${cellType}>${entry.unit1[i].name}</${cellType}><${cellType}>${entry.unit1[i].hall}</${cellType}></tr><tr>`;
         }
         table1 += `</tr>`;
 
@@ -169,8 +318,10 @@ function generateTable(any) {
             table2 += `<tr><th rowspan="${entry.unit2.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
         }
         for (let i = 0; i < entry.unit2.length; i++) {
-            const venue = Array.isArray(entry.unit2[i].venue) ? entry.unit2[i].venue : entry.unit2[i].hall;
-            table2 += `<td>${entry.unit2[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+            const isFirst = firstUnit2;
+            if (isFirst) firstUnit2 = false;
+            const cellType = isFirst ? "th" : "td";
+            table2 += `<${cellType}>${entry.unit2[i].name}</${cellType}><${cellType}>${entry.unit2[i].hall}</${cellType}></tr><tr>`;
         }
         table2 += `</tr>`;
 
@@ -178,8 +329,10 @@ function generateTable(any) {
             table3 += `<tr><th rowspan="${entry.unit3.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
         }
         for (let i = 0; i < entry.unit3.length; i++) {
-            const venue = Array.isArray(entry.unit3[i].venue) ? entry.unit3[i].venue : entry.unit3[i].hall;
-            table3 += `<td>${entry.unit3[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+            const isFirst = firstUnit3;
+            if (isFirst) firstUnit3 = false;
+            const cellType = isFirst ? "th" : "td";
+            table3 += `<${cellType}>${entry.unit3[i].name}</${cellType}><${cellType}>${entry.unit3[i].hall}</${cellType}></tr><tr>`;
         }
         table3 += `</tr>`;
     });
@@ -189,9 +342,7 @@ function generateTable(any) {
     table3 += `</table>`;
 
     const outputTT = document.querySelector('.output');
-    outputActions.innerHTML = any.length
-        ? "<button class='download action-btn'>Save Timetable</button>"
-        : "";
+    outputActions.innerHTML = any.length ? "<button class='download action-btn'>Save Timetable</button>" : "";
     outputTT.innerHTML = table1 + table2 + table3;
 
     const downloadBtn = document.querySelector(".download");
