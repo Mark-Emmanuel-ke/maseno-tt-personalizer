@@ -1,0 +1,58 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  workflow_dispatch:  # Allow manual trigger from GitHub
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create config.js from secrets
+        run: |
+          cat > config.js << 'EOF'
+          window.APP_CONFIG = {
+              // Admin passcode hash (from secrets)
+              adminPasscodeHash: "${{ secrets.ADMIN_PASSCODE_HASH }}",
+              
+              // GitHub Configuration with encrypted token
+              github: {
+                  username: "${{ secrets.USERNAME }}",
+                  repo: "${{ secrets.REPO_NAME }}",
+                  encryptedToken: "${{ secrets.ENCRYPTED_TOKEN }}"
+              }
+          };
+          EOF
+        env:
+          ADMIN_PASSCODE_HASH: ${{ secrets.ADMIN_PASSCODE_HASH }}
+          USERNAME: ${{ secrets.USERNAME }}
+          REPO_NAME: ${{ secrets.REPO_NAME }}
+          ENCRYPTED_TOKEN: ${{ secrets.ENCRYPTED_TOKEN }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+
+      - name: Cleanup config.js after deploy
+        if: always()
+        run: rm -f config.js
