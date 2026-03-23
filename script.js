@@ -150,12 +150,12 @@ function displayUnits() {
     });
 }
 
-function generateTable(entries) {
+function generateTable(any) {
     let table1 = `<table style="width: 66vw">`;
     let table2 = `<table style="width: 66vw">`;
     let table3 = `<table style="width: 66vw">`;
 
-    entries.forEach((entry) => {
+    any.forEach(entry => {
         if (entry.unit1.length > 0) {
             table1 += `<tr><th rowspan="${entry.unit1.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
         }
@@ -189,7 +189,7 @@ function generateTable(entries) {
     table3 += `</table>`;
 
     const outputTT = document.querySelector('.output');
-    outputActions.innerHTML = entries.length
+    outputActions.innerHTML = any.length
         ? "<button class='download action-btn'>Save Timetable</button>"
         : "";
     outputTT.innerHTML = table1 + table2 + table3;
@@ -203,30 +203,7 @@ function generateTable(entries) {
     }
 }
 
-function renderSlotTable(entries, slotKey, title) {
-    if (!entries.length) {
-        return "";
-    }
 
-    let html = `<h3>${title}</h3><table style="width: 66vw">`;
-    let hasRows = false;
-
-    entries.forEach((entry) => {
-        const slotUnits = entry[slotKey];
-        if (slotUnits.length > 0) {
-            hasRows = true;
-            html += `<tr><th rowspan="${slotUnits.length + 1}">${formatDay(entry.day)}</th></tr><tr>`;
-            for (let i = 0; i < slotUnits.length; i++) {
-                const venue = Array.isArray(slotUnits[i].venue) ? slotUnits[i].venue : slotUnits[i].hall;
-                html += `<td>${slotUnits[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
-            }
-            html += `</tr>`;
-        }
-    });
-
-    html += `</table><br/>`;
-    return html;
-}
 
 function parseWorkbookToFullTT(data) {
     const workbook = XLSX.read(data, { type: "array" });
