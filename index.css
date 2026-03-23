@@ -164,6 +164,16 @@ th{
 .admin-logs table{
     margin-top: 6px;
 }
+.admin-controls{
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 0;
+}
+.admin-controls button{
+    background: #334155;
+    color: #f8fafc;
+    box-shadow: none;
+}
 .hidden{
     display: none;
 }

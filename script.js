@@ -18,6 +18,7 @@ const outputActions = document.querySelector(".outputActions");
 
 const adminPanel = document.querySelector("#adminPanel");
 const adminStats = document.querySelector(".admin-stats");
+const adminControls = document.querySelector(".admin-controls");
 const adminLogs = document.querySelector(".admin-logs");
 
 if (!localStorage.getItem(STORAGE_KEYS.adminPasscode)) {
@@ -355,11 +356,25 @@ function closeAdminPanel() {
 
 function renderAdminDashboard() {
     const logs = JSON.parse(localStorage.getItem(STORAGE_KEYS.visitLogs)) || [];
+    const uniqueIps = new Set(logs.map((log) => log.ip).filter((ip) => ip && ip !== "Unavailable")).size;
 
     adminStats.innerHTML = `
         <p><strong>Total Visits:</strong> ${logs.length}</p>
+        <p><strong>Unique IPs:</strong> ${uniqueIps}</p>
         <p><strong>Latest Visit:</strong> ${logs.length ? new Date(logs[logs.length - 1].at).toLocaleString() : "-"}</p>
     `;
+
+    adminControls.innerHTML = "<button class='clear-logs'>Clear Logs</button>";
+    const clearLogsBtn = adminControls.querySelector(".clear-logs");
+    clearLogsBtn.addEventListener("click", () => {
+        const okay = confirm("Clear all locally stored visit logs?");
+        if (!okay) {
+            return;
+        }
+
+        localStorage.setItem(STORAGE_KEYS.visitLogs, JSON.stringify([]));
+        renderAdminDashboard();
+    });
 
     const recent = logs.slice(-25).reverse();
     let rows = "<table><tr><th>#</th><th>Time</th><th>IP</th></tr>";
