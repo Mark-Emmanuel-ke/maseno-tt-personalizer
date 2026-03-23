@@ -151,14 +151,48 @@ function displayUnits() {
 }
 
 function generateTable(entries) {
-    const table1 = renderSlotTable(entries, "unit1", "Session 1 (7:00 AM - 9:00 AM)");
-    const table2 = renderSlotTable(entries, "unit2", "Session 2 (10:00 AM - 12:00 PM)");
-    const table3 = renderSlotTable(entries, "unit3", "Session 3 (2:00 PM - 4:00 PM)");
+    let table1 = `<table style="width: 66vw">`;
+    let table2 = `<table style="width: 66vw">`;
+    let table3 = `<table style="width: 66vw">`;
 
-    outputTT.innerHTML = table1 + table2 + table3;
+    entries.forEach((entry) => {
+        if (entry.unit1.length > 0) {
+            table1 += `<tr><th rowspan="${entry.unit1.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
+        }
+        for (let i = 0; i < entry.unit1.length; i++) {
+            const venue = Array.isArray(entry.unit1[i].venue) ? entry.unit1[i].venue : entry.unit1[i].hall;
+            table1 += `<td>${entry.unit1[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+        }
+        table1 += `</tr>`;
+
+        if (entry.unit2.length > 0) {
+            table2 += `<tr><th rowspan="${entry.unit2.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
+        }
+        for (let i = 0; i < entry.unit2.length; i++) {
+            const venue = Array.isArray(entry.unit2[i].venue) ? entry.unit2[i].venue : entry.unit2[i].hall;
+            table2 += `<td>${entry.unit2[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+        }
+        table2 += `</tr>`;
+
+        if (entry.unit3.length > 0) {
+            table3 += `<tr><th rowspan="${entry.unit3.length + 1}">${formatDay(entry['day'])}</th></tr><tr>`;
+        }
+        for (let i = 0; i < entry.unit3.length; i++) {
+            const venue = Array.isArray(entry.unit3[i].venue) ? entry.unit3[i].venue : entry.unit3[i].hall;
+            table3 += `<td>${entry.unit3[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+        }
+        table3 += `</tr>`;
+    });
+
+    table1 += `</table><br/>`;
+    table2 += `</table><br/>`;
+    table3 += `</table>`;
+
+    const outputTT = document.querySelector('.output');
     outputActions.innerHTML = entries.length
         ? "<button class='download action-btn'>Save Timetable</button>"
         : "";
+    outputTT.innerHTML = table1 + table2 + table3;
 
     const downloadBtn = document.querySelector(".download");
     if (downloadBtn) {
@@ -174,27 +208,23 @@ function renderSlotTable(entries, slotKey, title) {
         return "";
     }
 
-    let html = `<h3>${title}</h3><table>`;
+    let html = `<h3>${title}</h3><table style="width: 66vw">`;
     let hasRows = false;
 
     entries.forEach((entry) => {
         const slotUnits = entry[slotKey];
-        if (!slotUnits.length) {
-            return;
-        }
-
-        hasRows = true;
         if (slotUnits.length > 0) {
+            hasRows = true;
             html += `<tr><th rowspan="${slotUnits.length + 1}">${formatDay(entry.day)}</th></tr><tr>`;
+            for (let i = 0; i < slotUnits.length; i++) {
+                const venue = Array.isArray(slotUnits[i].venue) ? slotUnits[i].venue : slotUnits[i].hall;
+                html += `<td>${slotUnits[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
+            }
+            html += `</tr>`;
         }
-        for (let i = 0; i < slotUnits.length; i++) {
-            const venue = Array.isArray(slotUnits[i].venue) ? slotUnits[i].venue : slotUnits[i].hall;
-            html += `<td>${slotUnits[i].name}</td><td>${(venue || []).join(", ")}</td></tr><tr>`;
-        }
-        html += `</tr>`;
     });
 
-    html += hasRows ? "</table>" : "<tr><td>No units in this session</td></tr></table>";
+    html += `</table><br/>`;
     return html;
 }
 

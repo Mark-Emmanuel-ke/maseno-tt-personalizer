@@ -43,6 +43,7 @@ h3{
     border-radius: 10px;
     padding: 10px;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
+    overflow-x: auto;
 }
 button{
     padding: 8px;
@@ -108,6 +109,9 @@ th,td{
     text-align: center;
     padding: 6px;
 }
+tr > td:nth-child(2){
+    text-align: left;
+}
 tr > td:nth-child(3){
     text-align: left;
 }
@@ -116,8 +120,9 @@ tr:nth-child(even){
 }
 
 th{
-    background-color: #dddd;
+    background-color: #a8d5a8;
     color: black;
+    font-weight: bold;
 }
 #add{
     width: 100%;
@@ -142,7 +147,8 @@ th{
 .outputActions{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+    gap: 8px;
 }
 .admin-panel{
     position: fixed;
@@ -201,6 +207,9 @@ th{
         height: 1px;
         width: 100%;
         margin: 2px 0;
+    }
+    table{
+        width: 100% !important;
     }
 }
 
