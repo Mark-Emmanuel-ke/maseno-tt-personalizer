@@ -499,7 +499,7 @@ generate.addEventListener("click", () => {
                 .map(unit => unit.code)
                 .join(", ");
             
-            alert(`${notFound} unit(s) not found: ${notFoundCodes}\n\nPossible reasons:\n• Unit code has changed or is outdated\n• You may have entered the wrong unit code\n• Check the spelling and try again`);
+            alert(`${notFound} unit(s) not found: ${notFoundCodes}\n\nPossible reasons:\n• Unit code has changed or is outdated\n• You may have entered the wrong unit code\n• Unit may not be offered in the selected semester\n• The unit is missing from the master timetable`);
         }
         localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
     }
