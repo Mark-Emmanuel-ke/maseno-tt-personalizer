@@ -323,7 +323,7 @@ generate.addEventListener("click", () => {
                         unit3: []
                     };
                     format.day = each.day;
-                    format.unit1.push({ name: n.name, hall: [...n.hall] });
+                    format.unit1.push({ name: n.name, hall: Array.isArray(n.venue) ? [...n.venue] : [n.venue] });
                     myUnits.push({ ...format });
                 }
             });
@@ -338,7 +338,7 @@ generate.addEventListener("click", () => {
                         unit3: []
                     };
                     format.day = each.day;
-                    format.unit2.push({ name: n.name, hall: [...n.hall] });
+                    format.unit2.push({ name: n.name, hall: Array.isArray(n.venue) ? [...n.venue] : [n.venue] });
                     myUnits.push({ ...format });
                 }
             });
@@ -353,7 +353,7 @@ generate.addEventListener("click", () => {
                         unit3: []
                     };
                     format.day = each.day;
-                    format.unit3.push({ name: n.name, hall: [...n.hall] });
+                    format.unit3.push({ name: n.name, hall: Array.isArray(n.venue) ? [...n.venue] : [n.venue] });
                     myUnits.push({ ...format });
                 }
             });
