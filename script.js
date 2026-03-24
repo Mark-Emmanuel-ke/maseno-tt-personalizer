@@ -123,30 +123,50 @@ add.addEventListener("click", selectUnits);
 function detectClashes(timetable) {
     const clashes = [];
     
+    // Create a map of day -> timeSlot -> units
+    const daySlotMap = {};
+    
     // Skip header row (index 0)
     for (let i = 1; i < timetable.length; i++) {
-        const dayEntry = timetable[i];
+        const entry = timetable[i];
+        const day = entry.day;
         
-        // Check unit1, unit2, unit3 for multiple units on same day/time
-        const timeSlots = [
-            { slot: 'unit1', units: dayEntry.unit1 },
-            { slot: 'unit2', units: dayEntry.unit2 },
-            { slot: 'unit3', units: dayEntry.unit3 }
-        ];
+        if (!daySlotMap[day]) {
+            daySlotMap[day] = {
+                unit1: [],
+                unit2: [],
+                unit3: []
+            };
+        }
         
-        timeSlots.forEach(({ slot, units }) => {
-            if (units.length > 1) {
-                // Multiple units in the same time slot = clash
-                const clashingUnits = units.map(u => u.name).join('\n  • ');
-                clashes.push({
-                    day: dayEntry.day,
-                    timeSlot: slot,
-                    units: clashingUnits,
-                    count: units.length
+        // Collect units in each time slot
+        ['unit1', 'unit2', 'unit3'].forEach(slot => {
+            if (entry[slot] && entry[slot].length > 0) {
+                entry[slot].forEach(unit => {
+                    daySlotMap[day][slot].push(unit.name);
                 });
             }
         });
     }
+    
+    // Check for clashes (multiple units in same slot on same day)
+    Object.keys(daySlotMap).forEach(day => {
+        ['unit1', 'unit2', 'unit3'].forEach(slot => {
+            if (daySlotMap[day][slot].length > 1) {
+                // Get time slot name from header row (index 0)
+                let timeSlotName = slot;
+                if (timetable.length > 0 && timetable[0][slot] && timetable[0][slot].length > 0) {
+                    timeSlotName = timetable[0][slot][0].name; // e.g., "8.30am - 11.30am"
+                }
+                
+                clashes.push({
+                    day: day,
+                    timeSlot: timeSlotName,
+                    units: daySlotMap[day][slot]
+                });
+            }
+        });
+    });
     
     return clashes;
 }
@@ -155,16 +175,20 @@ function detectClashes(timetable) {
 function showClashAlert(clashes) {
     if (clashes.length === 0) return;
     
-    let message = "⚠️ SCHEDULE CLASH DETECTED!\n\nYou have selected units at the same time:\n\n";
+    let message = "⚠️ SCHEDULE CLASH DETECTED!\n\n";
+    message += "You have selected multiple units at the same time:\n\n";
     
     clashes.forEach((clash, index) => {
         message += `📅 ${clash.day}\n`;
-        message += `⏰ Time Slot: ${clash.timeSlot}\n`;
-        message += `  • ${clash.units}\n`;
+        message += `⏰ ${clash.timeSlot}\n`;
+        clash.units.forEach(unit => {
+            message += `   • ${unit}\n`;
+        });
         if (index < clashes.length - 1) message += "\n";
     });
     
-    message += "\n⚠️ Please review your unit selection to avoid clashes.";
+    message += "\n⚠️ Please review your unit selection to avoid schedule conflicts.";
+    console.warn("Clash Alert:", clashes);
     alert(message);
 }
 
