@@ -311,8 +311,25 @@ generate.addEventListener("click", () => {
         let found = 0;
 
         // Add header row (always at index 2: "Day, Date" with time slots)
+        // Convert venue to hall to match file processing format
         if (wholeTT.length > 2) {
-            myUnits.push(wholeTT[2]);
+            const headerRow = wholeTT[2];
+            const headerFormatted = {
+                day: headerRow.day,
+                unit1: headerRow.unit1.map(item => ({
+                    name: item.name,
+                    hall: Array.isArray(item.venue) ? [...item.venue] : [item.venue]
+                })),
+                unit2: headerRow.unit2.map(item => ({
+                    name: item.name,
+                    hall: Array.isArray(item.venue) ? [...item.venue] : [item.venue]
+                })),
+                unit3: headerRow.unit3.map(item => ({
+                    name: item.name,
+                    hall: Array.isArray(item.venue) ? [...item.venue] : [item.venue]
+                }))
+            };
+            myUnits.push(headerFormatted);
         }
 
         // Process data rows starting from index 3
