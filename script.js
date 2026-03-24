@@ -364,7 +364,23 @@ generate.addEventListener("click", () => {
         
         const notFound = units.length - found;
         if (notFound > 0) {
-            alert(`${notFound} unit(s) not found,\nDouble check the unit codes and generate again`);
+            const notFoundCodes = units
+                .filter(unit => {
+                    const regex = new RegExp(`^(${units.map(u => u.code).join("|")})`, "i");
+                    let isFound = false;
+                    myUnits.forEach(dayEntry => {
+                        [...dayEntry.unit1, ...dayEntry.unit2, ...dayEntry.unit3].forEach(unitItem => {
+                            if (regex.test(unitItem.name) && unitItem.name.includes(unit.code)) {
+                                isFound = true;
+                            }
+                        });
+                    });
+                    return !isFound;
+                })
+                .map(unit => unit.code)
+                .join(", ");
+            
+            alert(`${notFound} unit(s) not found: ${notFoundCodes}\n\nPossible reasons:\n• Unit code has changed or is outdated\n• You may have entered the wrong unit code\n• Check the spelling and try again`);
         }
         localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
     };
@@ -467,7 +483,23 @@ generate.addEventListener("click", () => {
         generateTable(myUnits);
         const notFound = units.length - found;
         if (notFound > 0) {
-            alert(`${notFound} unit(s) not found,\nDouble check the unit codes and generate again`);
+            const notFoundCodes = units
+                .filter(unit => {
+                    const regex = new RegExp(`^(${units.map(u => u.code).join("|")})`, "i");
+                    let isFound = false;
+                    myUnits.forEach(dayEntry => {
+                        [...dayEntry.unit1, ...dayEntry.unit2, ...dayEntry.unit3].forEach(unitItem => {
+                            if (regex.test(unitItem.name) && unitItem.name.includes(unit.code)) {
+                                isFound = true;
+                            }
+                        });
+                    });
+                    return !isFound;
+                })
+                .map(unit => unit.code)
+                .join(", ");
+            
+            alert(`${notFound} unit(s) not found: ${notFoundCodes}\n\nPossible reasons:\n• Unit code has changed or is outdated\n• You may have entered the wrong unit code\n• Check the spelling and try again`);
         }
         localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
     }
@@ -576,8 +608,15 @@ function generateTable(any) {
     const downloadBtn = document.querySelector(".download");
     if (downloadBtn) {
         downloadBtn.addEventListener("click", () => {
-            localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
-            alert("TimeTable Saved Successfully");
+            const element = document.querySelector('.output');
+            const opt = {
+                margin: 10,
+                filename: `Timetable-${new Date().toISOString().split('T')[0]}.pdf`,
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2 },
+                jsPDF: { orientation: 'landscape', unit: 'mm', format: 'a4' }
+            };
+            html2pdf().set(opt).from(element).save();
         });
     }
 }
