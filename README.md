@@ -30,6 +30,7 @@ See [USER_GUIDE.txt](USER_GUIDE.txt) for step-by-step instructions on how to use
 1. **Access Admin**: Triple-click the copyright text at the bottom to access the admin panel
 2. **Enter Password**: Enter the admin passcode when prompted
 
+**LIMITATION**: The site is hosted on github pages thus true backend can never be achieved, all configurations are loaded in client side
 ### Managing Timetables
 
 - **Upload Timetable**: Upload an Excel file (.xlsx or .xls) with the base timetable
