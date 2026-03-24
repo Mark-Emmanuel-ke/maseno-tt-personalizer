@@ -60,6 +60,11 @@ async function loadAdminTimetable() {
     await loadAdminTimetable();
     if (myUnits.length > 0) {
         generateTable(myUnits);
+        // Check for clashes when loading from storage
+        const clashes = detectClashes(myUnits);
+        if (clashes.length > 0) {
+            showClashAlert(clashes);
+        }
     }
     displayUnits();
     trackVisit();
@@ -113,6 +118,55 @@ unitCode.addEventListener("keydown", (e) => {
 });
 
 add.addEventListener("click", selectUnits);
+
+// Detect schedule clashes
+function detectClashes(timetable) {
+    const clashes = [];
+    
+    // Skip header row (index 0)
+    for (let i = 1; i < timetable.length; i++) {
+        const dayEntry = timetable[i];
+        
+        // Check unit1, unit2, unit3 for multiple units on same day/time
+        const timeSlots = [
+            { slot: 'unit1', units: dayEntry.unit1 },
+            { slot: 'unit2', units: dayEntry.unit2 },
+            { slot: 'unit3', units: dayEntry.unit3 }
+        ];
+        
+        timeSlots.forEach(({ slot, units }) => {
+            if (units.length > 1) {
+                // Multiple units in the same time slot = clash
+                const clashingUnits = units.map(u => u.name).join('\n  • ');
+                clashes.push({
+                    day: dayEntry.day,
+                    timeSlot: slot,
+                    units: clashingUnits,
+                    count: units.length
+                });
+            }
+        });
+    }
+    
+    return clashes;
+}
+
+// Show clash alert if clashes exist
+function showClashAlert(clashes) {
+    if (clashes.length === 0) return;
+    
+    let message = "⚠️ SCHEDULE CLASH DETECTED!\n\nYou have selected units at the same time:\n\n";
+    
+    clashes.forEach((clash, index) => {
+        message += `📅 ${clash.day}\n`;
+        message += `⏰ Time Slot: ${clash.timeSlot}\n`;
+        message += `  • ${clash.units}\n`;
+        if (index < clashes.length - 1) message += "\n";
+    });
+    
+    message += "\n⚠️ Please review your unit selection to avoid clashes.";
+    alert(message);
+}
 
 generate.addEventListener("click", () => {
     if (units.length <= 0) {
@@ -280,6 +334,11 @@ generate.addEventListener("click", () => {
         });
 
         generateTable(myUnits);
+        
+        // Detect and show clashes
+        const clashes = detectClashes(myUnits);
+        showClashAlert(clashes);
+        
         const notFound = units.length - found;
         if (notFound > 0) {
             alert(`${notFound} unit(s) not found,\nDouble check the unit codes and generate again`);
