@@ -176,7 +176,6 @@ function showClashAlert(clashes) {
     if (clashes.length === 0) return;
     
     let message = "⚠️ SCHEDULE CLASH DETECTED!\n\n";
-    message += "You have selected multiple units at the same time:\n\n";
     
     clashes.forEach((clash, index) => {
         message += `📅 ${clash.day}\n`;
@@ -187,7 +186,7 @@ function showClashAlert(clashes) {
         if (index < clashes.length - 1) message += "\n";
     });
     
-    message += "\n⚠️ Please review your unit selection to avoid schedule conflicts.";
+    message += "\n⚠️ Sort out the schedule conflicts.";
     console.warn("Clash Alert:", clashes);
     alert(message);
 }
