@@ -302,9 +302,69 @@ generate.addEventListener("click", () => {
         return;
     }
 
-    // Use global admin timetable or fallback to stored one
-    if (globalAdminTimetable && Array.isArray(globalAdminTimetable.fullTT)) {
-        processFile(globalAdminTimetable.fullTT);
+    // Use global admin timetable if no file uploaded
+    if (globalAdminTimetable && Array.isArray(globalAdminTimetable.fullTT) && globalAdminTimetable.fullTT.length > 0) {
+        // globalAdminTimetable.fullTT is already in processed format, use it directly
+        const wholeTT = globalAdminTimetable.fullTT;
+        const regex = new RegExp(`^(${units.map(unit => unit.code).join("|")})`, "i");
+        myUnits = [];
+        let found = 0;
+
+        myUnits.push(wholeTT[0]);
+
+        wholeTT.forEach(each => {
+            each.unit1.forEach(n => {
+                if (regex.test(n.name)) {
+                    found++;
+                    const format = {
+                        day: "",
+                        unit1: [],
+                        unit2: [],
+                        unit3: []
+                    };
+                    format.day = each.day;
+                    format.unit1.push({ name: n.name, hall: [...n.hall] });
+                    myUnits.push({ ...format });
+                }
+            });
+
+            each.unit2.forEach(n => {
+                if (regex.test(n.name)) {
+                    found++;
+                    const format = {
+                        day: "",
+                        unit1: [],
+                        unit2: [],
+                        unit3: []
+                    };
+                    format.day = each.day;
+                    format.unit2.push({ name: n.name, hall: [...n.hall] });
+                    myUnits.push({ ...format });
+                }
+            });
+
+            each.unit3.forEach(n => {
+                if (regex.test(n.name)) {
+                    found++;
+                    const format = {
+                        day: "",
+                        unit1: [],
+                        unit2: [],
+                        unit3: []
+                    };
+                    format.day = each.day;
+                    format.unit3.push({ name: n.name, hall: [...n.hall] });
+                    myUnits.push({ ...format });
+                }
+            });
+        });
+
+        generateTable(myUnits);
+        const notFound = units.length - found;
+        if (notFound > 0) {
+            alert(`${notFound} unit(s) not found,\nDouble check the unit codes and generate again`);
+        }
+        localStorage.setItem(STORAGE_KEYS.savedTimetable, JSON.stringify(myUnits));
     }
 });
 
