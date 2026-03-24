@@ -310,9 +310,15 @@ generate.addEventListener("click", () => {
         myUnits = [];
         let found = 0;
 
-        myUnits.push(wholeTT[0]);
+        // Add header row (always at index 2: "Day, Date" with time slots)
+        if (wholeTT.length > 2) {
+            myUnits.push(wholeTT[2]);
+        }
 
-        wholeTT.forEach(each => {
+        // Process data rows starting from index 3
+        for (let i = 3; i < wholeTT.length; i++) {
+            const each = wholeTT[i];
+            
             each.unit1.forEach(n => {
                 if (regex.test(n.name)) {
                     found++;
@@ -357,7 +363,7 @@ generate.addEventListener("click", () => {
                     myUnits.push({ ...format });
                 }
             });
-        });
+        }
 
         generateTable(myUnits);
         const notFound = units.length - found;
