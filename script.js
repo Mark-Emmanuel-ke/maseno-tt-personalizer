@@ -506,22 +506,52 @@ generate.addEventListener("click", () => {
 });
 
 function selectUnits() {
-    const code = unitCode.value.trim().toUpperCase();
+    const codeInput = unitCode.value.trim().toUpperCase();
     const name = unitName.value.trim();
 
-    if (!code) {
+    if (!codeInput) {
         alert("Unit Code Cannot be empty");
         return;
     }
 
-    const alreadyAdded = units.some((u) => u.code.toUpperCase() === code);
-    if (alreadyAdded) {
-        alert("Unit code already added");
+    // Split by comma and filter empty values
+    const codes = codeInput.split(",").map(c => c.trim()).filter(c => c.length > 0);
+
+    if (codes.length === 0) {
+        alert("Unit Code Cannot be empty");
         return;
     }
 
-    units.push({ code, name });
-    localStorage.setItem(STORAGE_KEYS.units, JSON.stringify(units));
+    let duplicates = [];
+    let added = [];
+
+    codes.forEach(code => {
+        const alreadyAdded = units.some((u) => u.code.toUpperCase() === code);
+        if (alreadyAdded) {
+            duplicates.push(code);
+        } else {
+            units.push({ code, name });
+            added.push(code);
+        }
+    });
+
+    if (added.length > 0) {
+        localStorage.setItem(STORAGE_KEYS.units, JSON.stringify(units));
+    }
+
+    // Provide feedback
+    let message = "";
+    if (added.length > 0) {
+        message += `Added ${added.length} unit${added.length > 1 ? "s" : ""}: ${added.join(", ")}`;
+    }
+    if (duplicates.length > 0) {
+        if (message) message += "\n\n";
+        message += `Already added: ${duplicates.join(", ")}`;
+    }
+
+    if (message) {
+        alert(message);
+    }
 
     unitCode.value = "";
     unitName.value = "";
