@@ -191,6 +191,60 @@ function showClashAlert(clashes) {
     alert(message);
 }
 
+// Extract table data from PDF and convert to Excel format
+async function extractTableFromPDF(pdf) {
+    const rows = [];
+    
+    // Set worker script for PDF.js
+    if (typeof pdfjsLib !== 'undefined' && pdfjsLib.GlobalWorkerOptions) {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+    
+    for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+        const page = await pdf.getPage(pageNum);
+        const textContent = await page.getTextContent();
+        
+        // Group text items into rows based on Y coordinate
+        const items = textContent.items.filter(item => item.str && item.str.trim());
+        
+        if (items.length === 0) continue;
+        
+        const itemsByY = {};
+        items.forEach(item => {
+            const y = Math.round(item.y); // Group by approximate Y position
+            if (!itemsByY[y]) itemsByY[y] = [];
+            itemsByY[y].push(item);
+        });
+        
+        // Sort by Y position (top to bottom)
+        const sortedYPositions = Object.keys(itemsByY).sort((a, b) => b - a);
+        
+        sortedYPositions.forEach(y => {
+            const rowItems = itemsByY[y];
+            // Sort items by X position (left to right)
+            rowItems.sort((a, b) => a.x - b.x);
+            
+            // Create row data
+            const rowData = {};
+            const columnNames = [" MASENO UNIVERSITY", "__EMPTY", "__EMPTY_2", "__EMPTY_3", "__EMPTY_5", "__EMPTY_6", "__EMPTY_8"];
+            
+            rowItems.forEach((item, index) => {
+                const colName = columnNames[Math.min(index, columnNames.length - 1)];
+                rowData[colName] = item.str.trim();
+            });
+            
+            rows.push(rowData);
+        });
+    }
+    
+    // Convert rows array to Excel-compatible array buffer format
+    const ws = XLSX.utils.json_to_sheet(rows);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Sheet1");
+    
+    return XLSX.write(wb, { bookType: 'xlsx', type: 'array' });
+}
+
 generate.addEventListener("click", () => {
     if (units.length <= 0) {
         alert("You have to select your registered units");
@@ -202,6 +256,12 @@ generate.addEventListener("click", () => {
         alert("No source timetable found. Upload one or ask admin to upload a default timetable.");
         return;
     }
+
+    // Determine file type
+    const isPDF = file && file.type === "application/pdf";
+    const isExcel = file && (file.type === "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" || 
+                            file.type === "application/vnd.ms-excel" ||
+                            file.name.endsWith(".xlsx") || file.name.endsWith(".xls"));
 
     const processFile = (data) => {
         const workbook = XLSX.read(data, { type: "array" });
@@ -387,10 +447,18 @@ generate.addEventListener("click", () => {
 
     if (file) {
         const reader = new FileReader();
-        reader.onload = (e) => {
+        reader.onload = async (e) => {
             try {
-                const data = new Uint8Array(e.target.result);
-                processFile(data);
+                if (isPDF) {
+                    // Handle PDF
+                    const pdf = await pdfjsLib.getDocument(new Uint8Array(e.target.result)).promise;
+                    const excelData = await extractTableFromPDF(pdf);
+                    processFile(excelData);
+                } else {
+                    // Handle Excel
+                    const data = new Uint8Array(e.target.result);
+                    processFile(data);
+                }
             } catch (error) {
                 alert("Failed to read the selected timetable file.");
                 console.error(error);
@@ -1058,8 +1126,6 @@ async function getConfiguredAdminPasscodeHash() {
 }
 
 // ===== GITHUB TOKEN ENCRYPTION/DECRYPTION =====
-// Encrypts the GitHub token with a master password
-// This prevents the token from being exposed even if code is leaked
 
 async function encryptGitHubToken(token, masterPassword) {
     try {
