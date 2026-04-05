@@ -15,9 +15,30 @@
     },
     {
       "day": "Day, Date",
-      "unit1": [],
-      "unit2": [],
-      "unit3": []
+      "unit1": [
+        {
+          "name": "8.30am - 11.30am",
+          "venue": [
+            "Hall"
+          ]
+        }
+      ],
+      "unit2": [
+        {
+          "name": "12.00noon - 3.00pm",
+          "venue": [
+            "Hall"
+          ]
+        }
+      ],
+      "unit3": [
+        {
+          "name": "3.30pm 6.30pm",
+          "venue": [
+            "Hall"
+          ]
+        }
+      ]
     },
     {
       "day": "Monday, 13 April 2026",
